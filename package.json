@@ -1,0 +1,41 @@
+{
+  "name": "react-simple-tooltip",
+  "version": "1.0.0",
+  "description": "A lightweight and simple tooltip component for React",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedricdelpoux/react-simple.git"
+  },
+  "keywords": [
+    "react",
+    "tooltip",
+    "bubble"
+  ],
+  "author": "Cédric Delpoux <cedric.delpoux@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cedricdelpoux/react-simple-tooltip/issues"
+  },
+  "homepage": "https://github.com/cedricdelpoux/react-simple-tooltip#readme",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "classnames": "~2.1.2",
+    "react": "^0.13.1"
+  },
+  "devDependencies": {
+    "babel": "^5.4.5",
+    "babel-eslint": "^3.1.5",
+    "eslint": "^0.21.1",
+    "eslint-plugin-react": "^2.1.0"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "babel src --out-dir lib --copy-files",
+    "watch": "npm run build -- --watch",
+    "lint": "eslint src/",
+    "prepublish": "npm run clean && npm run build"
+  }
+}
