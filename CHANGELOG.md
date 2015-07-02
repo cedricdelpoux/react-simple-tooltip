@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 - 2015-07-02
+
+* Changed: tooltips exemple screenshot
+
 ## 1.0.1 - 2015-07-02
 
 * Changed: repository url in package.json

@@ -18,7 +18,7 @@ See [changelog](./CHANGELOG.md)
 
 ### Exemple
 
-![Tooltip exemple](/screenshots/twolinestooltip.png)
+![Tooltip exemple](/screenshots/themed-tooltips.png)
 
 ```js
 import React, { Component } from 'react'
