@@ -8,6 +8,8 @@ A lightweight and simple tooltip component for React
 npm install --save react-simple-tooltip
 ```
 
+[![react-simple-tooltip](https://nodei.co/npm/react-simple-tooltip.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-simple-tooltip/)
+
 ## Changelog
 
 See [changelog](./CHANGELOG.md)
