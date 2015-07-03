@@ -16,9 +16,31 @@ See [changelog](./CHANGELOG.md)
 
 ## Usage
 
-### Exemple
+### Examples
 
-![Tooltip exemple](/screenshots/themed-tooltips.png)
+![Tooltip example](/screenshots/themed-tooltips.png)
+
+#### Fixed Tooltip
+
+```js
+import React from 'react'
+import { Tooltip } from 'react-simple-tooltip'
+
+export default class MyComponent {
+  render() {
+    return (
+      <div>
+        <Tooltip>
+          <div>react-simple-tooltip</div>
+          <div>By cedricdelpoux</div> 
+        </Tooltip>
+      </div>
+    )
+  }
+}
+```
+
+#### Hover Tooltip
 
 ```js
 import React, { Component } from 'react'
@@ -45,8 +67,8 @@ export default class MyComponent extends Component {
         { this.state.tooltipTrigger
           ? (
             <Tooltip placement="top" trigger={ this.state.tooltipTrigger }>
-              <div>Line 1</div>
-              <div>Line 2</div> 
+              <div>react-simple-tooltip</div>
+              <div>By cedricdelpoux</div> 
             </Tooltip>
           )
           : null
@@ -64,9 +86,9 @@ export default class MyComponent extends Component {
 
 ### Props
 
-  * `placement`: String - one of ['top', 'right', 'bottom', 'left']
-  * `theme`: String - one of ['black', 'grey', 'blue', 'green', 'yellow', 'red']
-  * `trigger`: React element
+  * `placement`: String - by default is right - one of ['top', 'right', 'bottom', 'left']
+  * `theme`: String - by default is black - one of ['black', 'grey', 'blue', 'green', 'yellow', 'red']
+  * `trigger`: React element - by default is null
 
 ## Development
 

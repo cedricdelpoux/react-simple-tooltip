@@ -1,8 +1,12 @@
 # Changelog
 
+## 1.0.3 - 2015-07-03
+
+* Added: fixed tooltip example  
+
 ## 1.0.2 - 2015-07-02
 
-* Changed: tooltips exemple screenshot
+* Changed: tooltips example screenshot
 
 ## 1.0.1 - 2015-07-02
 
