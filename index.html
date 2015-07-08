@@ -20,131 +20,120 @@
 
     <section class="main-content">
       <h1>
-<a id="react-simple-tooltip" class="anchor" href="#react-simple-tooltip" aria-hidden="true"><span class="octicon octicon-link"></span></a>react-simple-tooltip</h1>
+      <a id="react-simple-tooltip" class="anchor" href="#react-simple-tooltip" aria-hidden="true"><span class="octicon octicon-link"></span></a>react-simple-tooltip</h1>
 
-<p>A lightweight and simple tooltip component for React</p>
+      <p>A lightweight and simple tooltip component for React</p>
 
-<h2>
-<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+      <h2>
+      <a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
 
-<div class="highlight highlight-sh"><pre>npm install --save react-simple-tooltip</pre></div>
+      <div class="highlight highlight-sh"><pre>npm install --save react-simple-tooltip</pre></div>
 
-<p><a href="https://nodei.co/npm/react-simple-tooltip/"><img src="https://nodei.co/npm/react-simple-tooltip.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="react-simple-tooltip"></a></p>
+      <p><a href="https://nodei.co/npm/react-simple-tooltip/"><img src="https://nodei.co/npm/react-simple-tooltip.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="react-simple-tooltip"></a></p>
 
-<h2>
-<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog</h2>
+      <h2>
+      <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+      <div id="demo-container"></div>
 
-<p>See <a href="./CHANGELOG.md">changelog</a></p>
+      <h2>
+      <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+      <h3>
+      <a id="fixed-tooltip" class="anchor" href="#fixed-tooltip" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fixed Tooltip</h3>
 
-<h3>
-<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
+      <div class="highlight highlight-js"><pre><span class="pl-k">import</span> React <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>
+      <span class="pl-k">import</span> { Tooltip } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react-simple-tooltip<span class="pl-pds">'</span></span>
 
-<p><img src="/screenshots/themed-tooltips.png" alt="Tooltip example"></p>
-
-<h4>
-<a id="fixed-tooltip" class="anchor" href="#fixed-tooltip" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fixed Tooltip</h4>
-
-<div class="highlight highlight-js"><pre><span class="pl-k">import</span> React <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>
-<span class="pl-k">import</span> { Tooltip } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react-simple-tooltip<span class="pl-pds">'</span></span>
-
-<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-en">MyComponent</span> {
-  <span class="pl-en">render</span>() {
-    <span class="pl-k">return</span> (
-      <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
-        <span class="pl-k">&lt;</span>Tooltip<span class="pl-k">&gt;</span>
-          <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>react<span class="pl-k">-</span>simple<span class="pl-k">-</span>tooltip<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
-          <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>By cedricdelpoux<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span> 
-        <span class="pl-k">&lt;</span>/Tooltip<span class="pl-k">&gt;</span>
-      <span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
-    )
-  }
-}</pre></div>
-
-<h4>
-<a id="hover-tooltip" class="anchor" href="#hover-tooltip" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hover Tooltip</h4>
-
-<div class="highlight highlight-js"><pre><span class="pl-k">import</span> React, { Component } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>
-<span class="pl-k">import</span> { Tooltip } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react-simple-tooltip<span class="pl-pds">'</span></span>
-
-<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-en">MyComponent</span> <span class="pl-k">extends</span> <span class="pl-en">Component</span> {
-  <span class="pl-en">constructor</span>(<span class="pl-smi">props</span>, <span class="pl-smi">context</span>) {
-    <span class="pl-v">super</span>(props, context)
-
-    <span class="pl-v">this</span>.state <span class="pl-k">=</span> {
-      tooltipTrigger<span class="pl-k">:</span> <span class="pl-c1">null</span>,
-    }
-  }
-
-  <span class="pl-en">handleHover</span>(<span class="pl-smi">trigger</span>) {
-    <span class="pl-v">this</span>.setState({
-      tooltipTrigger<span class="pl-k">:</span> trigger,
-    })
-  }
-
-  <span class="pl-en">render</span>() {
-    <span class="pl-k">return</span> (
-      <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
-        { <span class="pl-v">this</span>.state.tooltipTrigger
-          <span class="pl-k">?</span> (
-            <span class="pl-k">&lt;</span>Tooltip placement<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>top<span class="pl-pds">"</span></span> trigger<span class="pl-k">=</span>{ <span class="pl-v">this</span>.state.tooltipTrigger }<span class="pl-k">&gt;</span>
-              <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>react<span class="pl-k">-</span>simple<span class="pl-k">-</span>tooltip<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
-              <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>By cedricdelpoux<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span> 
-            <span class="pl-k">&lt;</span>/Tooltip<span class="pl-k">&gt;</span>
+      <span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-en">MyComponent</span> {
+        <span class="pl-en">render</span>() {
+          <span class="pl-k">return</span> (
+            <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+              <span class="pl-k">&lt;</span>Tooltip<span class="pl-k">&gt;</span>
+                <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>react<span class="pl-k">-</span>simple<span class="pl-k">-</span>tooltip<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
+                <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>By cedricdelpoux<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
+              <span class="pl-k">&lt;</span>/Tooltip<span class="pl-k">&gt;</span>
+            <span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
           )
-          <span class="pl-k">:</span> <span class="pl-c1">null</span>
+        }
+      }</pre></div>
+
+      <h3>
+      <a id="hover-tooltip" class="anchor" href="#hover-tooltip" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hover Tooltip</h3>
+
+      <div class="highlight highlight-js"><pre><span class="pl-k">import</span> React, { Component } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>
+      <span class="pl-k">import</span> { Tooltip } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react-simple-tooltip<span class="pl-pds">'</span></span>
+
+      <span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-en">MyComponent</span> <span class="pl-k">extends</span> <span class="pl-en">Component</span> {
+        <span class="pl-en">constructor</span>(<span class="pl-smi">props</span>, <span class="pl-smi">context</span>) {
+          <span class="pl-v">super</span>(props, context)
+
+          <span class="pl-v">this</span>.state <span class="pl-k">=</span> {
+            tooltipTrigger<span class="pl-k">:</span> <span class="pl-c1">null</span>,
+          }
         }
 
+        <span class="pl-en">handleHover</span>(<span class="pl-smi">trigger</span>) {
+          <span class="pl-v">this</span>.setState({
+            tooltipTrigger<span class="pl-k">:</span> trigger,
+          })
+        }
 
-        <span class="pl-k">&lt;</span>RandomComponent
-          onComponentHover<span class="pl-k">=</span>{ <span class="pl-k">::</span><span class="pl-v">this</span>.handleHover }
-        /<span class="pl-k">&gt;</span>
-      <span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
-    )
-  }
-}</pre></div>
+        <span class="pl-en">render</span>() {
+          <span class="pl-k">return</span> (
+            <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+              { <span class="pl-v">this</span>.state.tooltipTrigger
+                <span class="pl-k">?</span> (
+                  <span class="pl-k">&lt;</span>Tooltip placement<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>top<span class="pl-pds">"</span></span> trigger<span class="pl-k">=</span>{ <span class="pl-v">this</span>.state.tooltipTrigger }<span class="pl-k">&gt;</span>
+                    <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>react<span class="pl-k">-</span>simple<span class="pl-k">-</span>tooltip<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
+                    <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>By cedricdelpoux<span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
+                  <span class="pl-k">&lt;</span>/Tooltip<span class="pl-k">&gt;</span>
+                )
+                <span class="pl-k">:</span> <span class="pl-c1">null</span>
+              }
 
-<h3>
-<a id="props" class="anchor" href="#props" aria-hidden="true"><span class="octicon octicon-link"></span></a>Props</h3>
 
-<ul>
-<li>
-<code>placement</code>: String - by default is right - one of ['top', 'right', 'bottom', 'left']</li>
-<li>
-<code>theme</code>: String - by default is black - one of ['black', 'grey', 'blue', 'green', 'yellow', 'red']</li>
-<li>
-<code>trigger</code>: React element - by default is null</li>
-</ul>
+              <span class="pl-k">&lt;</span>RandomComponent
+                onComponentHover<span class="pl-k">=</span>{ <span class="pl-k">::</span><span class="pl-v">this</span>.handleHover }
+              /<span class="pl-k">&gt;</span>
+            <span class="pl-k">&lt;</span>/div<span class="pl-k">&gt;</span>
+          )
+        }
+      }</pre></div>
 
-<h2>
-<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+      <h3>
+      <a id="props" class="anchor" href="#props" aria-hidden="true"><span class="octicon octicon-link"></span></a>Props</h3>
 
-<h3>
-<a id="clean-lib-folder" class="anchor" href="#clean-lib-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clean <code>lib</code> folder</h3>
+      <ul>
+      <li>
+      <code>placement</code>: String - by default is right - one of ['top', 'right', 'bottom', 'left']</li>
+      <li>
+      <code>theme</code>: String - by default is black - one of ['black', 'grey', 'blue', 'green', 'yellow', 'red']</li>
+      <li>
+      <code>trigger</code>: React element - by default is null</li>
+      </ul>
 
-<div class="highlight highlight-js"><pre>npm run clean</pre></div>
+      <h2>
+      <a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
 
-<h3>
-<a id="build-lib-folder" class="anchor" href="#build-lib-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build <code>lib</code> folder</h3>
+      <h3>
+      <a id="clean-lib-folder" class="anchor" href="#clean-lib-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clean <code>lib</code> folder</h3>
 
-<div class="highlight highlight-js"><pre>npm run build</pre></div>
+      <div class="highlight highlight-js"><pre>npm run clean</pre></div>
 
-<h3>
-<a id="watch-src-folder" class="anchor" href="#watch-src-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Watch <code>src</code> folder</h3>
+      <h3>
+      <a id="build-lib-folder" class="anchor" href="#build-lib-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build <code>lib</code> folder</h3>
 
-<div class="highlight highlight-js"><pre>npm run watch</pre></div>
+      <div class="highlight highlight-js"><pre>npm run build</pre></div>
 
-<h3>
-<a id="lint-src-folder" class="anchor" href="#lint-src-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lint <code>src</code> folder</h3>
+      <h3>
+      <a id="watch-src-folder" class="anchor" href="#watch-src-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Watch <code>src</code> folder</h3>
 
-<div class="highlight highlight-js"><pre>npm run build</pre></div>
+      <div class="highlight highlight-js"><pre>npm run watch</pre></div>
 
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+      <h3>
+      <a id="lint-src-folder" class="anchor" href="#lint-src-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lint <code>src</code> folder</h3>
 
-<p>See <a href="./LICENCE">MIT</a></p>
+      <div class="highlight highlight-js"><pre>npm run build</pre></div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/cedricdelpoux/react-simple-tooltip">React-simple-tooltip</a> is maintained by <a href="https://github.com/cedricdelpoux">cedricdelpoux</a>.</span>
@@ -153,8 +142,6 @@
       </footer>
 
     </section>
-
-  
+    <script type="text/javascript" src="build/bundle.js"></script>
   </body>
 </html>
-
