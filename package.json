@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tooltip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight and simple tooltip component for React",
   "repository": {
     "type": "git",
@@ -22,19 +22,26 @@
     "lib"
   ],
   "dependencies": {
+    "babel-runtime": "~5.6.4",
     "classnames": "~2.1.2",
-    "react": "^0.13.1"
+    "react": "^0.13.3"
   },
   "devDependencies": {
-    "babel": "^5.4.5",
-    "babel-eslint": "^3.1.5",
-    "eslint": "^0.21.1",
-    "eslint-plugin-react": "^2.1.0"
+    "babel": "~5.6.14",
+    "babel-core": "~5.6.15",
+    "babel-eslint": "~3.1.20",
+    "babel-loader": "~5.1.4",
+    "css-loader": "~0.15.1",
+    "eslint": "~0.21.2",
+    "eslint-loader": "~0.14.0",
+    "eslint-plugin-react": "~2.6.4",
+    "node-libs-browser": "~0.5.2",
+    "style-loader": "~0.12.2",
+    "webpack": "~1.10.1"
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "build": "babel src --out-dir lib --copy-files",
-    "watch": "npm run build -- --watch",
+    "build": "webpack --progress --colors --display-modules",
     "lint": "eslint src/",
     "prepublish": "npm run clean && npm run build"
   }

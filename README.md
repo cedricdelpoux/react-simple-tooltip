@@ -14,6 +14,10 @@ npm install --save react-simple-tooltip
 
 See [changelog](./CHANGELOG.md)
 
+## Demo 
+
+http://cedricdelpoux.github.io/react-simple-tooltip/
+
 ## Usage
 
 ### Examples
@@ -102,12 +106,6 @@ npm run clean
 
 ```js
 npm run build
-```
-
-### Watch `src` folder
-
-```js
-npm run watch
 ```
 
 ### Lint `src` folder
