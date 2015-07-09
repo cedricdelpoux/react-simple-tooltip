@@ -5,9 +5,9 @@
   line-height: 1.4;
 }
 
-.tooltip-black {
-
-}
+/*
+ * Placement
+ */
 
 .tooltip-top {
   margin-top: -.1875rem;
@@ -32,6 +32,10 @@
   padding: 0 .3125rem;
   transform: translateY(-50%);
 }
+
+/*
+ * Arrow
+ */
 
 .tooltip_arrow {
   position: absolute;
@@ -164,6 +168,10 @@
 .tooltip-right.tooltip-red .tooltip_arrow {
   border-right-color: #d9534f;
 }
+
+/*
+ * Inner
+ */
 
 .tooltip_inner {
   max-width: 12.5rem;
