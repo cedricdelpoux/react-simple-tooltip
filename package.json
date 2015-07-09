@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tooltip",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight and simple tooltip component for React",
   "repository": {
     "type": "git",
@@ -22,7 +22,6 @@
     "lib"
   ],
   "dependencies": {
-    "babel-runtime": "~5.6.4",
     "classnames": "~2.1.2",
     "react": "^0.13.3"
   },
@@ -35,6 +34,7 @@
     "eslint": "~0.21.2",
     "eslint-loader": "~0.14.0",
     "eslint-plugin-react": "~2.6.4",
+    "extract-text-webpack-plugin": "^0.8.2",
     "node-libs-browser": "~0.5.2",
     "style-loader": "~0.12.2",
     "webpack": "~1.10.1"

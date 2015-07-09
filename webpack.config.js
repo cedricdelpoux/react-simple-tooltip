@@ -1,5 +1,6 @@
 var webpack = require('webpack')
 var path = require('path')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var sources = [
   path.resolve(__dirname, 'src'),
@@ -10,6 +11,8 @@ module.exports = {
   output: {
     path: __dirname,
     filename: './lib/index.js',
+    library: 'ReactSimpleTooltip',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['', '.js', '.css']
@@ -20,8 +23,16 @@ module.exports = {
     ],
     loaders: [
       { test: /\.js$/, include: sources, loader: 'babel' },
-      { test: /\.css$/, include: sources, loader: 'style!css' },
+      { test: /\.css$/, include: sources, loader: ExtractTextPlugin.extract('style', 'css') },
     ],
+  },
+  externals: {
+    react: {
+      root: 'React',
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+    },
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
@@ -33,5 +44,6 @@ module.exports = {
         warnings: false,
       },
     }),
+    new ExtractTextPlugin('./lib/index.css'),
   ]
 }

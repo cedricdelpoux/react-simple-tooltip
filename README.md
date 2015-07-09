@@ -27,8 +27,10 @@ http://cedricdelpoux.github.io/react-simple-tooltip/
 #### Fixed Tooltip
 
 ```js
+import 'react-simple-tooltip/lib/index.css'
+
 import React from 'react'
-import { Tooltip } from 'react-simple-tooltip'
+import Tooltip from 'react-simple-tooltip'
 
 export default class MyComponent {
   render() {
@@ -47,8 +49,10 @@ export default class MyComponent {
 #### Hover Tooltip
 
 ```js
+import 'react-simple-tooltip/lib/index.css'
+
 import React, { Component } from 'react'
-import { Tooltip } from 'react-simple-tooltip'
+import Tooltip from 'react-simple-tooltip'
 
 export default class MyComponent extends Component {
   constructor(props, context) {
