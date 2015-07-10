@@ -1,4 +1,4 @@
-# react-simple-tooltip
+# react-simple-tooltip  ![npm](https://img.shields.io/npm/v/react-simple-tooltip.svg) ![license](https://img.shields.io/npm/l/react-simple-tooltip.svg) ![github-issues](https://img.shields.io/github/issues/cedricdelpoux/react-simple-tooltip.svg)
 
 A lightweight and simple tooltip component for React
 
