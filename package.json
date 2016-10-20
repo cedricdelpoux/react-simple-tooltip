@@ -4,7 +4,7 @@
   "description": "A lightweight and simple tooltip component for React",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cedricdelpoux/react-simple-tooltip.git"
+    "url": "git+https://github.com/xuopled/react-simple-tooltip.git"
   },
   "keywords": [
     "react",
@@ -14,9 +14,9 @@
   "author": "Cédric Delpoux <cedric.delpoux@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cedricdelpoux/react-simple-tooltip/issues"
+    "url": "https://github.com/xuopled/react-simple-tooltip/issues"
   },
-  "homepage": "https://github.com/cedricdelpoux/react-simple-tooltip#readme",
+  "homepage": "https://github.com/xuopled/react-simple-tooltip#readme",
   "main": "lib/index.js",
   "files": [
     "lib"
