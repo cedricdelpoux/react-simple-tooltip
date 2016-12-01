@@ -1,4 +1,4 @@
-# react-simple-tooltip  ![npm](https://img.shields.io/npm/v/react-simple-tooltip.svg) ![license](https://img.shields.io/npm/l/react-simple-tooltip.svg) ![github-issues](https://img.shields.io/github/issues/cedricdelpoux/react-simple-tooltip.svg)
+# react-simple-tooltip  ![npm](https://img.shields.io/npm/v/react-simple-tooltip.svg) ![license](https://img.shields.io/npm/l/react-simple-tooltip.svg) ![github-issues](https://img.shields.io/github/issues/xuopled/react-simple-tooltip.svg)
 
 A lightweight and simple tooltip component for React
 
@@ -16,7 +16,7 @@ See [changelog](./CHANGELOG.md)
 
 ## Demo 
 
-http://cedricdelpoux.github.io/react-simple-tooltip/
+http://xuopled.github.io/react-simple-tooltip/
 
 ## Usage
 
@@ -38,7 +38,7 @@ export default class MyComponent {
       <div>
         <Tooltip>
           <div>react-simple-tooltip</div>
-          <div>By cedricdelpoux</div> 
+          <div>By xuopled</div> 
         </Tooltip>
       </div>
     )
@@ -76,7 +76,7 @@ export default class MyComponent extends Component {
           ? (
             <Tooltip placement="top" trigger={ this.state.tooltipTrigger }>
               <div>react-simple-tooltip</div>
-              <div>By cedricdelpoux</div> 
+              <div>By xuopled</div> 
             </Tooltip>
           )
           : null
