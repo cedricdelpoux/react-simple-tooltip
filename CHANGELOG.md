@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.6 - 2017-08-24
+
+* Changed: Import PropTypes from `prop-types` package
+* Added: Yarn
+
 ## 1.0.5 - 2015-07-09
 
 * Changed: webpack build
