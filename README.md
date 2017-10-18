@@ -1,123 +1,88 @@
-# react-simple-tooltip  ![npm](https://img.shields.io/npm/v/react-simple-tooltip.svg) ![license](https://img.shields.io/npm/l/react-simple-tooltip.svg) ![github-issues](https://img.shields.io/github/issues/xuopled/react-simple-tooltip.svg)
+# react-simple-tooltip
+
+[![npm package][npm-badge]][npm]
+[![Travis][build-badge]][build]
+[![Codecov][codecov-badge]][codecov]
+![Module formats][module-formats]
 
 A lightweight and simple tooltip component for React
 
-## Install
-
-```sh
-npm install --save react-simple-tooltip
-```
+## Getting started
 
 [![react-simple-tooltip](https://nodei.co/npm/react-simple-tooltip.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-simple-tooltip/)
 
-## Changelog
+You can download `react-simple-tooltip` from the NPM registry via the `npm` or `yarn` commands
 
-See [changelog](./CHANGELOG.md)
+```shell
+yarn add react-simple-tooltip
+npm install react-simple-tooltip --save
+```
 
-## Demo 
+If you don't use package manager and you want to include `react-simple-tooltip` directly in your html, you could get it from the UNPKG CDN
 
-http://xuopled.github.io/react-simple-tooltip/
+```html
+https://unpkg.com/react-simple-tooltip/dist/react-simple-tooltip.min.js.
+```
 
 ## Usage
 
-### Examples
+```javascript
+import React from "react"
+import Tooltip from "react-simple-tooltip"
 
-![Tooltip example](/screenshots/themed-tooltips.png)
-
-#### Fixed Tooltip
-
-```js
-import 'react-simple-tooltip/lib/index.css'
-
-import React from 'react'
-import Tooltip from 'react-simple-tooltip'
-
-export default class MyComponent {
-  render() {
-    return (
-      <div>
-        <Tooltip>
-          <div>react-simple-tooltip</div>
-          <div>By xuopled</div> 
-        </Tooltip>
-      </div>
-    )
-  }
-}
+const App = () =>
+  <Tooltip>
+    <button>Hover me !</button>
+  </Tooltip>
 ```
 
-#### Hover Tooltip
+## Demo
 
-```js
-import 'react-simple-tooltip/lib/index.css'
+See [Demo page][github-page]
 
-import React, { Component } from 'react'
-import Tooltip from 'react-simple-tooltip'
+## Props
 
-export default class MyComponent extends Component {
-  constructor(props, context) {
-    super(props, context)
+|Name|PropType|Description|Default
+|---|---|---|---
+|arrow|PropTypes.number|Arrow size, in pixels|8
+|background|PropTypes.string|Tooltip background color|"#000"
+|border|PropTypes.string|Tooltip border color|"#000"
+|color|PropTypes.string|Tooltip text color|"#fff"
+|content|PropTypes.any.isRequired|Tooltip content|-
+|fixed|PropTypes.bool|Tooltip behavior, hover by default|false
+|fontFamily|PropTypes.bool|Tooltip text font-family|"inherit"
+|fontSize|PropTypes.bool|Tooltip text font-size|"inherit"
+|padding|PropTypes.number|Tooltip padding, in pixels|16
+|placement|PropTypes.oneOf(["left", "top", "right", "bottom"])|Tooltip placement|"top"
+|radius|PropTypes.number|Tooltip border radius|0
+|zIndex|PropTypes.number|Tooltip z-index|1
 
-    this.state = {
-      tooltipTrigger: null,
-    }
-  }
+## Contributing
 
-  handleHover(trigger) {
-    this.setState({
-      tooltipTrigger: trigger,
-    })
-  }
+* ⇄ Pull/Merge requests and ★ Stars are always welcome.
+* For bugs and feature requests, please [create an issue][github-issue].
+* Pull requests must be accompanied by passing automated tests (`npm test`).
 
-  render() {
-    return (
-      <div>
-        { this.state.tooltipTrigger
-          ? (
-            <Tooltip placement="top" trigger={ this.state.tooltipTrigger }>
-              <div>react-simple-tooltip</div>
-              <div>By xuopled</div> 
-            </Tooltip>
-          )
-          : null
-        }
+See [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines
 
+## Changelog
 
-        <RandomComponent
-          onComponentHover={ ::this.handleHover }
-        />
-      </div>
-    )
-  }
-}
-```
-
-### Props
-
-  * `placement`: String - by default is right - one of ['top', 'right', 'bottom', 'left']
-  * `theme`: String - by default is black - one of ['black', 'grey', 'blue', 'green', 'yellow', 'red']
-  * `trigger`: React element - by default is null
-
-## Development
-
-### Clean `lib` folder
-
-```js
-npm run clean
-```
-
-### Build `lib` folder
-
-```js
-npm run build
-```
-
-### Lint `src` folder
-
-```js
-npm run build
-```
+See [CHANGELOG.md](./CHANGELOG.md)
 
 ## License
 
-See [MIT](./LICENCE)
+This project is licensed under the MIT License - see the [LICENCE.md](./LICENCE.md) file for details
+
+[npm-badge]: https://img.shields.io/npm/v/react-simple-tooltip.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-simple-tooltip
+
+[build-badge]: https://img.shields.io/travis/xuopled/react-simple-tooltip/master.svg?style=flat-square
+[build]: https://travis-ci.org/xuopled/react-simple-tooltip
+
+[codecov-badge]: https://img.shields.io/codecov/c/github/xuopled/react-simple-tooltip.svg?style=flat-square
+[codecov]: https://codecov.io/gh/xuopled/react-simple-tooltip
+
+[module-formats]: https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat-square
+
+[github-page]: https://xuopled.github.io/react-simple-tooltip
+[github-issue]: https://github.com/xuopled/react-simple-tooltip/issues/new

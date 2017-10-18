@@ -1,61 +1,124 @@
-import './index.css'
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import classNames from 'classnames'
+import Arrow from "./components/Arrow"
+import Tooltip from "./components/Tooltip"
+import Bubble from "./components/Bubble"
 
-export default class Tooltip {
-  static propTypes = {
-    placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-    theme: PropTypes.oneOf(['black', 'grey', 'blue', 'green', 'yellow', 'red']),
-    trigger: PropTypes.element,
+const Container = styled.div`
+  position: relative;
+  display: inline-block;
+`
+
+class Wrapper extends React.Component {
+  constructor() {
+    super()
+
+    this.state = {
+      open: false,
+    }
+
+    this.handleMouseEnter = this.handleMouseEnter.bind(this)
+    this.handleMouseLeave = this.handleMouseLeave.bind(this)
   }
 
-  static defaultProps = {
-    placement: 'right',
-    theme: 'black',
+  handleMouseEnter() {
+    this.setState({open: true})
+  }
+
+  handleMouseLeave() {
+    this.setState({open: false})
   }
 
   render() {
-    const { className, placement, theme, trigger } = this.props
-    const placementStyles = {}
-
-    if (trigger) {
-      const triggerRect = trigger.getBoundingClientRect()
-
-      switch (placement) {
-        case 'top':
-          placementStyles.left = triggerRect.left + (triggerRect.right - triggerRect.left) / 2
-          placementStyles.top = triggerRect.top
-          break
-
-        case 'bottom':
-          placementStyles.left = triggerRect.left + (triggerRect.right - triggerRect.left) / 2
-          placementStyles.top = triggerRect.bottom
-          break
-
-        case 'right':
-          placementStyles.left = triggerRect.right
-          placementStyles.top = triggerRect.top + (triggerRect.bottom - triggerRect.top) / 2
-          break
-
-        case 'left':
-          placementStyles.left = triggerRect.left
-          placementStyles.top = triggerRect.top + (triggerRect.bottom - triggerRect.top) / 2
-          break
-      }
-    }
-
+    const {open} = this.state
+    const {
+      arrow,
+      background,
+      border,
+      color,
+      children,
+      fixed,
+      fontFamily,
+      fontSize,
+      content,
+      padding,
+      placement,
+      radius,
+      zIndex,
+      ...props
+    } = this.props
     return (
-      <div
-        className={ classNames('tooltip', 'tooltip-' + theme, trigger && 'tooltip-' + placement, className) }
-        style={ placementStyles }
+      <Container
+        onMouseEnter={!fixed && this.handleMouseEnter}
+        onMouseLeave={!fixed && this.handleMouseLeave}
+        {...props}
       >
-        <div className="tooltip_arrow" />
-        <div className="tooltip_inner">
-          { this.props.children }
-        </div>
-      </div>
+        {children}
+        <Tooltip
+          open={fixed ? true : open}
+          placement={placement}
+          offset={arrow}
+          zIndex={zIndex}
+        >
+          <Bubble
+            background={background}
+            border={border}
+            color={color}
+            radius={radius}
+            fontFamily={fontFamily}
+            fontSize={fontSize}
+            padding={padding}
+          >
+            <Arrow
+              width={arrow}
+              background={background}
+              border={border}
+              color={color}
+              placement={placement}
+            />
+            {content}
+          </Bubble>
+        </Tooltip>
+      </Container>
     )
   }
 }
+
+Wrapper.propTypes = {
+  arrow: PropTypes.number,
+  background: PropTypes.string,
+  border: PropTypes.string,
+  children: PropTypes.any.isRequired,
+  color: PropTypes.string,
+  content: PropTypes.any.isRequired,
+  fixed: PropTypes.bool,
+  fontFamily: PropTypes.string,
+  fontSize: PropTypes.string,
+  padding: PropTypes.number,
+  placement: PropTypes.oneOf(["left", "top", "right", "bottom"]),
+  radius: PropTypes.number,
+  zIndex: PropTypes.number,
+}
+
+Wrapper.defaultProps = {
+  arrow: 8,
+  background: "#000",
+  border: "#000",
+  color: "#fff",
+  fixed: false,
+  fontFamily: "inherit",
+  fontSize: "inherit",
+  padding: 16,
+  placement: "top",
+  radius: 0,
+  zIndex: 1,
+}
+
+Wrapper.displayName = "Tooltip.Wrapper"
+Tooltip.displayName = "Tooltip"
+Bubble.displayName = "Tooltip.Bubble"
+Arrow.displayName = "Tooltip.Arrow"
+
+export default Wrapper
