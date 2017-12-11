@@ -1,8 +1,15 @@
 import React from "react"
 import ReactSimpleTooltip from "../../src"
+import styled from "styled-components"
 
 import demoHtml from "./demo.md"
 import readmeHtml from "../../README.md"
+
+const Zone = styled.div`
+  background: #44b39d;
+  color: #fff;
+  padding: 10px;
+`
 
 const data = []
 
@@ -17,7 +24,7 @@ const routes = [
     demo: {
       component: (
         <ReactSimpleTooltip placement="top" content="😎" arrow={15}>
-          <button>Hover me !</button>
+          <Zone>Hover me !</Zone>
         </ReactSimpleTooltip>
       ),
       displayName: "ReactSimpleTooltip",
@@ -25,6 +32,31 @@ const routes = [
       html: demoHtml,
     },
     label: "Demo",
+  },
+  {
+    path: "/standalone",
+    demo: {
+      component: (
+        <div
+          style={{
+            position: "relative",
+            height: "100px",
+            background: "#fff",
+            border: "1px solid #44B39D",
+          }}
+        >
+          <ReactSimpleTooltip
+            style={{position: "absolute", bottom: "0", left: "50%"}}
+            placement="bottom"
+            content="😎"
+          />
+        </div>
+      ),
+      displayName: "ReactSimpleTooltip",
+      hiddenProps: ["children"],
+      html: demoHtml,
+    },
+    label: "Standalone",
   },
   {
     path: "/readme",

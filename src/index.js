@@ -37,51 +37,57 @@ class Wrapper extends React.Component {
       arrow,
       background,
       border,
-      color,
       children,
+      color,
+      content,
       fixed,
       fontFamily,
       fontSize,
-      content,
       padding,
       placement,
       radius,
       zIndex,
       ...props
     } = this.props
-    return (
+    const hasTrigger = children !== undefined && children !== null
+    const tooltipElement = (
+      <Tooltip
+        open={!hasTrigger || fixed ? true : open}
+        placement={placement}
+        offset={arrow}
+        zIndex={zIndex}
+      >
+        <Bubble
+          background={background}
+          border={border}
+          color={color}
+          radius={radius}
+          fontFamily={fontFamily}
+          fontSize={fontSize}
+          padding={padding}
+        >
+          <Arrow
+            width={arrow}
+            background={background}
+            border={border}
+            color={color}
+            placement={placement}
+          />
+          {content}
+        </Bubble>
+      </Tooltip>
+    )
+    return hasTrigger ? (
       <Container
         onMouseEnter={!fixed && this.handleMouseEnter}
         onMouseLeave={!fixed && this.handleMouseLeave}
         {...props}
       >
         {children}
-        <Tooltip
-          open={fixed ? true : open}
-          placement={placement}
-          offset={arrow}
-          zIndex={zIndex}
-        >
-          <Bubble
-            background={background}
-            border={border}
-            color={color}
-            radius={radius}
-            fontFamily={fontFamily}
-            fontSize={fontSize}
-            padding={padding}
-          >
-            <Arrow
-              width={arrow}
-              background={background}
-              border={border}
-              color={color}
-              placement={placement}
-            />
-            {content}
-          </Bubble>
-        </Tooltip>
+        {tooltipElement}
       </Container>
+    ) : (
+      <Container {...props}>{tooltipElement}</Container>
     )
   }
 }
@@ -90,7 +96,7 @@ Wrapper.propTypes = {
   arrow: PropTypes.number,
   background: PropTypes.string,
   border: PropTypes.string,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.any,
   color: PropTypes.string,
   content: PropTypes.any.isRequired,
   fixed: PropTypes.bool,
@@ -106,6 +112,7 @@ Wrapper.defaultProps = {
   arrow: 8,
   background: "#000",
   border: "#000",
+  children: null,
   color: "#fff",
   fixed: false,
   fontFamily: "inherit",

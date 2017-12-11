@@ -26,14 +26,30 @@ https://unpkg.com/react-simple-tooltip/dist/react-simple-tooltip.min.js.
 
 ## Usage
 
+### Attached to a Component
+
 ```javascript
 import React from "react"
 import Tooltip from "react-simple-tooltip"
 
 const App = () =>
-  <Tooltip>
+  <Tooltip content="😎">
     <button>Hover me !</button>
   </Tooltip>
+```
+
+### Standalone
+```javascript
+import React from "react"
+import Tooltip from "react-simple-tooltip"
+
+const App = () =>
+  <div style={{position: "relative"}}>
+    <Tooltip
+      style={{position: "absolute", top: "50%", right: "0"}}
+      content="😎"
+    />
+  </div>
 ```
 
 ## Demo

@@ -1,4 +1,8 @@
-# 2.0.0 - 2017-18-10
+# 2.1.0 - 2017-12-08
+
+* Added: Standalone version
+
+# 2.0.0 - 2017-10-18
 
 * Added: Nwb build
 * Update: Nwb build
