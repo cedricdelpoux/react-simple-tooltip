@@ -3,16 +3,16 @@ import PropTypes from "prop-types"
 import styled, {keyframes} from "styled-components"
 import {easingPropType} from "../../utils/propTypes"
 
-const createAnimation = props => {
-  const fadeAnimation = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-  `
+const fadeAnimation = keyframes`
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+`
 
+const createAnimation = props => {
   return `animation:
     ${props.fadeDuration}s
     ${props.fadeEasing}
