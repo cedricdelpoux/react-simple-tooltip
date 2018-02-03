@@ -35,6 +35,7 @@ class Wrapper extends React.Component {
   render() {
     const {open} = this.state
     const {
+      offset,
       arrow,
       background,
       border,
@@ -57,7 +58,7 @@ class Wrapper extends React.Component {
       <Tooltip
         open={!hasTrigger || fixed ? true : open}
         placement={placement}
-        offset={arrow}
+        offset={offset + arrow}
         zIndex={zIndex}
         fadeEasing={fadeEasing}
         fadeDuration={fadeDuration}
@@ -98,6 +99,7 @@ class Wrapper extends React.Component {
 }
 
 Wrapper.propTypes = {
+  offset: PropTypes.number,
   arrow: PropTypes.number,
   background: PropTypes.string,
   border: PropTypes.string,
@@ -116,6 +118,7 @@ Wrapper.propTypes = {
 }
 
 Wrapper.defaultProps = {
+  offset: 0,
   arrow: 8,
   background: "#000",
   border: "#000",

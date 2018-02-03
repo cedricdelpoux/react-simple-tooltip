@@ -40,9 +40,9 @@ describe("Tooltip", () => {
 
   it("should create a Tooltip with an animation", () => {
     const wrapper = mount(
-      <Tooltip {...tooltipProps} fadeDuration={5} fadeEasing={"ease-out"} />
+      <Tooltip {...tooltipProps} fadeDuration={100} fadeEasing={"ease-out"} />
     )
-    expect(wrapper).toHaveStyleRule("animation", /5s ease-out 0s 1 \w+/)
+    expect(wrapper).toHaveStyleRule("animation", /100ms ease-out 0s 1 \w+/)
     expect(wrapper).toMatchSnapshot()
   })
 })

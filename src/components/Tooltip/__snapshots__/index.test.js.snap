@@ -139,8 +139,8 @@ exports[`Tooltip renders 4`] = `
 exports[`Tooltip should create a Tooltip with an animation 1`] = `
 .c0 {
   position: absolute;
-  -webkit-animation: 5s ease-out 0s 1 bcCCNc;
-  animation: 5s ease-out 0s 1 bcCCNc;
+  -webkit-animation: 100ms ease-out 0s 1 bcCCNc;
+  animation: 100ms ease-out 0s 1 bcCCNc;
   z-index: 8;
   bottom: 100%;
   left: 50%;
@@ -151,14 +151,14 @@ exports[`Tooltip should create a Tooltip with an animation 1`] = `
 }
 
 <Tooltip
-  fadeDuration={5}
+  fadeDuration={100}
   fadeEasing="ease-out"
   offset={8}
   open={true}
   zIndex={8}
 >
   <styled.div
-    fadeDuration={5}
+    fadeDuration={100}
     fadeEasing="ease-out"
     offset={8}
     open={true}
