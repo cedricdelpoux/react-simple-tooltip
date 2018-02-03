@@ -31,7 +31,6 @@
     "clean": "nwb clean-module && nwb clean-demo",
     "deploy": "gh-pages -d demo/dist",
     "lint": "eslint src demo/src",
-    "lint-staged": "lint-staged",
     "precommit": "lint-staged",
     "prepublish": "yarn run clean && yarn run build",
     "start": "nwb serve-react-demo --port 1190",
