@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled, {keyframes} from "styled-components"
-import {fadeEasingPropType} from "../../utils/propTypes"
+import {easingPropType} from "../../utils/propTypes"
 
 const createAnimation = props => {
   const fadeAnimation = keyframes`
@@ -95,7 +95,7 @@ Tooltip.propTypes = {
   open: PropTypes.bool,
   placement: PropTypes.string,
   zIndex: PropTypes.number,
-  fadeEasing: fadeEasingPropType,
+  fadeEasing: easingPropType,
   fadeDuration: PropTypes.number,
 }
 

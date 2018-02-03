@@ -1,8 +1,8 @@
 import {checkPropTypes} from "prop-types"
-import {fadeEasingPropType} from "./propTypes"
+import {easingPropType} from "./propTypes"
 import sinon from "sinon"
 
-describe("fadeEasingPropType", () => {
+describe("easingPropType", () => {
   let consoleSpy = null
   let consoleStub = null
   beforeEach(() => {
@@ -16,7 +16,7 @@ describe("fadeEasingPropType", () => {
   })
 
   it("should not error for normal easing types", () => {
-    const normalEasingTypes = [
+    const normalEasingProps = [
       "linear",
       "ease",
       "ease-in",
@@ -24,10 +24,10 @@ describe("fadeEasingPropType", () => {
       "ease-in-out",
     ]
 
-    normalEasingTypes.forEach(easingType => {
+    normalEasingProps.forEach(easing => {
       checkPropTypes(
-        {fadeEasing: fadeEasingPropType},
-        {fadeEasing: easingType},
+        {fadeEasing: easingPropType},
+        {fadeEasing: easing},
         "fadeEasing",
         "DummyComponent"
       )
@@ -51,10 +51,10 @@ describe("fadeEasingPropType", () => {
       "cubic-bezier(20,0.1,.1,30)",
     ]
 
-    validCubicBezierProps.forEach(easingType => {
+    validCubicBezierProps.forEach(easing => {
       checkPropTypes(
-        {fadeEasing: fadeEasingPropType},
-        {fadeEasing: easingType},
+        {fadeEasing: easingPropType},
+        {fadeEasing: easing},
         "fadeEasing",
         "DummyComponent"
       )
@@ -83,13 +83,13 @@ describe("fadeEasingPropType", () => {
       "cubic-bezier0.1,0.1,0.1,0.1)",
     ]
 
-    invalidCubicBezierProps.forEach((easingType, idx) => {
+    invalidCubicBezierProps.forEach((easing, idx) => {
       // checkPropTypes only warns once for the same prop,
       // so we need to change the prop name for every call
       const propName = `fadeEasing_${idx}`
       checkPropTypes(
-        {[propName]: fadeEasingPropType},
-        {[propName]: easingType},
+        {[propName]: easingPropType},
+        {[propName]: easing},
         propName,
         "DummyComponent"
       )

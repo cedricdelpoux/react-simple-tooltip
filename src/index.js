@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Arrow from "./components/Arrow"
 import Tooltip from "./components/Tooltip"
 import Bubble from "./components/Bubble"
-import {fadeEasingPropType} from "./utils/propTypes"
+import {easingPropType} from "./utils/propTypes"
 
 const Container = styled.div`
   position: relative;
@@ -111,7 +111,7 @@ Wrapper.propTypes = {
   placement: PropTypes.oneOf(["left", "top", "right", "bottom"]),
   radius: PropTypes.number,
   zIndex: PropTypes.number,
-  fadeEasing: fadeEasingPropType,
+  fadeEasing: easingPropType,
   fadeDuration: PropTypes.number,
 }
 

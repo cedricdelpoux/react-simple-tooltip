@@ -26,9 +26,9 @@ const cubicEasingPropType = (props, propName, componentName) => {
   }
 }
 
-const fadeEasingPropType = PropTypes.oneOfType([
+const easingPropType = PropTypes.oneOfType([
   normalEasingPropType,
   cubicEasingPropType,
 ])
 
-export {fadeEasingPropType}
+export {easingPropType}
