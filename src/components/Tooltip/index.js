@@ -13,15 +13,20 @@ const createAnimation = props => {
     }
   `
 
-  return `animation: ${props.fadeDuration}s ${
-    props.fadeEasing
-  } 0s 1 ${fadeAnimation};`
+  return `animation:
+    ${props.fadeDuration}s
+    ${props.fadeEasing}
+    0s
+    1
+    ${fadeAnimation}
+  `
 }
 
+// prettier-ignore
 const Base = styled.div`
   position: absolute;
-  ${props => props.fadeDuration && createAnimation(props)} ${props =>
-      props.zIndex && `z-index: ${props.zIndex};`};
+  ${props => props.fadeDuration && `${createAnimation(props)}`}
+  ${props => props.zIndex && `z-index: ${props.zIndex};`};
 `
 
 const Top = Base.extend`
