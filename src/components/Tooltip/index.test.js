@@ -42,7 +42,7 @@ describe("Tooltip", () => {
     const wrapper = mount(
       <Tooltip {...tooltipProps} fadeDuration={5} fadeEasing={"ease-out"} />
     )
-    expect(wrapper).toHaveStyleRule("animation", "5s ease-out 0s 1 bcCCNc")
+    expect(wrapper).toHaveStyleRule("animation", /5s ease-out 0s 1 \w+/)
     expect(wrapper).toMatchSnapshot()
   })
 })
