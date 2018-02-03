@@ -7,7 +7,7 @@ describe("fadeEasingPropType", () => {
   let consoleStub = null
   beforeEach(() => {
     consoleSpy = jest.fn()
-    consoleStub = sinon.stub(global.console, "error").callsFake(consoleSpy)
+    consoleStub = sinon.stub(global.console, "error").callsFake(consoleSpy) // eslint-disable-line no-undef
   })
 
   afterEach(() => {
