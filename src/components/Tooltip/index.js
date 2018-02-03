@@ -25,7 +25,7 @@ const createAnimation = props => {
 // prettier-ignore
 const Base = styled.div`
   position: absolute;
-  ${props => props.fadeDuration && `${createAnimation(props)}`}
+  ${props => props.fadeDuration && `${createAnimation(props)};`}
   ${props => props.zIndex && `z-index: ${props.zIndex};`};
 `
 
