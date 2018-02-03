@@ -1,6 +1,7 @@
 import {mount} from "enzyme"
 import React from "react"
 import Tooltip from "./index"
+import "jest-styled-components"
 
 const tooltipProps = {
   offset: 8,
@@ -16,13 +17,32 @@ const NoTooltipFixture = <Tooltip {...tooltipProps} open={false} />
 
 describe("Tooltip", () => {
   it("renders", () => {
-    mount(TooltipUpFixture)
-    mount(TooltipBottomFixture)
-    mount(TooltipLeftFixture)
-    mount(TooltipRightFixture)
+    const wrappers = [
+      mount(TooltipUpFixture),
+      mount(TooltipBottomFixture),
+      mount(TooltipLeftFixture),
+      mount(TooltipRightFixture),
+    ]
+
+    wrappers.forEach(wrapper => {
+      expect(wrapper).not.toHaveStyleRule("animation", /.*/)
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 
   it("do not render", () => {
-    mount(NoTooltipFixture)
+    expect(
+      mount(NoTooltipFixture)
+        .children()
+        .get(0)
+    ).toBeFalsy()
+  })
+
+  it("should create a Tooltip with an animation", () => {
+    const wrapper = mount(
+      <Tooltip {...tooltipProps} fadeDuration={5} fadeEasing={"ease-out"} />
+    )
+    expect(wrapper).toHaveStyleRule("animation", "5s ease-out 0s 1 bcCCNc")
+    expect(wrapper).toMatchSnapshot()
   })
 })

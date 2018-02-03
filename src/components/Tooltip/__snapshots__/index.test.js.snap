@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip renders 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 8;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+
+<Tooltip
+  offset={8}
+  open={true}
+  placement="bottom"
+  zIndex={8}
+>
+  <styled.div
+    offset={8}
+    open={true}
+    zIndex={8}
+  >
+    <div
+      className="c0"
+      offset={8}
+      open={true}
+    >
+      😎
+    </div>
+  </styled.div>
+</Tooltip>
+`;
+
+exports[`Tooltip renders 2`] = `
+.c0 {
+  position: absolute;
+  z-index: 8;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+<Tooltip
+  offset={8}
+  open={true}
+  placement="top"
+  zIndex={8}
+>
+  <styled.div
+    offset={8}
+    open={true}
+    zIndex={8}
+  >
+    <div
+      className="c0"
+      offset={8}
+      open={true}
+    >
+      😎
+    </div>
+  </styled.div>
+</Tooltip>
+`;
+
+exports[`Tooltip renders 3`] = `
+.c0 {
+  position: absolute;
+  z-index: 8;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 8px;
+}
+
+<Tooltip
+  offset={8}
+  open={true}
+  placement="right"
+  zIndex={8}
+>
+  <styled.div
+    offset={8}
+    open={true}
+    zIndex={8}
+  >
+    <div
+      className="c0"
+      offset={8}
+      open={true}
+    >
+      😎
+    </div>
+  </styled.div>
+</Tooltip>
+`;
+
+exports[`Tooltip renders 4`] = `
+.c0 {
+  position: absolute;
+  z-index: 8;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 8px;
+}
+
+<Tooltip
+  offset={8}
+  open={true}
+  placement="left"
+  zIndex={8}
+>
+  <styled.div
+    offset={8}
+    open={true}
+    zIndex={8}
+  >
+    <div
+      className="c0"
+      offset={8}
+      open={true}
+    >
+      😎
+    </div>
+  </styled.div>
+</Tooltip>
+`;
+
+exports[`Tooltip should create a Tooltip with an animation 1`] = `
+.c0 {
+  position: absolute;
+  -webkit-animation: 5s ease-out 0s 1 bcCCNc;
+  animation: 5s ease-out 0s 1 bcCCNc;
+  z-index: 8;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+<Tooltip
+  fadeDuration={5}
+  fadeEasing="ease-out"
+  offset={8}
+  open={true}
+  zIndex={8}
+>
+  <styled.div
+    fadeDuration={5}
+    fadeEasing="ease-out"
+    offset={8}
+    open={true}
+    zIndex={8}
+  >
+    <div
+      className="c0"
+      offset={8}
+      open={true}
+    >
+      😎
+    </div>
+  </styled.div>
+</Tooltip>
+`;
