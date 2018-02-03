@@ -1,3 +1,7 @@
+# 2.2.0 - 2018-01-03
+
+* Added: Fade animation props (by @BenLorantfy)
+
 # 2.1.0 - 2017-12-08
 
 * Added: Standalone version
@@ -39,4 +43,3 @@
 # 1.0.0 - 2015-07-01
 
 * Initial release
-
