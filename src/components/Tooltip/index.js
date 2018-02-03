@@ -1,9 +1,31 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
+import {easingPropType} from "../../utils/propTypes"
 
+const fadeAnimation = keyframes`
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+`
+
+const createAnimation = props => {
+  return `animation:
+    ${props.fadeDuration}s
+    ${props.fadeEasing}
+    0s
+    1
+    ${fadeAnimation}
+  `
+}
+
+// prettier-ignore
 const Base = styled.div`
   position: absolute;
+  ${props => props.fadeDuration && `${createAnimation(props)};`}
   ${props => props.zIndex && `z-index: ${props.zIndex};`};
 `
 
@@ -42,11 +64,25 @@ const tooltips = {
   bottom: Bottom,
 }
 
-const Tooltip = ({children, offset, open, placement, zIndex}) => {
+const Tooltip = ({
+  children,
+  offset,
+  open,
+  placement,
+  zIndex,
+  fadeDuration,
+  fadeEasing,
+}) => {
   const Component = tooltips[placement] || tooltips.top
   return (
     open && (
-      <Component offset={offset} open={open} zIndex={zIndex}>
+      <Component
+        offset={offset}
+        open={open}
+        zIndex={zIndex}
+        fadeDuration={fadeDuration}
+        fadeEasing={fadeEasing}
+      >
         {children}
       </Component>
     )
@@ -59,6 +95,8 @@ Tooltip.propTypes = {
   open: PropTypes.bool,
   placement: PropTypes.string,
   zIndex: PropTypes.number,
+  fadeEasing: easingPropType,
+  fadeDuration: PropTypes.number,
 }
 
 export default Tooltip

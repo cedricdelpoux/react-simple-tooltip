@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Arrow from "./components/Arrow"
 import Tooltip from "./components/Tooltip"
 import Bubble from "./components/Bubble"
+import {easingPropType} from "./utils/propTypes"
 
 const Container = styled.div`
   position: relative;
@@ -47,6 +48,8 @@ class Wrapper extends React.Component {
       placement,
       radius,
       zIndex,
+      fadeEasing,
+      fadeDuration,
       ...props
     } = this.props
     const hasTrigger = children !== undefined && children !== null
@@ -56,6 +59,8 @@ class Wrapper extends React.Component {
         placement={placement}
         offset={arrow}
         zIndex={zIndex}
+        fadeEasing={fadeEasing}
+        fadeDuration={fadeDuration}
       >
         <Bubble
           background={background}
@@ -106,6 +111,8 @@ Wrapper.propTypes = {
   placement: PropTypes.oneOf(["left", "top", "right", "bottom"]),
   radius: PropTypes.number,
   zIndex: PropTypes.number,
+  fadeEasing: easingPropType,
+  fadeDuration: PropTypes.number,
 }
 
 Wrapper.defaultProps = {
@@ -121,6 +128,8 @@ Wrapper.defaultProps = {
   placement: "top",
   radius: 0,
   zIndex: 1,
+  fadeEasing: "linear",
+  fadeDuration: 0,
 }
 
 Wrapper.displayName = "Tooltip.Wrapper"
