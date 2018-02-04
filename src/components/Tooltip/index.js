@@ -14,7 +14,7 @@ const fadeAnimation = keyframes`
 
 const createAnimation = props => {
   return `animation:
-    ${props.fadeDuration}s
+    ${props.fadeDuration}ms
     ${props.fadeEasing}
     0s
     1

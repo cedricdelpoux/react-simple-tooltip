@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip Should render without children 1`] = `
+<Tooltip.Wrapper
+  arrow={8}
+  background="#000"
+  border="#000"
+  color="#fff"
+  content="my content"
+  fadeDuration={0}
+  fadeEasing="linear"
+  fixed={false}
+  fontFamily="inherit"
+  fontSize="inherit"
+  offset={0}
+  padding={16}
+  placement="top"
+  radius={0}
+  zIndex={1}
+>
+  <styled.div>
+    <div
+      className="sc-gZMcBi daZGjV"
+    >
+      <Tooltip
+        fadeDuration={0}
+        fadeEasing="linear"
+        offset={8}
+        open={true}
+        placement="top"
+        zIndex={1}
+      >
+        <styled.div
+          fadeDuration={0}
+          fadeEasing="linear"
+          offset={8}
+          open={true}
+          zIndex={1}
+        >
+          <div
+            className="sc-bZQynM hQvhch"
+            offset={8}
+            open={true}
+          >
+            <Tooltip.Bubble
+              background="#000"
+              border="#000"
+              color="#fff"
+              fontFamily="inherit"
+              fontSize="inherit"
+              padding={16}
+              radius={0}
+            >
+              <div
+                className="sc-iwsKbI jAfIlk"
+                color="#fff"
+                fontFamily="inherit"
+                fontSize="inherit"
+                radius={0}
+              >
+                <Tooltip.Arrow
+                  background="#000"
+                  border="#000"
+                  color="#fff"
+                  placement="top"
+                  width={8}
+                >
+                  <styled.div
+                    background="#000"
+                    border="#000"
+                    width={8}
+                  >
+                    <div
+                      className="sc-htpNat flyQrw"
+                      width={8}
+                    />
+                  </styled.div>
+                </Tooltip.Arrow>
+                my content
+              </div>
+            </Tooltip.Bubble>
+          </div>
+        </styled.div>
+      </Tooltip>
+    </div>
+  </styled.div>
+</Tooltip.Wrapper>
+`;
+
+exports[`Tooltip should render 1`] = `
+<Tooltip.Wrapper
+  arrow={8}
+  background="#000"
+  border="#000"
+  color="#fff"
+  content="my content"
+  fadeDuration={0}
+  fadeEasing="linear"
+  fixed={false}
+  fontFamily="inherit"
+  fontSize="inherit"
+  offset={0}
+  padding={16}
+  placement="top"
+  radius={0}
+  zIndex={1}
+>
+  <styled.div
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="sc-gZMcBi daZGjV"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <button>
+        Hover Me
+      </button>
+      <Tooltip
+        fadeDuration={0}
+        fadeEasing="linear"
+        offset={8}
+        open={false}
+        placement="top"
+        zIndex={1}
+      />
+    </div>
+  </styled.div>
+</Tooltip.Wrapper>
+`;
