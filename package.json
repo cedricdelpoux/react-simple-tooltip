@@ -1,14 +1,23 @@
 {
   "name": "react-simple-tooltip",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": {
     "name": "Cédric Delpoux",
     "email": "xuopled@gmail.com"
   },
   "description": "A lightweight and simple tooltip component for React",
-  "files": ["css", "es", "lib", "umd"],
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "homepage": "https://github.com/xuopled/react-simple-tooltip#readme",
-  "keywords": ["react", "tooltip", "bubble"],
+  "keywords": [
+    "react",
+    "tooltip",
+    "bubble"
+  ],
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",

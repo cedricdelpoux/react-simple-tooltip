@@ -1,3 +1,8 @@
+# 2.3.0 - 2018-01-04
+
+* Updated: FadeDuration to be in ms,
+* Added: Offset prop to allow spacing between arrow and trigger
+
 # 2.2.0 - 2018-01-03
 
 * Added: Fade animation props (by @BenLorantfy)
@@ -9,7 +14,7 @@
 # 2.0.0 - 2017-10-18
 
 * Added: Nwb build
-* Update: Nwb build
+* Updated: Nwb build
 * Added: Tests
 * Added: styled-components dependency
 * Removed: classnames dependency
