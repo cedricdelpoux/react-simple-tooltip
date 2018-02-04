@@ -32,24 +32,27 @@ https://unpkg.com/react-simple-tooltip/dist/react-simple-tooltip.min.js.
 import React from "react"
 import Tooltip from "react-simple-tooltip"
 
-const App = () =>
+const App = () => (
   <Tooltip content="😎">
     <button>Hover me !</button>
   </Tooltip>
+)
 ```
 
 ### Standalone
+
 ```javascript
 import React from "react"
 import Tooltip from "react-simple-tooltip"
 
-const App = () =>
+const App = () => (
   <div style={{position: "relative"}}>
     <Tooltip
       style={{position: "absolute", top: "50%", right: "0"}}
       content="😎"
     />
   </div>
+)
 ```
 
 ## Demo
@@ -58,20 +61,22 @@ See [Demo page][github-page]
 
 ## Props
 
-|Name|PropType|Description|Default
-|---|---|---|---
-|arrow|PropTypes.number|Arrow size, in pixels|8
-|background|PropTypes.string|Tooltip background color|"#000"
-|border|PropTypes.string|Tooltip border color|"#000"
-|color|PropTypes.string|Tooltip text color|"#fff"
-|content|PropTypes.any.isRequired|Tooltip content|-
-|fixed|PropTypes.bool|Tooltip behavior, hover by default|false
-|fontFamily|PropTypes.bool|Tooltip text font-family|"inherit"
-|fontSize|PropTypes.bool|Tooltip text font-size|"inherit"
-|padding|PropTypes.number|Tooltip padding, in pixels|16
-|placement|PropTypes.oneOf(["left", "top", "right", "bottom"])|Tooltip placement|"top"
-|radius|PropTypes.number|Tooltip border radius|0
-|zIndex|PropTypes.number|Tooltip z-index|1
+| Name         | PropType                                            | Description                        | Default   |
+| ------------ | --------------------------------------------------- | ---------------------------------- | --------- |
+| arrow        | PropTypes.number                                    | Arrow size, in pixels              | 8         |
+| background   | PropTypes.string                                    | Tooltip background color           | "#000"    |
+| border       | PropTypes.string                                    | Tooltip border color               | "#000"    |
+| color        | PropTypes.string                                    | Tooltip text color                 | "#fff"    |
+| content      | PropTypes.any.isRequired                            | Tooltip content                    | -         |
+| fadeDuration | PropTypes.number                                    | Fade duration, in milliseconds     | 0         |
+| fadeEasing   | PropTypes.string                                    | Fade easing                        | "linear"  |
+| fixed        | PropTypes.bool                                      | Tooltip behavior, hover by default | false     |
+| fontFamily   | PropTypes.bool                                      | Tooltip text font-family           | "inherit" |
+| fontSize     | PropTypes.bool                                      | Tooltip text font-size             | "inherit" |
+| padding      | PropTypes.number                                    | Tooltip padding, in pixels         | 16        |
+| placement    | PropTypes.oneOf(["left", "top", "right", "bottom"]) | Tooltip placement                  | "top"     |
+| radius       | PropTypes.number                                    | Tooltip border radius              | 0         |
+| zIndex       | PropTypes.number                                    | Tooltip z-index                    | 1         |
 
 ## Contributing
 
@@ -91,14 +96,10 @@ This project is licensed under the MIT License - see the [LICENCE.md](./LICENCE.
 
 [npm-badge]: https://img.shields.io/npm/v/react-simple-tooltip.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/react-simple-tooltip
-
 [build-badge]: https://img.shields.io/travis/xuopled/react-simple-tooltip/master.svg?style=flat-square
 [build]: https://travis-ci.org/xuopled/react-simple-tooltip
-
 [codecov-badge]: https://img.shields.io/codecov/c/github/xuopled/react-simple-tooltip.svg?style=flat-square
 [codecov]: https://codecov.io/gh/xuopled/react-simple-tooltip
-
 [module-formats]: https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat-square
-
 [github-page]: https://xuopled.github.io/react-simple-tooltip
 [github-issue]: https://github.com/xuopled/react-simple-tooltip/issues/new

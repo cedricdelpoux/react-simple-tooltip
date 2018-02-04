@@ -99,40 +99,40 @@ class Wrapper extends React.Component {
 }
 
 Wrapper.propTypes = {
-  offset: PropTypes.number,
   arrow: PropTypes.number,
   background: PropTypes.string,
   border: PropTypes.string,
   children: PropTypes.any,
   color: PropTypes.string,
   content: PropTypes.any.isRequired,
+  fadeDuration: PropTypes.number,
+  fadeEasing: easingPropType,
   fixed: PropTypes.bool,
   fontFamily: PropTypes.string,
   fontSize: PropTypes.string,
+  offset: PropTypes.number,
   padding: PropTypes.number,
   placement: PropTypes.oneOf(["left", "top", "right", "bottom"]),
   radius: PropTypes.number,
   zIndex: PropTypes.number,
-  fadeEasing: easingPropType,
-  fadeDuration: PropTypes.number,
 }
 
 Wrapper.defaultProps = {
-  offset: 0,
   arrow: 8,
   background: "#000",
   border: "#000",
   children: null,
   color: "#fff",
+  fadeDuration: 0,
+  fadeEasing: "linear",
   fixed: false,
   fontFamily: "inherit",
   fontSize: "inherit",
+  offset: 0,
   padding: 16,
   placement: "top",
   radius: 0,
   zIndex: 1,
-  fadeEasing: "linear",
-  fadeDuration: 0,
 }
 
 Wrapper.displayName = "Tooltip.Wrapper"

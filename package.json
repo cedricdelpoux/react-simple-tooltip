@@ -6,18 +6,9 @@
     "email": "xuopled@gmail.com"
   },
   "description": "A lightweight and simple tooltip component for React",
-  "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
-  ],
+  "files": ["css", "es", "lib", "umd"],
   "homepage": "https://github.com/xuopled/react-simple-tooltip#readme",
-  "keywords": [
-    "react",
-    "tooltip",
-    "bubble"
-  ],
+  "keywords": ["react", "tooltip", "bubble"],
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
