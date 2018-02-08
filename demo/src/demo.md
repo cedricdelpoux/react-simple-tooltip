@@ -1,6 +1,6 @@
 ## Description
 
-`react-card-bank` checks your `number` prop and display on of these three folowwing logos if `number` is recognized ad credit card number:
+`react-card-bank` checks your `number` prop and display on of these three following logos if `number` is recognized ad credit card number:
 * Visa
 * MasterCard
 * Cb
