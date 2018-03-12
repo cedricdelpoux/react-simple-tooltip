@@ -1,3 +1,7 @@
+# 2.3.1 — 2018-03-12
+
+* Fixed: Removed warning when onMouseEnter and Leave are booleans instead of undefined by @vincentdesmares
+
 # 2.3.0 - 2018-01-04
 
 * Updated: FadeDuration to be in ms,
