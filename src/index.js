@@ -85,8 +85,8 @@ class Wrapper extends React.Component {
     )
     return hasTrigger ? (
       <Container
-        onMouseEnter={!fixed && this.handleMouseEnter}
-        onMouseLeave={!fixed && this.handleMouseLeave}
+        onMouseEnter={!fixed ? this.handleMouseEnter : undefined}
+        onMouseLeave={!fixed ? this.handleMouseLeave : undefined}
         {...props}
       >
         {children}
