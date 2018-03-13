@@ -3,14 +3,14 @@ webpackJsonp([0],{
 /***/ "./README.md":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 id=\"react-simple-tooltip\">react-simple-tooltip</h1>\n<p><a href=\"https://www.npmjs.org/package/react-simple-tooltip\"><img src=\"https://img.shields.io/npm/v/react-simple-tooltip.svg?style=flat-square\" alt=\"npm package\"></a>\n<a href=\"https://travis-ci.org/xuopled/react-simple-tooltip\"><img src=\"https://img.shields.io/travis/xuopled/react-simple-tooltip/master.svg?style=flat-square\" alt=\"Travis\"></a>\n<a href=\"https://codecov.io/gh/xuopled/react-simple-tooltip\"><img src=\"https://img.shields.io/codecov/c/github/xuopled/react-simple-tooltip.svg?style=flat-square\" alt=\"Codecov\"></a>\n<img src=\"https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat-square\" alt=\"Module formats\"></p>\n<p>A lightweight and simple tooltip component for React</p>\n<h2 id=\"getting-started\">Getting started</h2>\n<p><a href=\"https://nodei.co/npm/react-simple-tooltip/\"><img src=\"https://nodei.co/npm/react-simple-tooltip.png?downloads=true&amp;downloadRank=true&amp;stars=true\" alt=\"react-simple-tooltip\"></a></p>\n<p>You can download <code>react-simple-tooltip</code> from the NPM registry via the <code>npm</code> or <code>yarn</code> commands</p>\n<pre><code class=\"lang-shell\">yarn add react-simple-tooltip\nnpm install react-simple-tooltip --save\n</code></pre>\n<p>If you don&#39;t use package manager and you want to include <code>react-simple-tooltip</code> directly in your html, you could get it from the UNPKG CDN</p>\n<pre><code class=\"lang-html\">https://unpkg.com/react-simple-tooltip/dist/react-simple-tooltip.min.js.\n</code></pre>\n<h2 id=\"usage\">Usage</h2>\n<pre><code class=\"lang-javascript\">import React from &quot;react&quot;\nimport Tooltip from &quot;react-simple-tooltip&quot;\n\nconst App = () =&gt;\n  &lt;Tooltip&gt;\n    &lt;button&gt;Hover me !&lt;/button&gt;\n  &lt;/Tooltip&gt;\n</code></pre>\n<h2 id=\"demo\">Demo</h2>\n<p>See <a href=\"https://xuopled.github.io/react-simple-tooltip\">Demo page</a></p>\n<h2 id=\"props\">Props</h2>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>PropType</th>\n<th>Description</th>\n<th>Default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>arrow</td>\n<td>PropTypes.number</td>\n<td>Arrow size, in pixels</td>\n<td>8</td>\n</tr>\n<tr>\n<td>background</td>\n<td>PropTypes.string</td>\n<td>Tooltip background color</td>\n<td>&quot;#000&quot;</td>\n</tr>\n<tr>\n<td>border</td>\n<td>PropTypes.string</td>\n<td>Tooltip border color</td>\n<td>&quot;#000&quot;</td>\n</tr>\n<tr>\n<td>color</td>\n<td>PropTypes.string</td>\n<td>Tooltip text color</td>\n<td>&quot;#fff&quot;</td>\n</tr>\n<tr>\n<td>content</td>\n<td>PropTypes.any.isRequired</td>\n<td>Tooltip content</td>\n<td>-</td>\n</tr>\n<tr>\n<td>fixed</td>\n<td>PropTypes.bool</td>\n<td>Tooltip behavior, hover by default</td>\n<td>false</td>\n</tr>\n<tr>\n<td>fontFamily</td>\n<td>PropTypes.bool</td>\n<td>Tooltip text font-family</td>\n<td>&quot;inherit&quot;</td>\n</tr>\n<tr>\n<td>fontSize</td>\n<td>PropTypes.bool</td>\n<td>Tooltip text font-size</td>\n<td>&quot;inherit&quot;</td>\n</tr>\n<tr>\n<td>padding</td>\n<td>PropTypes.number</td>\n<td>Tooltip padding, in pixels</td>\n<td>16</td>\n</tr>\n<tr>\n<td>placement</td>\n<td>PropTypes.oneOf([&quot;left&quot;, &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;])</td>\n<td>Tooltip placement</td>\n<td>&quot;top&quot;</td>\n</tr>\n<tr>\n<td>radius</td>\n<td>PropTypes.number</td>\n<td>Tooltip border radius</td>\n<td>0</td>\n</tr>\n<tr>\n<td>zIndex</td>\n<td>PropTypes.number</td>\n<td>Tooltip z-index</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"contributing\">Contributing</h2>\n<ul>\n<li>⇄ Pull/Merge requests and ★ Stars are always welcome.</li>\n<li>For bugs and feature requests, please <a href=\"https://github.com/xuopled/react-simple-tooltip/issues/new\">create an issue</a>.</li>\n<li>Pull requests must be accompanied by passing automated tests (<code>npm test</code>).</li>\n</ul>\n<p>See <a href=\"./CONTRIBUTING.md\">CONTRIBUTING.md</a> guidelines</p>\n<h2 id=\"changelog\">Changelog</h2>\n<p>See <a href=\"./CHANGELOG.md\">CHANGELOG.md</a></p>\n<h2 id=\"license\">License</h2>\n<p>This project is licensed under the MIT License - see the <a href=\"./LICENCE.md\">LICENCE.md</a> file for details</p>\n";
+module.exports = "<h1 id=\"react-simple-tooltip\">react-simple-tooltip</h1>\n<p><a href=\"https://www.npmjs.org/package/react-simple-tooltip\"><img src=\"https://img.shields.io/npm/v/react-simple-tooltip.svg?style=flat-square\" alt=\"npm package\"></a>\n<a href=\"https://travis-ci.org/xuopled/react-simple-tooltip\"><img src=\"https://img.shields.io/travis/xuopled/react-simple-tooltip/master.svg?style=flat-square\" alt=\"Travis\"></a>\n<a href=\"https://codecov.io/gh/xuopled/react-simple-tooltip\"><img src=\"https://img.shields.io/codecov/c/github/xuopled/react-simple-tooltip.svg?style=flat-square\" alt=\"Codecov\"></a>\n<img src=\"https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat-square\" alt=\"Module formats\"></p>\n<p>A lightweight and simple tooltip component for React</p>\n<h2 id=\"getting-started\">Getting started</h2>\n<p><a href=\"https://nodei.co/npm/react-simple-tooltip/\"><img src=\"https://nodei.co/npm/react-simple-tooltip.png?downloads=true&amp;downloadRank=true&amp;stars=true\" alt=\"react-simple-tooltip\"></a></p>\n<p>You can download <code>react-simple-tooltip</code> from the NPM registry via the <code>npm</code> or <code>yarn</code> commands</p>\n<pre><code class=\"lang-shell\">yarn add react-simple-tooltip\nnpm install react-simple-tooltip --save\n</code></pre>\n<p>If you don&#39;t use package manager and you want to include <code>react-simple-tooltip</code> directly in your html, you could get it from the UNPKG CDN</p>\n<pre><code class=\"lang-html\">https://unpkg.com/react-simple-tooltip/dist/react-simple-tooltip.min.js.\n</code></pre>\n<h2 id=\"usage\">Usage</h2>\n<h3 id=\"attached-to-a-component\">Attached to a Component</h3>\n<pre><code class=\"lang-javascript\">import React from &quot;react&quot;\nimport Tooltip from &quot;react-simple-tooltip&quot;\n\nconst App = () =&gt; (\n  &lt;Tooltip content=&quot;😎&quot;&gt;\n    &lt;button&gt;Hover me !&lt;/button&gt;\n  &lt;/Tooltip&gt;\n)\n</code></pre>\n<h3 id=\"standalone\">Standalone</h3>\n<pre><code class=\"lang-javascript\">import React from &quot;react&quot;\nimport Tooltip from &quot;react-simple-tooltip&quot;\n\nconst App = () =&gt; (\n  &lt;div style={{position: &quot;relative&quot;}}&gt;\n    &lt;Tooltip\n      style={{position: &quot;absolute&quot;, top: &quot;50%&quot;, right: &quot;0&quot;}}\n      content=&quot;😎&quot;\n    /&gt;\n  &lt;/div&gt;\n)\n</code></pre>\n<h2 id=\"demo\">Demo</h2>\n<p>See <a href=\"https://xuopled.github.io/react-simple-tooltip\">Demo page</a></p>\n<h2 id=\"props\">Props</h2>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>PropType</th>\n<th>Description</th>\n<th>Default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>arrow</td>\n<td>PropTypes.number</td>\n<td>Arrow size, in pixels</td>\n<td>8</td>\n</tr>\n<tr>\n<td>background</td>\n<td>PropTypes.string</td>\n<td>Tooltip background color</td>\n<td>&quot;#000&quot;</td>\n</tr>\n<tr>\n<td>border</td>\n<td>PropTypes.string</td>\n<td>Tooltip border color</td>\n<td>&quot;#000&quot;</td>\n</tr>\n<tr>\n<td>color</td>\n<td>PropTypes.string</td>\n<td>Tooltip text color</td>\n<td>&quot;#fff&quot;</td>\n</tr>\n<tr>\n<td>content</td>\n<td>PropTypes.any.isRequired</td>\n<td>Tooltip content</td>\n<td>-</td>\n</tr>\n<tr>\n<td>fadeDuration</td>\n<td>PropTypes.number</td>\n<td>Fade duration, in milliseconds</td>\n<td>0</td>\n</tr>\n<tr>\n<td>fadeEasing</td>\n<td>PropTypes.string</td>\n<td>Fade easing</td>\n<td>&quot;linear&quot;</td>\n</tr>\n<tr>\n<td>fixed</td>\n<td>PropTypes.bool</td>\n<td>Tooltip behavior, hover by default</td>\n<td>false</td>\n</tr>\n<tr>\n<td>fontFamily</td>\n<td>PropTypes.bool</td>\n<td>Tooltip text font-family</td>\n<td>&quot;inherit&quot;</td>\n</tr>\n<tr>\n<td>fontSize</td>\n<td>PropTypes.bool</td>\n<td>Tooltip text font-size</td>\n<td>&quot;inherit&quot;</td>\n</tr>\n<tr>\n<td>padding</td>\n<td>PropTypes.number</td>\n<td>Tooltip padding, in pixels</td>\n<td>16</td>\n</tr>\n<tr>\n<td>placement</td>\n<td>PropTypes.oneOf([&quot;left&quot;, &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;])</td>\n<td>Tooltip placement</td>\n<td>&quot;top&quot;</td>\n</tr>\n<tr>\n<td>radius</td>\n<td>PropTypes.number</td>\n<td>Tooltip border radius</td>\n<td>0</td>\n</tr>\n<tr>\n<td>zIndex</td>\n<td>PropTypes.number</td>\n<td>Tooltip z-index</td>\n<td>1</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"contributing\">Contributing</h2>\n<ul>\n<li>⇄ Pull/Merge requests and ★ Stars are always welcome.</li>\n<li>For bugs and feature requests, please <a href=\"https://github.com/xuopled/react-simple-tooltip/issues/new\">create an issue</a>.</li>\n<li>Pull requests must be accompanied by passing automated tests (<code>npm test</code>).</li>\n</ul>\n<p>See <a href=\"./CONTRIBUTING.md\">CONTRIBUTING.md</a> guidelines</p>\n<h2 id=\"changelog\">Changelog</h2>\n<p>See <a href=\"./CHANGELOG.md\">CHANGELOG.md</a></p>\n<h2 id=\"license\">License</h2>\n<p>This project is licensed under the MIT License - see the <a href=\"./LICENCE.md\">LICENCE.md</a> file for details</p>\n";
 
 /***/ }),
 
 /***/ "./demo/src/demo.md":
 /***/ (function(module, exports) {
 
-module.exports = "<h2 id=\"description\">Description</h2>\n<p><code>react-card-bank</code> checks your <code>number</code> prop and display on of these three folowwing logos if <code>number</code> is recognized ad credit card number:</p>\n<ul>\n<li>Visa</li>\n<li>MasterCard</li>\n<li>Cb</li>\n</ul>\n<p>You can hightlight specific field (to match with your form field).</p>\n<blockquote>\n<p>There is also the card verso displayed following <code>verso</code> prop.</p>\n</blockquote>\n<h2 id=\"demo\">Demo</h2>\n";
+module.exports = "<h2 id=\"description\">Description</h2>\n<p><code>react-card-bank</code> checks your <code>number</code> prop and display on of these three following logos if <code>number</code> is recognized ad credit card number:</p>\n<ul>\n<li>Visa</li>\n<li>MasterCard</li>\n<li>Cb</li>\n</ul>\n<p>You can hightlight specific field (to match with your form field).</p>\n<blockquote>\n<p>There is also the card verso displayed following <code>verso</code> prop.</p>\n</blockquote>\n<h2 id=\"demo\">Demo</h2>\n";
 
 /***/ }),
 
@@ -65,15 +65,23 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/react.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src__ = __webpack_require__("./src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__demo_md__ = __webpack_require__("./demo/src/demo.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__demo_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__demo_md__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__README_md__ = __webpack_require__("./README.md");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__README_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__README_md__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__demo_md__ = __webpack_require__("./demo/src/demo.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__demo_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__demo_md__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__README_md__ = __webpack_require__("./README.md");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__README_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__README_md__);
+var _templateObject = _taggedTemplateLiteralLoose(["\n  background: #44b39d;\n  color: #fff;\n  padding: 10px;\n"], ["\n  background: #44b39d;\n  color: #fff;\n  padding: 10px;\n"]);
+
+function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
 
 
 
 
+
+
+
+var Zone = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject);
 
 var data = [];
 
@@ -89,19 +97,43 @@ var routes = [{
       __WEBPACK_IMPORTED_MODULE_1__src__["a" /* default */],
       { placement: "top", content: "\uD83D\uDE0E", arrow: 15 },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "button",
+        Zone,
         null,
         "Hover me !"
       )
     ),
     displayName: "ReactSimpleTooltip",
     hiddenProps: ["children"],
-    html: __WEBPACK_IMPORTED_MODULE_2__demo_md___default.a
+    html: __WEBPACK_IMPORTED_MODULE_3__demo_md___default.a
   },
   label: "Demo"
 }, {
+  path: "/standalone",
+  demo: {
+    component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      {
+        style: {
+          position: "relative",
+          height: "100px",
+          background: "#fff",
+          border: "1px solid #44B39D"
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src__["a" /* default */], {
+        style: { position: "absolute", bottom: "0", left: "50%" },
+        placement: "bottom",
+        content: "\uD83D\uDE0E"
+      })
+    ),
+    displayName: "ReactSimpleTooltip",
+    hiddenProps: ["children"],
+    html: __WEBPACK_IMPORTED_MODULE_3__demo_md___default.a
+  },
+  label: "Standalone"
+}, {
   path: "/readme",
-  html: __WEBPACK_IMPORTED_MODULE_3__README_md___default.a,
+  html: __WEBPACK_IMPORTED_MODULE_4__README_md___default.a,
   label: "Read me"
 }];
 
@@ -4573,28 +4605,6 @@ module.exports = invariant;
 
 /***/ }),
 
-/***/ "./node_modules/is-function/index.js":
-/***/ (function(module, exports) {
-
-module.exports = isFunction
-
-var toString = Object.prototype.toString
-
-function isFunction (fn) {
-  var string = toString.call(fn)
-  return string === '[object Function]' ||
-    (typeof fn === 'function' && string !== '[object RegExp]') ||
-    (typeof window !== 'undefined' &&
-     // IE8 and below
-     (fn === window.setTimeout ||
-      fn === window.alert ||
-      fn === window.confirm ||
-      fn === window.prompt))
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/is-obj/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4660,6 +4670,16 @@ module.exports = function isPlainObject(o) {
 
 module.exports = function (re) {
 	return Object.prototype.toString.call(re) === '[object RegExp]';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/isarray/index.js":
+/***/ (function(module, exports) {
+
+module.exports = Array.isArray || function (arr) {
+  return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
 
@@ -4779,6 +4799,439 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/path-to-regexp/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var isarray = __webpack_require__("./node_modules/isarray/index.js")
+
+/**
+ * Expose `pathToRegexp`.
+ */
+module.exports = pathToRegexp
+module.exports.parse = parse
+module.exports.compile = compile
+module.exports.tokensToFunction = tokensToFunction
+module.exports.tokensToRegExp = tokensToRegExp
+
+/**
+ * The main path matching regexp utility.
+ *
+ * @type {RegExp}
+ */
+var PATH_REGEXP = new RegExp([
+  // Match escaped characters that would otherwise appear in future matches.
+  // This allows the user to escape special characters that won't transform.
+  '(\\\\.)',
+  // Match Express-style parameters and un-named parameters with a prefix
+  // and optional suffixes. Matches appear as:
+  //
+  // "/:test(\\d+)?" => ["/", "test", "\d+", undefined, "?", undefined]
+  // "/route(\\d+)"  => [undefined, undefined, undefined, "\d+", undefined, undefined]
+  // "/*"            => ["/", undefined, undefined, undefined, undefined, "*"]
+  '([\\/.])?(?:(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?|(\\*))'
+].join('|'), 'g')
+
+/**
+ * Parse a string for the raw tokens.
+ *
+ * @param  {string}  str
+ * @param  {Object=} options
+ * @return {!Array}
+ */
+function parse (str, options) {
+  var tokens = []
+  var key = 0
+  var index = 0
+  var path = ''
+  var defaultDelimiter = options && options.delimiter || '/'
+  var res
+
+  while ((res = PATH_REGEXP.exec(str)) != null) {
+    var m = res[0]
+    var escaped = res[1]
+    var offset = res.index
+    path += str.slice(index, offset)
+    index = offset + m.length
+
+    // Ignore already escaped sequences.
+    if (escaped) {
+      path += escaped[1]
+      continue
+    }
+
+    var next = str[index]
+    var prefix = res[2]
+    var name = res[3]
+    var capture = res[4]
+    var group = res[5]
+    var modifier = res[6]
+    var asterisk = res[7]
+
+    // Push the current path onto the tokens.
+    if (path) {
+      tokens.push(path)
+      path = ''
+    }
+
+    var partial = prefix != null && next != null && next !== prefix
+    var repeat = modifier === '+' || modifier === '*'
+    var optional = modifier === '?' || modifier === '*'
+    var delimiter = res[2] || defaultDelimiter
+    var pattern = capture || group
+
+    tokens.push({
+      name: name || key++,
+      prefix: prefix || '',
+      delimiter: delimiter,
+      optional: optional,
+      repeat: repeat,
+      partial: partial,
+      asterisk: !!asterisk,
+      pattern: pattern ? escapeGroup(pattern) : (asterisk ? '.*' : '[^' + escapeString(delimiter) + ']+?')
+    })
+  }
+
+  // Match any characters still remaining.
+  if (index < str.length) {
+    path += str.substr(index)
+  }
+
+  // If the path exists, push it onto the end.
+  if (path) {
+    tokens.push(path)
+  }
+
+  return tokens
+}
+
+/**
+ * Compile a string to a template function for the path.
+ *
+ * @param  {string}             str
+ * @param  {Object=}            options
+ * @return {!function(Object=, Object=)}
+ */
+function compile (str, options) {
+  return tokensToFunction(parse(str, options))
+}
+
+/**
+ * Prettier encoding of URI path segments.
+ *
+ * @param  {string}
+ * @return {string}
+ */
+function encodeURIComponentPretty (str) {
+  return encodeURI(str).replace(/[\/?#]/g, function (c) {
+    return '%' + c.charCodeAt(0).toString(16).toUpperCase()
+  })
+}
+
+/**
+ * Encode the asterisk parameter. Similar to `pretty`, but allows slashes.
+ *
+ * @param  {string}
+ * @return {string}
+ */
+function encodeAsterisk (str) {
+  return encodeURI(str).replace(/[?#]/g, function (c) {
+    return '%' + c.charCodeAt(0).toString(16).toUpperCase()
+  })
+}
+
+/**
+ * Expose a method for transforming tokens into the path function.
+ */
+function tokensToFunction (tokens) {
+  // Compile all the tokens into regexps.
+  var matches = new Array(tokens.length)
+
+  // Compile all the patterns before compilation.
+  for (var i = 0; i < tokens.length; i++) {
+    if (typeof tokens[i] === 'object') {
+      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$')
+    }
+  }
+
+  return function (obj, opts) {
+    var path = ''
+    var data = obj || {}
+    var options = opts || {}
+    var encode = options.pretty ? encodeURIComponentPretty : encodeURIComponent
+
+    for (var i = 0; i < tokens.length; i++) {
+      var token = tokens[i]
+
+      if (typeof token === 'string') {
+        path += token
+
+        continue
+      }
+
+      var value = data[token.name]
+      var segment
+
+      if (value == null) {
+        if (token.optional) {
+          // Prepend partial segment prefixes.
+          if (token.partial) {
+            path += token.prefix
+          }
+
+          continue
+        } else {
+          throw new TypeError('Expected "' + token.name + '" to be defined')
+        }
+      }
+
+      if (isarray(value)) {
+        if (!token.repeat) {
+          throw new TypeError('Expected "' + token.name + '" to not repeat, but received `' + JSON.stringify(value) + '`')
+        }
+
+        if (value.length === 0) {
+          if (token.optional) {
+            continue
+          } else {
+            throw new TypeError('Expected "' + token.name + '" to not be empty')
+          }
+        }
+
+        for (var j = 0; j < value.length; j++) {
+          segment = encode(value[j])
+
+          if (!matches[i].test(segment)) {
+            throw new TypeError('Expected all "' + token.name + '" to match "' + token.pattern + '", but received `' + JSON.stringify(segment) + '`')
+          }
+
+          path += (j === 0 ? token.prefix : token.delimiter) + segment
+        }
+
+        continue
+      }
+
+      segment = token.asterisk ? encodeAsterisk(value) : encode(value)
+
+      if (!matches[i].test(segment)) {
+        throw new TypeError('Expected "' + token.name + '" to match "' + token.pattern + '", but received "' + segment + '"')
+      }
+
+      path += token.prefix + segment
+    }
+
+    return path
+  }
+}
+
+/**
+ * Escape a regular expression string.
+ *
+ * @param  {string} str
+ * @return {string}
+ */
+function escapeString (str) {
+  return str.replace(/([.+*?=^!:${}()[\]|\/\\])/g, '\\$1')
+}
+
+/**
+ * Escape the capturing group by escaping special characters and meaning.
+ *
+ * @param  {string} group
+ * @return {string}
+ */
+function escapeGroup (group) {
+  return group.replace(/([=!:$\/()])/g, '\\$1')
+}
+
+/**
+ * Attach the keys as a property of the regexp.
+ *
+ * @param  {!RegExp} re
+ * @param  {Array}   keys
+ * @return {!RegExp}
+ */
+function attachKeys (re, keys) {
+  re.keys = keys
+  return re
+}
+
+/**
+ * Get the flags for a regexp from the options.
+ *
+ * @param  {Object} options
+ * @return {string}
+ */
+function flags (options) {
+  return options.sensitive ? '' : 'i'
+}
+
+/**
+ * Pull out keys from a regexp.
+ *
+ * @param  {!RegExp} path
+ * @param  {!Array}  keys
+ * @return {!RegExp}
+ */
+function regexpToRegexp (path, keys) {
+  // Use a negative lookahead to match only capturing groups.
+  var groups = path.source.match(/\((?!\?)/g)
+
+  if (groups) {
+    for (var i = 0; i < groups.length; i++) {
+      keys.push({
+        name: i,
+        prefix: null,
+        delimiter: null,
+        optional: false,
+        repeat: false,
+        partial: false,
+        asterisk: false,
+        pattern: null
+      })
+    }
+  }
+
+  return attachKeys(path, keys)
+}
+
+/**
+ * Transform an array into a regexp.
+ *
+ * @param  {!Array}  path
+ * @param  {Array}   keys
+ * @param  {!Object} options
+ * @return {!RegExp}
+ */
+function arrayToRegexp (path, keys, options) {
+  var parts = []
+
+  for (var i = 0; i < path.length; i++) {
+    parts.push(pathToRegexp(path[i], keys, options).source)
+  }
+
+  var regexp = new RegExp('(?:' + parts.join('|') + ')', flags(options))
+
+  return attachKeys(regexp, keys)
+}
+
+/**
+ * Create a path regexp from string input.
+ *
+ * @param  {string}  path
+ * @param  {!Array}  keys
+ * @param  {!Object} options
+ * @return {!RegExp}
+ */
+function stringToRegexp (path, keys, options) {
+  return tokensToRegExp(parse(path, options), keys, options)
+}
+
+/**
+ * Expose a function for taking tokens and returning a RegExp.
+ *
+ * @param  {!Array}          tokens
+ * @param  {(Array|Object)=} keys
+ * @param  {Object=}         options
+ * @return {!RegExp}
+ */
+function tokensToRegExp (tokens, keys, options) {
+  if (!isarray(keys)) {
+    options = /** @type {!Object} */ (keys || options)
+    keys = []
+  }
+
+  options = options || {}
+
+  var strict = options.strict
+  var end = options.end !== false
+  var route = ''
+
+  // Iterate over the tokens and create our regexp string.
+  for (var i = 0; i < tokens.length; i++) {
+    var token = tokens[i]
+
+    if (typeof token === 'string') {
+      route += escapeString(token)
+    } else {
+      var prefix = escapeString(token.prefix)
+      var capture = '(?:' + token.pattern + ')'
+
+      keys.push(token)
+
+      if (token.repeat) {
+        capture += '(?:' + prefix + capture + ')*'
+      }
+
+      if (token.optional) {
+        if (!token.partial) {
+          capture = '(?:' + prefix + '(' + capture + '))?'
+        } else {
+          capture = prefix + '(' + capture + ')?'
+        }
+      } else {
+        capture = prefix + '(' + capture + ')'
+      }
+
+      route += capture
+    }
+  }
+
+  var delimiter = escapeString(options.delimiter || '/')
+  var endsWithDelimiter = route.slice(-delimiter.length) === delimiter
+
+  // In non-strict mode we allow a slash at the end of match. If the path to
+  // match already ends with a slash, we remove it for consistency. The slash
+  // is valid at the end of a path match, not in the middle. This is important
+  // in non-ending mode, where "/test/" shouldn't match "/test//route".
+  if (!strict) {
+    route = (endsWithDelimiter ? route.slice(0, -delimiter.length) : route) + '(?:' + delimiter + '(?=$))?'
+  }
+
+  if (end) {
+    route += '$'
+  } else {
+    // In non-ending mode, we need the capturing groups to match as much as
+    // possible by using a positive lookahead to the end or next path segment.
+    route += strict && endsWithDelimiter ? '' : '(?=' + delimiter + '|$)'
+  }
+
+  return attachKeys(new RegExp('^' + route, flags(options)), keys)
+}
+
+/**
+ * Normalize the given path string, returning a regular expression.
+ *
+ * An empty array can be passed in for the keys, which will hold the
+ * placeholder key descriptions. For example, using `/user/:id`, `keys` will
+ * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.
+ *
+ * @param  {(string|RegExp|Array)} path
+ * @param  {(Array|Object)=}       keys
+ * @param  {Object=}               options
+ * @return {!RegExp}
+ */
+function pathToRegexp (path, keys, options) {
+  if (!isarray(keys)) {
+    options = /** @type {!Object} */ (keys || options)
+    keys = []
+  }
+
+  options = options || {}
+
+  if (path instanceof RegExp) {
+    return regexpToRegexp(path, /** @type {!Array} */ (keys))
+  }
+
+  if (isarray(path)) {
+    return arrayToRegexp(/** @type {!Array} */ (path), /** @type {!Array} */ (keys), options)
+  }
+
+  return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
+}
 
 
 /***/ }),
@@ -26891,7 +27344,7 @@ Switch.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__("./node_modules/react-router/node_modules/path-to-regexp/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__("./node_modules/path-to-regexp/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -27080,449 +27533,6 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
     return targetComponent;
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/react-router/node_modules/isarray/index.js":
-/***/ (function(module, exports) {
-
-module.exports = Array.isArray || function (arr) {
-  return Object.prototype.toString.call(arr) == '[object Array]';
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/react-router/node_modules/path-to-regexp/index.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-var isarray = __webpack_require__("./node_modules/react-router/node_modules/isarray/index.js")
-
-/**
- * Expose `pathToRegexp`.
- */
-module.exports = pathToRegexp
-module.exports.parse = parse
-module.exports.compile = compile
-module.exports.tokensToFunction = tokensToFunction
-module.exports.tokensToRegExp = tokensToRegExp
-
-/**
- * The main path matching regexp utility.
- *
- * @type {RegExp}
- */
-var PATH_REGEXP = new RegExp([
-  // Match escaped characters that would otherwise appear in future matches.
-  // This allows the user to escape special characters that won't transform.
-  '(\\\\.)',
-  // Match Express-style parameters and un-named parameters with a prefix
-  // and optional suffixes. Matches appear as:
-  //
-  // "/:test(\\d+)?" => ["/", "test", "\d+", undefined, "?", undefined]
-  // "/route(\\d+)"  => [undefined, undefined, undefined, "\d+", undefined, undefined]
-  // "/*"            => ["/", undefined, undefined, undefined, undefined, "*"]
-  '([\\/.])?(?:(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?|(\\*))'
-].join('|'), 'g')
-
-/**
- * Parse a string for the raw tokens.
- *
- * @param  {string}  str
- * @param  {Object=} options
- * @return {!Array}
- */
-function parse (str, options) {
-  var tokens = []
-  var key = 0
-  var index = 0
-  var path = ''
-  var defaultDelimiter = options && options.delimiter || '/'
-  var res
-
-  while ((res = PATH_REGEXP.exec(str)) != null) {
-    var m = res[0]
-    var escaped = res[1]
-    var offset = res.index
-    path += str.slice(index, offset)
-    index = offset + m.length
-
-    // Ignore already escaped sequences.
-    if (escaped) {
-      path += escaped[1]
-      continue
-    }
-
-    var next = str[index]
-    var prefix = res[2]
-    var name = res[3]
-    var capture = res[4]
-    var group = res[5]
-    var modifier = res[6]
-    var asterisk = res[7]
-
-    // Push the current path onto the tokens.
-    if (path) {
-      tokens.push(path)
-      path = ''
-    }
-
-    var partial = prefix != null && next != null && next !== prefix
-    var repeat = modifier === '+' || modifier === '*'
-    var optional = modifier === '?' || modifier === '*'
-    var delimiter = res[2] || defaultDelimiter
-    var pattern = capture || group
-
-    tokens.push({
-      name: name || key++,
-      prefix: prefix || '',
-      delimiter: delimiter,
-      optional: optional,
-      repeat: repeat,
-      partial: partial,
-      asterisk: !!asterisk,
-      pattern: pattern ? escapeGroup(pattern) : (asterisk ? '.*' : '[^' + escapeString(delimiter) + ']+?')
-    })
-  }
-
-  // Match any characters still remaining.
-  if (index < str.length) {
-    path += str.substr(index)
-  }
-
-  // If the path exists, push it onto the end.
-  if (path) {
-    tokens.push(path)
-  }
-
-  return tokens
-}
-
-/**
- * Compile a string to a template function for the path.
- *
- * @param  {string}             str
- * @param  {Object=}            options
- * @return {!function(Object=, Object=)}
- */
-function compile (str, options) {
-  return tokensToFunction(parse(str, options))
-}
-
-/**
- * Prettier encoding of URI path segments.
- *
- * @param  {string}
- * @return {string}
- */
-function encodeURIComponentPretty (str) {
-  return encodeURI(str).replace(/[\/?#]/g, function (c) {
-    return '%' + c.charCodeAt(0).toString(16).toUpperCase()
-  })
-}
-
-/**
- * Encode the asterisk parameter. Similar to `pretty`, but allows slashes.
- *
- * @param  {string}
- * @return {string}
- */
-function encodeAsterisk (str) {
-  return encodeURI(str).replace(/[?#]/g, function (c) {
-    return '%' + c.charCodeAt(0).toString(16).toUpperCase()
-  })
-}
-
-/**
- * Expose a method for transforming tokens into the path function.
- */
-function tokensToFunction (tokens) {
-  // Compile all the tokens into regexps.
-  var matches = new Array(tokens.length)
-
-  // Compile all the patterns before compilation.
-  for (var i = 0; i < tokens.length; i++) {
-    if (typeof tokens[i] === 'object') {
-      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$')
-    }
-  }
-
-  return function (obj, opts) {
-    var path = ''
-    var data = obj || {}
-    var options = opts || {}
-    var encode = options.pretty ? encodeURIComponentPretty : encodeURIComponent
-
-    for (var i = 0; i < tokens.length; i++) {
-      var token = tokens[i]
-
-      if (typeof token === 'string') {
-        path += token
-
-        continue
-      }
-
-      var value = data[token.name]
-      var segment
-
-      if (value == null) {
-        if (token.optional) {
-          // Prepend partial segment prefixes.
-          if (token.partial) {
-            path += token.prefix
-          }
-
-          continue
-        } else {
-          throw new TypeError('Expected "' + token.name + '" to be defined')
-        }
-      }
-
-      if (isarray(value)) {
-        if (!token.repeat) {
-          throw new TypeError('Expected "' + token.name + '" to not repeat, but received `' + JSON.stringify(value) + '`')
-        }
-
-        if (value.length === 0) {
-          if (token.optional) {
-            continue
-          } else {
-            throw new TypeError('Expected "' + token.name + '" to not be empty')
-          }
-        }
-
-        for (var j = 0; j < value.length; j++) {
-          segment = encode(value[j])
-
-          if (!matches[i].test(segment)) {
-            throw new TypeError('Expected all "' + token.name + '" to match "' + token.pattern + '", but received `' + JSON.stringify(segment) + '`')
-          }
-
-          path += (j === 0 ? token.prefix : token.delimiter) + segment
-        }
-
-        continue
-      }
-
-      segment = token.asterisk ? encodeAsterisk(value) : encode(value)
-
-      if (!matches[i].test(segment)) {
-        throw new TypeError('Expected "' + token.name + '" to match "' + token.pattern + '", but received "' + segment + '"')
-      }
-
-      path += token.prefix + segment
-    }
-
-    return path
-  }
-}
-
-/**
- * Escape a regular expression string.
- *
- * @param  {string} str
- * @return {string}
- */
-function escapeString (str) {
-  return str.replace(/([.+*?=^!:${}()[\]|\/\\])/g, '\\$1')
-}
-
-/**
- * Escape the capturing group by escaping special characters and meaning.
- *
- * @param  {string} group
- * @return {string}
- */
-function escapeGroup (group) {
-  return group.replace(/([=!:$\/()])/g, '\\$1')
-}
-
-/**
- * Attach the keys as a property of the regexp.
- *
- * @param  {!RegExp} re
- * @param  {Array}   keys
- * @return {!RegExp}
- */
-function attachKeys (re, keys) {
-  re.keys = keys
-  return re
-}
-
-/**
- * Get the flags for a regexp from the options.
- *
- * @param  {Object} options
- * @return {string}
- */
-function flags (options) {
-  return options.sensitive ? '' : 'i'
-}
-
-/**
- * Pull out keys from a regexp.
- *
- * @param  {!RegExp} path
- * @param  {!Array}  keys
- * @return {!RegExp}
- */
-function regexpToRegexp (path, keys) {
-  // Use a negative lookahead to match only capturing groups.
-  var groups = path.source.match(/\((?!\?)/g)
-
-  if (groups) {
-    for (var i = 0; i < groups.length; i++) {
-      keys.push({
-        name: i,
-        prefix: null,
-        delimiter: null,
-        optional: false,
-        repeat: false,
-        partial: false,
-        asterisk: false,
-        pattern: null
-      })
-    }
-  }
-
-  return attachKeys(path, keys)
-}
-
-/**
- * Transform an array into a regexp.
- *
- * @param  {!Array}  path
- * @param  {Array}   keys
- * @param  {!Object} options
- * @return {!RegExp}
- */
-function arrayToRegexp (path, keys, options) {
-  var parts = []
-
-  for (var i = 0; i < path.length; i++) {
-    parts.push(pathToRegexp(path[i], keys, options).source)
-  }
-
-  var regexp = new RegExp('(?:' + parts.join('|') + ')', flags(options))
-
-  return attachKeys(regexp, keys)
-}
-
-/**
- * Create a path regexp from string input.
- *
- * @param  {string}  path
- * @param  {!Array}  keys
- * @param  {!Object} options
- * @return {!RegExp}
- */
-function stringToRegexp (path, keys, options) {
-  return tokensToRegExp(parse(path, options), keys, options)
-}
-
-/**
- * Expose a function for taking tokens and returning a RegExp.
- *
- * @param  {!Array}          tokens
- * @param  {(Array|Object)=} keys
- * @param  {Object=}         options
- * @return {!RegExp}
- */
-function tokensToRegExp (tokens, keys, options) {
-  if (!isarray(keys)) {
-    options = /** @type {!Object} */ (keys || options)
-    keys = []
-  }
-
-  options = options || {}
-
-  var strict = options.strict
-  var end = options.end !== false
-  var route = ''
-
-  // Iterate over the tokens and create our regexp string.
-  for (var i = 0; i < tokens.length; i++) {
-    var token = tokens[i]
-
-    if (typeof token === 'string') {
-      route += escapeString(token)
-    } else {
-      var prefix = escapeString(token.prefix)
-      var capture = '(?:' + token.pattern + ')'
-
-      keys.push(token)
-
-      if (token.repeat) {
-        capture += '(?:' + prefix + capture + ')*'
-      }
-
-      if (token.optional) {
-        if (!token.partial) {
-          capture = '(?:' + prefix + '(' + capture + '))?'
-        } else {
-          capture = prefix + '(' + capture + ')?'
-        }
-      } else {
-        capture = prefix + '(' + capture + ')'
-      }
-
-      route += capture
-    }
-  }
-
-  var delimiter = escapeString(options.delimiter || '/')
-  var endsWithDelimiter = route.slice(-delimiter.length) === delimiter
-
-  // In non-strict mode we allow a slash at the end of match. If the path to
-  // match already ends with a slash, we remove it for consistency. The slash
-  // is valid at the end of a path match, not in the middle. This is important
-  // in non-ending mode, where "/test/" shouldn't match "/test//route".
-  if (!strict) {
-    route = (endsWithDelimiter ? route.slice(0, -delimiter.length) : route) + '(?:' + delimiter + '(?=$))?'
-  }
-
-  if (end) {
-    route += '$'
-  } else {
-    // In non-ending mode, we need the capturing groups to match as much as
-    // possible by using a positive lookahead to the end or next path segment.
-    route += strict && endsWithDelimiter ? '' : '(?=' + delimiter + '|$)'
-  }
-
-  return attachKeys(new RegExp('^' + route, flags(options)), keys)
-}
-
-/**
- * Normalize the given path string, returning a regular expression.
- *
- * An empty array can be passed in for the keys, which will hold the
- * placeholder key descriptions. For example, using `/user/:id`, `keys` will
- * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.
- *
- * @param  {(string|RegExp|Array)} path
- * @param  {(Array|Object)=}       keys
- * @param  {Object=}               options
- * @return {!RegExp}
- */
-function pathToRegexp (path, keys, options) {
-  if (!isarray(keys)) {
-    options = /** @type {!Object} */ (keys || options)
-    keys = []
-  }
-
-  options = options || {}
-
-  if (path instanceof RegExp) {
-    return regexpToRegexp(path, /** @type {!Array} */ (keys))
-  }
-
-  if (isarray(path)) {
-    return arrayToRegexp(/** @type {!Array} */ (path), /** @type {!Array} */ (keys), options)
-  }
-
-  return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
-}
 
 
 /***/ }),
@@ -30426,8 +30436,8 @@ module.exports = (val, opts, pad) => {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export css */
-/* unused harmony export keyframes */
+/* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export css */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return keyframes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return injectGlobal; });
 /* unused harmony export ThemeProvider */
 /* unused harmony export withTheme */
@@ -30441,11 +30451,8 @@ module.exports = (val, opts, pad) => {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_is_function__ = __webpack_require__("./node_modules/is-function/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_is_function___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_is_function__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hoist_non_react_statics__ = __webpack_require__("./node_modules/hoist-non-react-statics/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_hoist_non_react_statics__);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_hoist_non_react_statics__ = __webpack_require__("./node_modules/hoist-non-react-statics/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_hoist_non_react_statics__);
 
 
 
@@ -30524,13 +30531,19 @@ var objToCss = function objToCss(obj, prevKey) {
 var flatten = function flatten(chunks, executionContext) {
   return chunks.reduce(function (ruleSet, chunk) {
     /* Remove falsey values */
-    if (chunk === undefined || chunk === null || chunk === false || chunk === '') return ruleSet;
+    if (chunk === undefined || chunk === null || chunk === false || chunk === '') {
+      return ruleSet;
+    }
     /* Flatten ruleSet */
-    if (Array.isArray(chunk)) return [].concat(ruleSet, flatten(chunk, executionContext));
+    if (Array.isArray(chunk)) {
+      return [].concat(ruleSet, flatten(chunk, executionContext));
+    }
 
     /* Handle other components */
-    // $FlowFixMe not sure how to make this pass
-    if (chunk.hasOwnProperty('styledComponentId')) return [].concat(ruleSet, ['.' + chunk.styledComponentId]);
+    if (chunk.hasOwnProperty('styledComponentId')) {
+      // $FlowFixMe not sure how to make this pass
+      return [].concat(ruleSet, ['.' + chunk.styledComponentId]);
+    }
 
     /* Either execute or defer the function */
     if (typeof chunk === 'function') {
@@ -30538,8 +30551,9 @@ var flatten = function flatten(chunks, executionContext) {
     }
 
     /* Handle objects */
+    return ruleSet.concat(
     // $FlowFixMe have to add %checks somehow to isPlainObject
-    return ruleSet.concat(__WEBPACK_IMPORTED_MODULE_0_is_plain_object___default()(chunk) ? objToCss(chunk) : chunk.toString());
+    __WEBPACK_IMPORTED_MODULE_0_is_plain_object___default()(chunk) ? objToCss(chunk) : chunk.toString());
   }, []);
 };
 
@@ -30596,7 +30610,7 @@ var css = (function (strings) {
 });
 
 //      
-var SC_COMPONENT_ID = /^[^\S\n]*?\/\* sc-component-id:\s+(\S+)\s+\*\//mg;
+var SC_COMPONENT_ID = /^[^\S\n]*?\/\* sc-component-id:\s+(\S+)\s+\*\//gm;
 
 var extractCompsFromCSS = (function (maybeCSS) {
   var css = '' + (maybeCSS || ''); // Definitely a string, and a clone
@@ -30756,7 +30770,9 @@ var BrowserTag = function () {
 
   BrowserTag.prototype.addComponent = function addComponent(componentId) {
     if (!this.ready) this.replaceElement();
-    if (this.components[componentId]) throw new Error('Trying to add Component \'' + componentId + '\' twice!');
+    if ("development" !== 'production' && this.components[componentId]) {
+      throw new Error('Trying to add Component \'' + componentId + '\' twice!');
+    }
 
     var comp = { componentId: componentId, textNode: document.createTextNode('') };
     this.el.appendChild(comp.textNode);
@@ -30769,8 +30785,12 @@ var BrowserTag = function () {
     if (!this.ready) this.replaceElement();
     var comp = this.components[componentId];
 
-    if (!comp) throw new Error('Must add a new component before you can inject css into it');
-    if (comp.textNode.data === '') comp.textNode.appendData('\n/* sc-component-id: ' + componentId + ' */\n');
+    if ("development" !== 'production' && !comp) {
+      throw new Error('Must add a new component before you can inject css into it');
+    }
+    if (comp.textNode.data === '') {
+      comp.textNode.appendData('\n/* sc-component-id: ' + componentId + ' */\n');
+    }
 
     comp.textNode.appendData(css);
     if (name) {
@@ -30790,7 +30810,7 @@ var BrowserTag = function () {
   };
 
   BrowserTag.prototype.toReactElement = function toReactElement() {
-    throw new Error('BrowserTag doesn\'t implement toReactElement!');
+    throw new Error("BrowserTag doesn't implement toReactElement!");
   };
 
   BrowserTag.prototype.clone = function clone() {
@@ -30820,7 +30840,9 @@ var BrowserTag = function () {
       newEl.appendChild(comp.textNode);
     });
 
-    if (!this.el.parentNode) throw new Error("Trying to replace an element that wasn't mounted!");
+    if (!this.el.parentNode) {
+      throw new Error("Trying to replace an element that wasn't mounted!");
+    }
 
     // The ol' switcheroo
     this.el.parentNode.replaceChild(newEl, this.el);
@@ -30874,6 +30896,10 @@ var BrowserStyleSheet = {
 var SC_ATTR = 'data-styled-components';
 var LOCAL_ATTR = 'data-styled-components-is-local';
 var CONTEXT_KEY = '__styled-components-stylesheet__';
+
+/* eslint-disable flowtype/object-type-delimiter */
+
+/* eslint-enable flowtype/object-type-delimiter */
 
 var instance = null;
 // eslint-disable-next-line no-use-before-define
@@ -31067,10 +31093,10 @@ var StyleSheetManager = function (_Component) {
   return StyleSheetManager;
 }(__WEBPACK_IMPORTED_MODULE_2_react__["Component"]);
 
-StyleSheetManager.childContextTypes = (_StyleSheetManager$ch = {}, _StyleSheetManager$ch[CONTEXT_KEY] = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(StyleSheet).isRequired, _StyleSheetManager$ch);
+StyleSheetManager.childContextTypes = (_StyleSheetManager$ch = {}, _StyleSheetManager$ch[CONTEXT_KEY] = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(StyleSheet), __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(ServerStyleSheet)]).isRequired, _StyleSheetManager$ch);
 
 StyleSheetManager.propTypes = {
-  sheet: __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(StyleSheet).isRequired
+  sheet: __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(StyleSheet), __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(ServerStyleSheet)]).isRequired
 };
 
 //      
@@ -31090,7 +31116,9 @@ var ServerTag = function () {
   };
 
   ServerTag.prototype.addComponent = function addComponent(componentId) {
-    if (this.components[componentId]) throw new Error('Trying to add Component \'' + componentId + '\' twice!');
+    if ("development" !== 'production' && this.components[componentId]) {
+      throw new Error('Trying to add Component \'' + componentId + '\' twice!');
+    }
     this.components[componentId] = { componentId: componentId, css: '' };
     this.size += 1;
   };
@@ -31106,7 +31134,9 @@ var ServerTag = function () {
   ServerTag.prototype.inject = function inject(componentId, css, name) {
     var comp = this.components[componentId];
 
-    if (!comp) throw new Error('Must add a new component before you can inject css into it');
+    if ("development" !== 'production' && !comp) {
+      throw new Error('Must add a new component before you can inject css into it');
+    }
     if (comp.css === '') comp.css = '/* sc-component-id: ' + componentId + ' */\n';
 
     comp.css += css.replace(/\n*$/, '\n');
@@ -31138,7 +31168,9 @@ var ServerTag = function () {
     }
 
     return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement('style', _extends({
-      key: key, type: 'text/css' }, attrs, {
+      key: key,
+      type: 'text/css'
+    }, attrs, {
       dangerouslySetInnerHTML: { __html: this.concatenateCSS() }
     }));
   };
@@ -31168,7 +31200,9 @@ var ServerStyleSheet = function () {
   }
 
   ServerStyleSheet.prototype.collectStyles = function collectStyles(children) {
-    if (this.closed) throw new Error("Can't collect styles once you've called getStyleTags!");
+    if (this.closed) {
+      throw new Error("Can't collect styles once you've called getStyleTags!");
+    }
     return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
       StyleSheetManager,
       { sheet: this.instance },
@@ -31217,7 +31251,7 @@ var createWarnTooManyClasses = (function (displayName) {
       if (Object.keys(generatedClasses).length >= LIMIT) {
         // Unable to find latestRule in test environment.
         /* eslint-disable no-console, prefer-template */
-        console.warn('Over ' + LIMIT + ' classes were generated for component ' + displayName + '. ' + 'Consider using style property for frequently changed styles.\n' + 'Example:\n' + '  const StyledComp = styled.div`width: 100%;`\n' + '  <StyledComp style={{ background: background }} />');
+        console.warn('Over ' + LIMIT + ' classes were generated for component ' + displayName + '. \n' + 'Consider using the attrs method, together with a style object for frequently changed styles.\n' + 'Example:\n' + '  const Component = styled.div.attrs({\n' + '    style: ({ background }) => ({\n' + '      background,\n' + '    }),\n' + '  })`width: 100%;`\n\n' + '  <Component />');
         warningSeen = true;
         generatedClasses = {};
       }
@@ -31226,596 +31260,32 @@ var createWarnTooManyClasses = (function (displayName) {
 });
 
 //      
-/* Trying to avoid the unknown-prop errors on styled components
- by filtering by React's attribute whitelist.
- */
+/* eslint-disable max-len */
+/**
+ * Trying to avoid the unknown-prop errors on styled components by filtering by
+ * React's attribute whitelist.
+ *
+ * To regenerate this regex:
+ *
+ * 1. `npm i -g regexgen` (https://github.com/devongovett/regexgen)
+ * 2. Run `regexgen` with the list of space-separated words below as input
+ * 3. Surround the emitted regex with this: `/^(GENERATED_REGEX)$/` -- this will ensure a full string match
+ *    and no false positives from partials
+ **/
+/*
+children dangerouslySetInnerHTML key ref autoFocus defaultValue valueLink defaultChecked checkedLink innerHTML suppressContentEditableWarning onFocusIn onFocusOut className onCopy onCut onPaste onCompositionEnd onCompositionStart onCompositionUpdate onKeyDown onKeyPress onKeyUp onFocus onBlur onChange onInput onSubmit onReset onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter onDragExit onDragLeave onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave onMouseMove onMouseOut onMouseOver onMouseUp onSelect onTouchCancel onTouchEnd onTouchMove onTouchStart onScroll onWheel onAbort onCanPlay onCanPlayThrough onDurationChange onEmptied onEncrypted onEnded onError onLoadedData onLoadedMetadata onLoadStart onPause onPlay onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend onTimeUpdate onVolumeChange onWaiting onLoad onAnimationStart onAnimationEnd onAnimationIteration onTransitionEnd onCopyCapture onCutCapture onPasteCapture onCompositionEndCapture onCompositionStartCapture onCompositionUpdateCapture onKeyDownCapture onKeyPressCapture onKeyUpCapture onFocusCapture onBlurCapture onChangeCapture onInputCapture onSubmitCapture onResetCapture onClickCapture onContextMenuCapture onDoubleClickCapture onDragCapture onDragEndCapture onDragEnterCapture onDragExitCapture onDragLeaveCapture onDragOverCapture onDragStartCapture onDropCapture onMouseDownCapture onMouseEnterCapture onMouseLeaveCapture onMouseMoveCapture onMouseOutCapture onMouseOverCapture onMouseUpCapture onSelectCapture onTouchCancelCapture onTouchEndCapture onTouchMoveCapture onTouchStartCapture onScrollCapture onWheelCapture onAbortCapture onCanPlayCapture onCanPlayThroughCapture onDurationChangeCapture onEmptiedCapture onEncryptedCapture onEndedCapture onErrorCapture onLoadedDataCapture onLoadedMetadataCapture onLoadStartCapture onPauseCapture onPlayCapture onPlayingCapture onProgressCapture onRateChangeCapture onSeekedCapture onSeekingCapture onStalledCapture onSuspendCapture onTimeUpdateCapture onVolumeChangeCapture onWaitingCapture onLoadCapture onAnimationStartCapture onAnimationEndCapture onAnimationIterationCapture onTransitionEndCapture accept acceptCharset accessKey action allowFullScreen allowTransparency alt as async autoComplete autoPlay capture cellPadding cellSpacing charSet challenge checked cite classID className cols colSpan content contentEditable contextMenu controls coords crossOrigin data dateTime default defer dir disabled download draggable encType form formAction formEncType formMethod formNoValidate formTarget frameBorder headers height hidden high href hrefLang htmlFor httpEquiv icon id inputMode integrity is keyParams keyType kind label lang list loop low manifest marginHeight marginWidth max maxLength media mediaGroup method min minLength multiple muted name nonce noValidate open optimum pattern placeholder playsInline poster preload profile radioGroup readOnly referrerPolicy rel required reversed role rows rowSpan sandbox scope scoped scrolling seamless selected shape size sizes span spellCheck src srcDoc srcLang srcSet start step style summary tabIndex target title type useMap value width wmode wrap about datatype inlist prefix property resource typeof vocab autoCapitalize autoCorrect autoSave color itemProp itemScope itemType itemID itemRef results security unselectable accentHeight accumulate additive alignmentBaseline allowReorder alphabetic amplitude arabicForm ascent attributeName attributeType autoReverse azimuth baseFrequency baseProfile baselineShift bbox begin bias by calcMode capHeight clip clipPath clipRule clipPathUnits colorInterpolation colorInterpolationFilters colorProfile colorRendering contentScriptType contentStyleType cursor cx cy d decelerate descent diffuseConstant direction display divisor dominantBaseline dur dx dy edgeMode elevation enableBackground end exponent externalResourcesRequired fill fillOpacity fillRule filter filterRes filterUnits floodColor floodOpacity focusable fontFamily fontSize fontSizeAdjust fontStretch fontStyle fontVariant fontWeight format from fx fy g1 g2 glyphName glyphOrientationHorizontal glyphOrientationVertical glyphRef gradientTransform gradientUnits hanging horizAdvX horizOriginX ideographic imageRendering in in2 intercept k k1 k2 k3 k4 kernelMatrix kernelUnitLength kerning keyPoints keySplines keyTimes lengthAdjust letterSpacing lightingColor limitingConeAngle local markerEnd markerMid markerStart markerHeight markerUnits markerWidth mask maskContentUnits maskUnits mathematical mode numOctaves offset opacity operator order orient orientation origin overflow overlinePosition overlineThickness paintOrder panose1 pathLength patternContentUnits patternTransform patternUnits pointerEvents points pointsAtX pointsAtY pointsAtZ preserveAlpha preserveAspectRatio primitiveUnits r radius refX refY renderingIntent repeatCount repeatDur requiredExtensions requiredFeatures restart result rotate rx ry scale seed shapeRendering slope spacing specularConstant specularExponent speed spreadMethod startOffset stdDeviation stemh stemv stitchTiles stopColor stopOpacity strikethroughPosition strikethroughThickness string stroke strokeDasharray strokeDashoffset strokeLinecap strokeLinejoin strokeMiterlimit strokeOpacity strokeWidth surfaceScale systemLanguage tableValues targetX targetY textAnchor textDecoration textRendering textLength to transform u1 u2 underlinePosition underlineThickness unicode unicodeBidi unicodeRange unitsPerEm vAlphabetic vHanging vIdeographic vMathematical values vectorEffect version vertAdvY vertOriginX vertOriginY viewBox viewTarget visibility widths wordSpacing writingMode x xHeight x1 x2 xChannelSelector xlinkActuate xlinkArcrole xlinkHref xlinkRole xlinkShow xlinkTitle xlinkType xmlBase xmlns xmlnsXlink xmlLang xmlSpace y y1 y2 yChannelSelector z zoomAndPan
+*/
+/* eslint-enable max-len */
 
-/* Logic copied from ReactDOMUnknownPropertyHook */
-var reactProps = {
-  children: true,
-  dangerouslySetInnerHTML: true,
-  key: true,
-  ref: true,
-  autoFocus: true,
-  defaultValue: true,
-  valueLink: true,
-  defaultChecked: true,
-  checkedLink: true,
-  innerHTML: true,
-  suppressContentEditableWarning: true,
-  onFocusIn: true,
-  onFocusOut: true,
-  className: true,
-
-  /* List copied from https://facebook.github.io/react/docs/events.html */
-  onCopy: true,
-  onCut: true,
-  onPaste: true,
-  onCompositionEnd: true,
-  onCompositionStart: true,
-  onCompositionUpdate: true,
-  onKeyDown: true,
-  onKeyPress: true,
-  onKeyUp: true,
-  onFocus: true,
-  onBlur: true,
-  onChange: true,
-  onInput: true,
-  onSubmit: true,
-  onClick: true,
-  onContextMenu: true,
-  onDoubleClick: true,
-  onDrag: true,
-  onDragEnd: true,
-  onDragEnter: true,
-  onDragExit: true,
-  onDragLeave: true,
-  onDragOver: true,
-  onDragStart: true,
-  onDrop: true,
-  onMouseDown: true,
-  onMouseEnter: true,
-  onMouseLeave: true,
-  onMouseMove: true,
-  onMouseOut: true,
-  onMouseOver: true,
-  onMouseUp: true,
-  onSelect: true,
-  onTouchCancel: true,
-  onTouchEnd: true,
-  onTouchMove: true,
-  onTouchStart: true,
-  onScroll: true,
-  onWheel: true,
-  onAbort: true,
-  onCanPlay: true,
-  onCanPlayThrough: true,
-  onDurationChange: true,
-  onEmptied: true,
-  onEncrypted: true,
-  onEnded: true,
-  onError: true,
-  onLoadedData: true,
-  onLoadedMetadata: true,
-  onLoadStart: true,
-  onPause: true,
-  onPlay: true,
-  onPlaying: true,
-  onProgress: true,
-  onRateChange: true,
-  onSeeked: true,
-  onSeeking: true,
-  onStalled: true,
-  onSuspend: true,
-  onTimeUpdate: true,
-  onVolumeChange: true,
-  onWaiting: true,
-  onLoad: true,
-  onAnimationStart: true,
-  onAnimationEnd: true,
-  onAnimationIteration: true,
-  onTransitionEnd: true,
-
-  onCopyCapture: true,
-  onCutCapture: true,
-  onPasteCapture: true,
-  onCompositionEndCapture: true,
-  onCompositionStartCapture: true,
-  onCompositionUpdateCapture: true,
-  onKeyDownCapture: true,
-  onKeyPressCapture: true,
-  onKeyUpCapture: true,
-  onFocusCapture: true,
-  onBlurCapture: true,
-  onChangeCapture: true,
-  onInputCapture: true,
-  onSubmitCapture: true,
-  onClickCapture: true,
-  onContextMenuCapture: true,
-  onDoubleClickCapture: true,
-  onDragCapture: true,
-  onDragEndCapture: true,
-  onDragEnterCapture: true,
-  onDragExitCapture: true,
-  onDragLeaveCapture: true,
-  onDragOverCapture: true,
-  onDragStartCapture: true,
-  onDropCapture: true,
-  onMouseDownCapture: true,
-  onMouseEnterCapture: true,
-  onMouseLeaveCapture: true,
-  onMouseMoveCapture: true,
-  onMouseOutCapture: true,
-  onMouseOverCapture: true,
-  onMouseUpCapture: true,
-  onSelectCapture: true,
-  onTouchCancelCapture: true,
-  onTouchEndCapture: true,
-  onTouchMoveCapture: true,
-  onTouchStartCapture: true,
-  onScrollCapture: true,
-  onWheelCapture: true,
-  onAbortCapture: true,
-  onCanPlayCapture: true,
-  onCanPlayThroughCapture: true,
-  onDurationChangeCapture: true,
-  onEmptiedCapture: true,
-  onEncryptedCapture: true,
-  onEndedCapture: true,
-  onErrorCapture: true,
-  onLoadedDataCapture: true,
-  onLoadedMetadataCapture: true,
-  onLoadStartCapture: true,
-  onPauseCapture: true,
-  onPlayCapture: true,
-  onPlayingCapture: true,
-  onProgressCapture: true,
-  onRateChangeCapture: true,
-  onSeekedCapture: true,
-  onSeekingCapture: true,
-  onStalledCapture: true,
-  onSuspendCapture: true,
-  onTimeUpdateCapture: true,
-  onVolumeChangeCapture: true,
-  onWaitingCapture: true,
-  onLoadCapture: true,
-  onAnimationStartCapture: true,
-  onAnimationEndCapture: true,
-  onAnimationIterationCapture: true,
-  onTransitionEndCapture: true
-};
-
-/* From HTMLDOMPropertyConfig */
-var htmlProps = {
-  /**
-   * Standard Properties
-   */
-  accept: true,
-  acceptCharset: true,
-  accessKey: true,
-  action: true,
-  allowFullScreen: true,
-  allowTransparency: true,
-  alt: true,
-  // specifies target context for links with `preload` type
-  as: true,
-  async: true,
-  autoComplete: true,
-  // autoFocus is polyfilled/normalized by AutoFocusUtils
-  // autoFocus: true,
-  autoPlay: true,
-  capture: true,
-  cellPadding: true,
-  cellSpacing: true,
-  charSet: true,
-  challenge: true,
-  checked: true,
-  cite: true,
-  classID: true,
-  className: true,
-  cols: true,
-  colSpan: true,
-  content: true,
-  contentEditable: true,
-  contextMenu: true,
-  controls: true,
-  coords: true,
-  crossOrigin: true,
-  data: true, // For `<object />` acts as `src`.
-  dateTime: true,
-  default: true,
-  defer: true,
-  dir: true,
-  disabled: true,
-  download: true,
-  draggable: true,
-  encType: true,
-  form: true,
-  formAction: true,
-  formEncType: true,
-  formMethod: true,
-  formNoValidate: true,
-  formTarget: true,
-  frameBorder: true,
-  headers: true,
-  height: true,
-  hidden: true,
-  high: true,
-  href: true,
-  hrefLang: true,
-  htmlFor: true,
-  httpEquiv: true,
-  icon: true,
-  id: true,
-  inputMode: true,
-  integrity: true,
-  is: true,
-  keyParams: true,
-  keyType: true,
-  kind: true,
-  label: true,
-  lang: true,
-  list: true,
-  loop: true,
-  low: true,
-  manifest: true,
-  marginHeight: true,
-  marginWidth: true,
-  max: true,
-  maxLength: true,
-  media: true,
-  mediaGroup: true,
-  method: true,
-  min: true,
-  minLength: true,
-  // Caution; `option.selected` is not updated if `select.multiple` is
-  // disabled with `removeAttribute`.
-  multiple: true,
-  muted: true,
-  name: true,
-  nonce: true,
-  noValidate: true,
-  open: true,
-  optimum: true,
-  pattern: true,
-  placeholder: true,
-  playsInline: true,
-  poster: true,
-  preload: true,
-  profile: true,
-  radioGroup: true,
-  readOnly: true,
-  referrerPolicy: true,
-  rel: true,
-  required: true,
-  reversed: true,
-  role: true,
-  rows: true,
-  rowSpan: true,
-  sandbox: true,
-  scope: true,
-  scoped: true,
-  scrolling: true,
-  seamless: true,
-  selected: true,
-  shape: true,
-  size: true,
-  sizes: true,
-  span: true,
-  spellCheck: true,
-  src: true,
-  srcDoc: true,
-  srcLang: true,
-  srcSet: true,
-  start: true,
-  step: true,
-  style: true,
-  summary: true,
-  tabIndex: true,
-  target: true,
-  title: true,
-  // Setting .type throws on non-<input> tags
-  type: true,
-  useMap: true,
-  value: true,
-  width: true,
-  wmode: true,
-  wrap: true,
-
-  /**
-   * RDFa Properties
-   */
-  about: true,
-  datatype: true,
-  inlist: true,
-  prefix: true,
-  // property is also supported for OpenGraph in meta tags.
-  property: true,
-  resource: true,
-  typeof: true,
-  vocab: true,
-
-  /**
-   * Non-standard Properties
-   */
-  // autoCapitalize and autoCorrect are supported in Mobile Safari for
-  // keyboard hints.
-  autoCapitalize: true,
-  autoCorrect: true,
-  // autoSave allows WebKit/Blink to persist values of input fields on page reloads
-  autoSave: true,
-  // color is for Safari mask-icon link
-  color: true,
-  // itemProp, itemScope, itemType are for
-  // Microdata support. See http://schema.org/docs/gs.html
-  itemProp: true,
-  itemScope: true,
-  itemType: true,
-  // itemID and itemRef are for Microdata support as well but
-  // only specified in the WHATWG spec document. See
-  // https://html.spec.whatwg.org/multipage/microdata.html#microdata-dom-api
-  itemID: true,
-  itemRef: true,
-  // results show looking glass icon and recent searches on input
-  // search fields in WebKit/Blink
-  results: true,
-  // IE-only attribute that specifies security restrictions on an iframe
-  // as an alternative to the sandbox attribute on IE<10
-  security: true,
-  // IE-only attribute that controls focus behavior
-  unselectable: 0
-};
-
-var svgProps = {
-  accentHeight: true,
-  accumulate: true,
-  additive: true,
-  alignmentBaseline: true,
-  allowReorder: true,
-  alphabetic: true,
-  amplitude: true,
-  arabicForm: true,
-  ascent: true,
-  attributeName: true,
-  attributeType: true,
-  autoReverse: true,
-  azimuth: true,
-  baseFrequency: true,
-  baseProfile: true,
-  baselineShift: true,
-  bbox: true,
-  begin: true,
-  bias: true,
-  by: true,
-  calcMode: true,
-  capHeight: true,
-  clip: true,
-  clipPath: true,
-  clipRule: true,
-  clipPathUnits: true,
-  colorInterpolation: true,
-  colorInterpolationFilters: true,
-  colorProfile: true,
-  colorRendering: true,
-  contentScriptType: true,
-  contentStyleType: true,
-  cursor: true,
-  cx: true,
-  cy: true,
-  d: true,
-  decelerate: true,
-  descent: true,
-  diffuseConstant: true,
-  direction: true,
-  display: true,
-  divisor: true,
-  dominantBaseline: true,
-  dur: true,
-  dx: true,
-  dy: true,
-  edgeMode: true,
-  elevation: true,
-  enableBackground: true,
-  end: true,
-  exponent: true,
-  externalResourcesRequired: true,
-  fill: true,
-  fillOpacity: true,
-  fillRule: true,
-  filter: true,
-  filterRes: true,
-  filterUnits: true,
-  floodColor: true,
-  floodOpacity: true,
-  focusable: true,
-  fontFamily: true,
-  fontSize: true,
-  fontSizeAdjust: true,
-  fontStretch: true,
-  fontStyle: true,
-  fontVariant: true,
-  fontWeight: true,
-  format: true,
-  from: true,
-  fx: true,
-  fy: true,
-  g1: true,
-  g2: true,
-  glyphName: true,
-  glyphOrientationHorizontal: true,
-  glyphOrientationVertical: true,
-  glyphRef: true,
-  gradientTransform: true,
-  gradientUnits: true,
-  hanging: true,
-  horizAdvX: true,
-  horizOriginX: true,
-  ideographic: true,
-  imageRendering: true,
-  in: true,
-  in2: true,
-  intercept: true,
-  k: true,
-  k1: true,
-  k2: true,
-  k3: true,
-  k4: true,
-  kernelMatrix: true,
-  kernelUnitLength: true,
-  kerning: true,
-  keyPoints: true,
-  keySplines: true,
-  keyTimes: true,
-  lengthAdjust: true,
-  letterSpacing: true,
-  lightingColor: true,
-  limitingConeAngle: true,
-  local: true,
-  markerEnd: true,
-  markerMid: true,
-  markerStart: true,
-  markerHeight: true,
-  markerUnits: true,
-  markerWidth: true,
-  mask: true,
-  maskContentUnits: true,
-  maskUnits: true,
-  mathematical: true,
-  mode: true,
-  numOctaves: true,
-  offset: true,
-  opacity: true,
-  operator: true,
-  order: true,
-  orient: true,
-  orientation: true,
-  origin: true,
-  overflow: true,
-  overlinePosition: true,
-  overlineThickness: true,
-  paintOrder: true,
-  panose1: true,
-  pathLength: true,
-  patternContentUnits: true,
-  patternTransform: true,
-  patternUnits: true,
-  pointerEvents: true,
-  points: true,
-  pointsAtX: true,
-  pointsAtY: true,
-  pointsAtZ: true,
-  preserveAlpha: true,
-  preserveAspectRatio: true,
-  primitiveUnits: true,
-  r: true,
-  radius: true,
-  refX: true,
-  refY: true,
-  renderingIntent: true,
-  repeatCount: true,
-  repeatDur: true,
-  requiredExtensions: true,
-  requiredFeatures: true,
-  restart: true,
-  result: true,
-  rotate: true,
-  rx: true,
-  ry: true,
-  scale: true,
-  seed: true,
-  shapeRendering: true,
-  slope: true,
-  spacing: true,
-  specularConstant: true,
-  specularExponent: true,
-  speed: true,
-  spreadMethod: true,
-  startOffset: true,
-  stdDeviation: true,
-  stemh: true,
-  stemv: true,
-  stitchTiles: true,
-  stopColor: true,
-  stopOpacity: true,
-  strikethroughPosition: true,
-  strikethroughThickness: true,
-  string: true,
-  stroke: true,
-  strokeDasharray: true,
-  strokeDashoffset: true,
-  strokeLinecap: true,
-  strokeLinejoin: true,
-  strokeMiterlimit: true,
-  strokeOpacity: true,
-  strokeWidth: true,
-  surfaceScale: true,
-  systemLanguage: true,
-  tableValues: true,
-  targetX: true,
-  targetY: true,
-  textAnchor: true,
-  textDecoration: true,
-  textRendering: true,
-  textLength: true,
-  to: true,
-  transform: true,
-  u1: true,
-  u2: true,
-  underlinePosition: true,
-  underlineThickness: true,
-  unicode: true,
-  unicodeBidi: true,
-  unicodeRange: true,
-  unitsPerEm: true,
-  vAlphabetic: true,
-  vHanging: true,
-  vIdeographic: true,
-  vMathematical: true,
-  values: true,
-  vectorEffect: true,
-  version: true,
-  vertAdvY: true,
-  vertOriginX: true,
-  vertOriginY: true,
-  viewBox: true,
-  viewTarget: true,
-  visibility: true,
-  widths: true,
-  wordSpacing: true,
-  writingMode: true,
-  x: true,
-  xHeight: true,
-  x1: true,
-  x2: true,
-  xChannelSelector: true,
-  xlinkActuate: true,
-  xlinkArcrole: true,
-  xlinkHref: true,
-  xlinkRole: true,
-  xlinkShow: true,
-  xlinkTitle: true,
-  xlinkType: true,
-  xmlBase: true,
-  xmlns: true,
-  xmlnsXlink: true,
-  xmlLang: true,
-  xmlSpace: true,
-  y: true,
-  y1: true,
-  y2: true,
-  yChannelSelector: true,
-  z: true,
-  zoomAndPan: true
-};
+var ATTRIBUTE_REGEX = /^((?:s(?:uppressContentEditableWarn|croll|pac)|(?:shape|image|text)Render|(?:letter|word)Spac|vHang|hang)ing|(?:on(?:AnimationIteration|C(?:o(?:mposition(?:Update|Start|End)|ntextMenu|py)|anPlayThrough|anPlay|hange|lick|ut)|(?:(?:Duration|Volume|Rate)Chang|(?:MouseLea|(?:Touch|Mouse)Mo|DragLea)v|Paus)e|Loaded(?:Metad|D)ata|(?:Animation|Touch|Load|Drag)Start|(?:(?:T(?:ransition|ouch)|Animation)E|Suspe)nd|DoubleClick|(?:TouchCanc|Whe)el|(?:Mouse(?:Ent|Ov)e|Drag(?:Ent|Ov)e|Erro)r|TimeUpdate|(?:E(?:n(?:crypt|d)|mpti)|S(?:tall|eek))ed|MouseDown|P(?:rogress|laying)|(?:MouseOu|DragExi|S(?:elec|ubmi)|Rese|Inpu)t|KeyPress|DragEnd|Key(?:Down|Up)|(?:Wait|Seek)ing|(?:MouseU|Dro)p|Scroll|Paste|Focus|Abort|Drag|Play|Load|Blur)Captur|alignmentBaselin|(?:limitingConeAng|xlink(?:(?:Arcr|R)o|Tit)|s(?:urfaceSca|ty|ca)|unselectab|baseProfi|fontSty|(?:focus|dragg)ab|multip|profi|tit)l|d(?:ominantBaselin|efaultValu)|a(?:uto(?:Capitaliz|Revers|Sav)|dditiv)|(?:(?:formNoValid|xlinkActu|noValid|accumul|rot)a|autoComple|decelera)t|(?:(?:attribute|item)T|datat)yp|(?:attribute|glyph)Nam|playsInlin|(?:formE|e)ncTyp|(?:writing|input|edge)Mod|(?:xlinkTy|itemSco|keyTy|slo)p|(?:amplitu|mo)d|(?:xmlSpa|non)c|fillRul|(?:dateTi|na)m|r(?:esourc|ol)|xmlBas|wmod)e|(?:glyphOrientationHorizont|loc)al|(?:externalResourcesRequir|select|revers|mut)ed|c(?:o(?:lorInterpolationFilter|ntrol|ord)s|o(?:lor(?:Interpolation)?|ntent)|(?:ontentS(?:cript|tyle)Typ|o(?:ntentEditab|lorProfi)l|l(?:assNam|ipRul)|a(?:lcMod|ptur)|it)e|olorRendering|l(?:ipPathUnits|assID)|o(?:ntextMenu|ls)|h(?:eckedLink|a(?:llenge|rSet)|ildren|ecked)|ell(?:Spac|Padd)ing|(?:rossOrigi|olSpa)n|apHeight|lip(?:Path)?|ursor|[xy])|glyphOrientationVertical|d(?:angerouslySetInnerHTML|efaultChecked|ownload|isabled|isplay|[xy])|(?:s(?:trikethroughThickn|eaml)es|(?:und|ov)erlineThicknes|r(?:equiredExtension|adiu)|(?:requiredFeatur|tableValu|stitchTil|numOctav|filterR)e|key(?:(?:Splin|Tim)e|Param)|autoFocu|header|bia)s|(?:(?:st(?:rikethroughPosi|dDevia)|(?:und|ov)erlinePosi|(?:textDecor|elev)a|orienta)tio|(?:strokeLinejo|orig)i|formActio|zoomAndPa|onFocusI|directio|(?:vers|act)io|rowSpa|begi|ico)n|o(?:n(?:AnimationIteration|C(?:o(?:mposition(?:Update|Start|End)|ntextMenu|py)|anPlayThrough|anPlay|hange|lick|ut)|(?:(?:Duration|Volume|Rate)Chang|(?:MouseLea|(?:Touch|Mouse)Mo|DragLea)v|Paus)e|Loaded(?:Metad|D)ata|(?:Animation|Touch|Load|Drag)Start|(?:(?:T(?:ransition|ouch)|Animation)E|Suspe)nd|DoubleClick|(?:TouchCanc|Whe)el|(?:Mouse(?:Ent|Ov)e|Drag(?:Ent|Ov)e|Erro)r|TimeUpdate|(?:E(?:n(?:crypt|d)|mpti)|S(?:tall|eek))ed|MouseDown|P(?:rogress|laying)|(?:MouseOu|DragExi|S(?:elec|ubmi)|Rese|Inpu)t|KeyPress|DragEnd|Key(?:Down|Up)|(?:Wait|Seek)ing|(?:MouseU|Dro)p|Scroll|Paste|Focus|Abort|Drag|Play|Load|Blur)|rient)|p(?:reserveA(?:spectRatio|lpha)|ointsAt[X-Z]|anose1)|(?:patternContent|ma(?:sk(?:Content)?|rker)|primitive|gradient|pattern|filter)Units|(?:gradientT|patternT|t)ransform|(?:(?:allowTranspar|baseFrequ)enc|re(?:ferrerPolic|adOnl)|(?:(?:st(?:roke|op)O|floodO|fillO|o)pac|integr|secur)it|visibilit|fontFamil|accessKe|propert|summar)y|(?:strokeMiterlimi|(?:specularConsta|repeatCou|fontVaria)n|(?:(?:specularE|e)xpon|renderingInt|asc)en|d(?:iffuseConsta|esce)n|(?:fontSizeAdju|lengthAdju|manife)s|baselineShif|vectorEffec|(?:(?:mar(?:ker|gin)|x)H|accentH|fontW)eigh|a(?:utoCorrec|bou)|markerStar|onFocusOu|in(?:tercep|lis)|restar|forma|heigh|lis)t|(?:(?:st(?:rokeDasho|artO)|o)ffs|acceptChars|formTarg|viewTarg|srcS)et|(?:(?:enableBackgrou|markerE)n|s(?:p(?:readMetho|ee)|ee)|formMetho|m(?:arkerMi|etho)|preloa|kin)d|k(?:ernel(?:UnitLength|Matrix)|[1-4])|(?:[xy]ChannelSelect|lightingCol|textAnch|floodCol|stopCol|operat|htmlF)or|(?:allowFullScre|hidd)en|strokeDasharray|systemLanguage|(?:strokeLineca|itemPro|useMa|wra|loo)p|v(?:Mathematical|ert(?:Origin[XY]|AdvY)|alues|ocab)|(?:pointerEve|keyPoi)nts|unicodeRange|(?:(?:allowReord|placehold|frameBord|paintOrd|post|ord)e|repeatDu|d(?:efe|u))r|mathematical|(?:vI|i)deographic|h(?:oriz(?:Origin|Adv)X|ttpEquiv)|u(?:nicodeBidi|[12])|(?:fontStretc|hig)h|(?:(?:mar(?:ker|gin)W|strokeW)id|azimu)th|vAlphabetic|mediaGroup|spellCheck|(?:unitsPerE|optimu|fro)m|r(?:adioGroup|e(?:sults|f[XY]|l)|ows|[xy])|(?:xmlnsXl|valueL)ink|a(?:rabicForm|l(?:phabetic|t)|sync)|pathLength|(?:text|m(?:in|ax))Length|innerHTML|xlinkShow|(?:xlinkHr|glyphR)ef|r(?:e(?:quired|sult|f))?|o(?:verflow|pen)|(?:tabInde|(?:sand|b)bo|viewBo)x|(?:(?:href|xml|src)La|kerni)ng|f(?:o(?:ntSize|rm)|il(?:ter|l))|autoPlay|unicode|p(?:attern|oints)|t(?:arget[XY]|o)|i(?:temRef|n2|s)|divisor|d(?:efault|ata|ir)?|srcDoc|s(?:coped|te(?:m[hv]|p)|pan)|(?:width|size)s|(?:stri|la)ng|prefix|itemID|s(?:t(?:roke|art)|hape|cope|rc)|a(?:ccept|s)|t(?:arget|ype)|typeof|width|value|x(?:mlns)?|label|m(?:edia|a(?:sk|x)|in)|size|href|k(?:ey)?|end|low|x[12]|i[dn]|y[12]|g[12]|by|f[xy]|[yz])$/;
 
 /* From DOMProperty */
 var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
 var ATTRIBUTE_NAME_CHAR = ATTRIBUTE_NAME_START_CHAR + '\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040';
 var isCustomAttribute = RegExp.prototype.test.bind(new RegExp('^(data|aria)-[' + ATTRIBUTE_NAME_CHAR + ']*$'));
 
-var hasOwnProperty = {}.hasOwnProperty;
 var validAttr = (function (name) {
-  return hasOwnProperty.call(htmlProps, name) || hasOwnProperty.call(svgProps, name) || isCustomAttribute(name.toLowerCase()) || hasOwnProperty.call(reactProps, name);
+  return ATTRIBUTE_REGEX.test(name) || isCustomAttribute(name.toLowerCase());
 });
 
 //      
@@ -31837,6 +31307,38 @@ function isStyledComponent(target) /* : %checks */{
 /* eslint-disable no-undef */
 function getComponentName(target) {
   return target.displayName || target.name || 'Component';
+}
+
+//      
+
+
+var determineTheme = (function (props, fallbackTheme, defaultProps) {
+  // Props should take precedence over ThemeProvider, which should take precedence over
+  // defaultProps, but React automatically puts defaultProps on props.
+
+  /* eslint-disable react/prop-types */
+  var isDefaultTheme = defaultProps && props.theme === defaultProps.theme;
+  var theme = props.theme && !isDefaultTheme ? props.theme : fallbackTheme;
+  /* eslint-enable */
+
+  return theme;
+});
+
+//      
+var escapeRegex = /[[\].#*$><+~=|^:(),"'`-]+/g;
+var dashesAtEnds = /(^-|-$)/g;
+
+/**
+ * TODO: Explore using CSS.escape when it becomes more available
+ * in evergreen browsers.
+ */
+function escape(str) {
+  return str
+  // Replace all possible CSS selectors
+  .replace(escapeRegex, '-')
+
+  // Remove extraneous hyphens at the start and end
+  .replace(dashesAtEnds, '');
 }
 
 //      
@@ -31909,10 +31411,18 @@ var CONTEXT_CHANNEL_SHAPE = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.s
   unsubscribe: __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.func
 });
 
-var warnChannelDeprecated = once(function () {
-  // eslint-disable-next-line no-console
-  console.error('Warning: Usage of `context.' + CHANNEL + '` as a function is deprecated. It will be replaced with the object on `.context.' + CHANNEL_NEXT + '` in a future version.');
-});
+var warnChannelDeprecated = void 0;
+if (true) {
+  warnChannelDeprecated = once(function () {
+    // eslint-disable-next-line no-console
+    console.error('Warning: Usage of `context.' + CHANNEL + '` as a function is deprecated. It will be replaced with the object on `.context.' + CHANNEL_NEXT + '` in a future version.');
+  });
+}
+
+var isFunction = function isFunction(test) {
+  return typeof test === 'function';
+};
+
 /**
  * Provide a theme to an entire react component tree via context and event listeners (have to do
  * both context and event emitter as pure components block context updates)
@@ -31955,7 +31465,9 @@ var ThemeProvider = function (_Component) {
       subscribe: this.broadcast.subscribe,
       unsubscribe: this.broadcast.unsubscribe
     }, _babelHelpers$extends[CHANNEL] = function (subscriber) {
-      warnChannelDeprecated();
+      if (true) {
+        warnChannelDeprecated();
+      }
 
       // Patch the old `subscribe` provide via `CHANNEL` for older clients.
       var unsubscribeId = _this3.broadcast.subscribe(subscriber);
@@ -31966,7 +31478,9 @@ var ThemeProvider = function (_Component) {
   };
 
   ThemeProvider.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-    if (this.props.theme !== nextProps.theme) this.broadcast.publish(this.getTheme(nextProps.theme));
+    if (this.props.theme !== nextProps.theme) {
+      this.broadcast.publish(this.getTheme(nextProps.theme));
+    }
   };
 
   ThemeProvider.prototype.componentWillUnmount = function componentWillUnmount() {
@@ -31980,9 +31494,9 @@ var ThemeProvider = function (_Component) {
 
   ThemeProvider.prototype.getTheme = function getTheme(passedTheme) {
     var theme = passedTheme || this.props.theme;
-    if (__WEBPACK_IMPORTED_MODULE_4_is_function___default()(theme)) {
+    if (isFunction(theme)) {
       var mergedTheme = theme(this.outerTheme);
-      if (!__WEBPACK_IMPORTED_MODULE_0_is_plain_object___default()(mergedTheme)) {
+      if ("development" !== 'production' && !__WEBPACK_IMPORTED_MODULE_0_is_plain_object___default()(mergedTheme)) {
         throw new Error('[ThemeProvider] Please return an object from your theme function, i.e. theme={() => ({})}!');
       }
       return mergedTheme;
@@ -32008,25 +31522,32 @@ ThemeProvider.contextTypes = (_ThemeProvider$contex = {}, _ThemeProvider$contex[
 
 //      
 
-var escapeRegex = /[[\].#*$><+~=|^:(),"'`]/g;
-var multiDashRegex = /--+/g;
-
 // HACK for generating all static styles without needing to allocate
 // an empty execution context every single time...
 var STATIC_EXECUTION_CONTEXT = {};
 
 var _StyledComponent = (function (ComponentStyle, constructWithOptions) {
-  /* We depend on components having unique IDs */
   var identifiers = {};
+
+  /* We depend on components having unique IDs */
   var generateId = function generateId(_displayName, parentComponentId) {
-    var displayName = typeof _displayName !== 'string' ? 'sc' : _displayName.replace(escapeRegex, '-') // Replace all possible CSS selectors
-    .replace(multiDashRegex, '-'); // Replace multiple -- with single -
+    var displayName = typeof _displayName !== 'string' ? 'sc' : escape(_displayName);
 
-    var nr = (identifiers[displayName] || 0) + 1;
-    identifiers[displayName] = nr;
+    var componentId = void 0;
 
-    var hash = ComponentStyle.generateName(displayName + nr);
-    var componentId = displayName + '-' + hash;
+    /**
+     * only fall back to hashing the component injection order if
+     * a proper displayName isn't provided by the babel plugin
+     */
+    if (!_displayName) {
+      var nr = (identifiers[displayName] || 0) + 1;
+      identifiers[displayName] = nr;
+
+      componentId = displayName + '-' + ComponentStyle.generateName(displayName + nr);
+    } else {
+      componentId = displayName + '-' + ComponentStyle.generateName(displayName);
+    }
+
     return parentComponentId !== undefined ? parentComponentId + '-' + componentId : componentId;
   };
 
@@ -32088,7 +31609,9 @@ var _StyledComponent = (function (ComponentStyle, constructWithOptions) {
         var executionContext = this.buildExecutionContext(theme, props);
         var className = componentStyle.generateAndInjectStyles(executionContext, styleSheet);
 
-        if (warnTooManyClasses !== undefined) warnTooManyClasses(className);
+        if ("development" !== 'production' && warnTooManyClasses !== undefined) {
+          warnTooManyClasses(className);
+        }
 
         return className;
       }
@@ -32114,16 +31637,9 @@ var _StyledComponent = (function (ComponentStyle, constructWithOptions) {
 
         this.unsubscribeId = subscribe(function (nextTheme) {
           // This will be called once immediately
-
-          // Props should take precedence over ThemeProvider, which should take precedence over
-          // defaultProps, but React automatically puts defaultProps on props.
-          var defaultProps = _this2.constructor.defaultProps;
-          /* eslint-disable react/prop-types */
-
-          var isDefaultTheme = defaultProps && _this2.props.theme === defaultProps.theme;
-          var theme = _this2.props.theme && !isDefaultTheme ? _this2.props.theme : nextTheme;
-          /* eslint-enable */
+          var theme = determineTheme(_this2.props, nextTheme, _this2.constructor.defaultProps);
           var generatedClassName = _this2.generateAndInjectStyles(theme, _this2.props);
+
           _this2.setState({ theme: theme, generatedClassName: generatedClassName });
         });
       } else {
@@ -32146,14 +31662,7 @@ var _StyledComponent = (function (ComponentStyle, constructWithOptions) {
       }
 
       this.setState(function (oldState) {
-        // Props should take precedence over ThemeProvider, which should take precedence over
-        // defaultProps, but React automatically puts defaultProps on props.
-        var defaultProps = _this3.constructor.defaultProps;
-        /* eslint-disable react/prop-types */
-
-        var isDefaultTheme = defaultProps && nextProps.theme === defaultProps.theme;
-        var theme = nextProps.theme && !isDefaultTheme ? nextProps.theme : oldState.theme;
-        /* eslint-enable */
+        var theme = determineTheme(nextProps, oldState.theme, _this3.constructor.defaultProps);
         var generatedClassName = _this3.generateAndInjectStyles(theme, nextProps);
 
         return { theme: theme, generatedClassName: generatedClassName };
@@ -32221,14 +31730,9 @@ var _StyledComponent = (function (ComponentStyle, constructWithOptions) {
         attrs = options.attrs;
 
 
-    var styledComponentId = options.displayName && options.componentId ? options.displayName + '-' + options.componentId : componentId;
+    var styledComponentId = options.displayName && options.componentId ? escape(options.displayName) + '-' + options.componentId : componentId;
 
-    var warnTooManyClasses = void 0;
-    if (true) {
-      warnTooManyClasses = createWarnTooManyClasses(displayName);
-    }
-
-    var componentStyle = new ComponentStyle(extendingRules === undefined ? rules : extendingRules.concat(rules), styledComponentId);
+    var componentStyle = new ComponentStyle(extendingRules === undefined ? rules : extendingRules.concat(rules), attrs, styledComponentId);
 
     var StyledComponent = function (_ParentComponent) {
       inherits(StyledComponent, _ParentComponent);
@@ -32243,7 +31747,7 @@ var _StyledComponent = (function (ComponentStyle, constructWithOptions) {
             optionsToCopy = objectWithoutProperties(options, ['componentId']);
 
 
-        var newComponentId = previousComponentId && previousComponentId + '-' + (isTag(tag) ? tag : getComponentName(tag));
+        var newComponentId = previousComponentId && previousComponentId + '-' + (isTag(tag) ? tag : escape(getComponentName(tag)));
 
         var newOptions = _extends({}, optionsToCopy, {
           componentId: newComponentId,
@@ -32275,14 +31779,17 @@ var _StyledComponent = (function (ComponentStyle, constructWithOptions) {
       return StyledComponent;
     }(ParentComponent);
 
-    StyledComponent.contextTypes = (_StyledComponent$cont = {}, _StyledComponent$cont[CHANNEL] = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.func, _StyledComponent$cont[CHANNEL_NEXT] = CONTEXT_CHANNEL_SHAPE, _StyledComponent$cont[CONTEXT_KEY] = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(StyleSheet), _StyledComponent$cont);
+    StyledComponent.contextTypes = (_StyledComponent$cont = {}, _StyledComponent$cont[CHANNEL] = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.func, _StyledComponent$cont[CHANNEL_NEXT] = CONTEXT_CHANNEL_SHAPE, _StyledComponent$cont[CONTEXT_KEY] = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(StyleSheet), __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.instanceOf(ServerStyleSheet)]), _StyledComponent$cont);
     StyledComponent.displayName = displayName;
     StyledComponent.styledComponentId = styledComponentId;
     StyledComponent.attrs = attrs;
     StyledComponent.componentStyle = componentStyle;
-    StyledComponent.warnTooManyClasses = warnTooManyClasses;
     StyledComponent.target = target;
 
+
+    if (true) {
+      StyledComponent.warnTooManyClasses = createWarnTooManyClasses(displayName);
+    }
 
     return StyledComponent;
   };
@@ -32356,7 +31863,7 @@ function Umul32(n, m) {
 }
 
 //      
-var isStaticRules = function isStaticRules(rules) {
+var isStaticRules = function isStaticRules(rules, attrs) {
   for (var i = 0; i < rules.length; i += 1) {
     var rule = rules[i];
 
@@ -32370,8 +31877,20 @@ var isStaticRules = function isStaticRules(rules) {
     }
   }
 
+  if (attrs !== undefined) {
+    // eslint-disable-next-line guard-for-in, no-restricted-syntax
+    for (var key in attrs) {
+      var value = attrs[key];
+      if (typeof value === 'function') {
+        return false;
+      }
+    }
+  }
+
   return true;
 };
+
+var isHRMEnabled = typeof module !== 'undefined' && module.hot && "development" !== 'production';
 
 /*
  ComponentStyle is all the CSS-specific stuff, not
@@ -32379,11 +31898,11 @@ var isStaticRules = function isStaticRules(rules) {
  */
 var _ComponentStyle = (function (nameGenerator, flatten, stringifyRules) {
   var ComponentStyle = function () {
-    function ComponentStyle(rules, componentId) {
+    function ComponentStyle(rules, attrs, componentId) {
       classCallCheck(this, ComponentStyle);
 
       this.rules = rules;
-      this.isStatic = isStaticRules(rules);
+      this.isStatic = !isHRMEnabled && isStaticRules(rules, attrs);
       this.componentId = componentId;
       if (!StyleSheet.instance.hasInjectedComponent(this.componentId)) {
         var placeholder =  true ? '.' + componentId + ' {}' : '';
@@ -32518,7 +32037,7 @@ var _constructWithOptions = (function (css) {
   var constructWithOptions = function constructWithOptions(componentConstructor, tag) {
     var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 
-    if (typeof tag !== 'string' && typeof tag !== 'function') {
+    if ("development" !== 'production' && typeof tag !== 'string' && typeof tag !== 'function') {
       // $FlowInvalidInputTest
       throw new Error('Cannot create styled-component for component: ' + tag);
     }
@@ -32538,7 +32057,8 @@ var _constructWithOptions = (function (css) {
     };
     templateFunction.attrs = function (attrs) {
       return constructWithOptions(componentConstructor, tag, _extends({}, options, {
-        attrs: _extends({}, options.attrs || {}, attrs) }));
+        attrs: _extends({}, options.attrs || {}, attrs)
+      }));
     };
 
     return templateFunction;
@@ -32555,7 +32075,9 @@ var wrapWithTheme = function wrapWithTheme(Component$$1) {
 
   var componentName = Component$$1.displayName || Component$$1.name || 'Component';
 
-  var isStyledComponent$$1 = isStyledComponent(Component$$1);
+  var shouldSetInnerRef = isStyledComponent(Component$$1) ||
+  // NOTE: We can't pass a ref to a stateless functional component
+  typeof Component$$1 === 'function' && !(Component$$1.prototype && 'isReactComponent' in Component$$1.prototype);
 
   var WithTheme = function (_React$Component) {
     inherits(WithTheme, _React$Component);
@@ -32578,17 +32100,32 @@ var wrapWithTheme = function wrapWithTheme(Component$$1) {
     WithTheme.prototype.componentWillMount = function componentWillMount() {
       var _this2 = this;
 
+      var defaultProps = this.constructor.defaultProps;
+
       var styledContext = this.context[CHANNEL_NEXT];
-      if (styledContext === undefined) {
+      var themeProp = determineTheme(this.props, undefined, defaultProps);
+      if (styledContext === undefined && themeProp === undefined && "development" !== 'production') {
         // eslint-disable-next-line no-console
-        console.error('[withTheme] Please use ThemeProvider to be able to use withTheme');
-        return;
+        console.warn('[withTheme] You are not using a ThemeProvider nor passing a theme prop or a theme in defaultProps');
+      } else if (styledContext === undefined && themeProp !== undefined) {
+        this.setState({ theme: themeProp });
+      } else {
+        var subscribe = styledContext.subscribe;
+
+        this.unsubscribeId = subscribe(function (nextTheme) {
+          var theme = determineTheme(_this2.props, nextTheme, defaultProps);
+          _this2.setState({ theme: theme });
+        });
       }
+    };
 
-      var subscribe = styledContext.subscribe;
+    WithTheme.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+      var defaultProps = this.constructor.defaultProps;
 
-      this.unsubscribeId = subscribe(function (theme) {
-        _this2.setState({ theme: theme });
+      this.setState(function (oldState) {
+        var theme = determineTheme(nextProps, oldState.theme, defaultProps);
+
+        return { theme: theme };
       });
     };
 
@@ -32607,8 +32144,8 @@ var wrapWithTheme = function wrapWithTheme(Component$$1) {
       return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(Component$$1, _extends({
         theme: theme
       }, this.props, {
-        innerRef: isStyledComponent$$1 ? innerRef : undefined,
-        ref: isStyledComponent$$1 ? undefined : innerRef
+        innerRef: shouldSetInnerRef ? innerRef : undefined,
+        ref: shouldSetInnerRef ? undefined : innerRef
       }));
     };
 
@@ -32620,7 +32157,7 @@ var wrapWithTheme = function wrapWithTheme(Component$$1) {
   WithTheme.contextTypes = (_WithTheme$contextTyp = {}, _WithTheme$contextTyp[CHANNEL] = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.func, _WithTheme$contextTyp[CHANNEL_NEXT] = CONTEXT_CHANNEL_SHAPE, _WithTheme$contextTyp);
 
 
-  return __WEBPACK_IMPORTED_MODULE_5_hoist_non_react_statics___default()(WithTheme, Component$$1);
+  return __WEBPACK_IMPORTED_MODULE_4_hoist_non_react_statics___default()(WithTheme, Component$$1);
 };
 
 //      
@@ -32641,6 +32178,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 
 /* harmony default export */ __webpack_exports__["a"] = (styled);
 
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -32724,9 +32262,11 @@ var styled = _styled(StyledComponent, constructWithOptions);
 	var pseudoptn = /([^\(])(:+) */g /* pseudo element */
 	var writingptn = /[svh]\w+-[tblr]{2}/ /* match writing mode property values */
 	var gradientptn = /([\w-]+t\()/g /* match *gradient property */
-	var supportsptn = /\(\s*([^]*?)\s*\)/g /* match supports (groups) */
-	var propertyptn = /([^]*?);/g /* match properties leading semicolon */
+	var supportsptn = /\(\s*(.*)\s*\)/g /* match supports (groups) */
+	var propertyptn = /([\s\S]*?);/g /* match properties leading semicolon */
 	var selfptn = /-self|flex-/g /* match flex- and -self in align-self: flex-*; */
+	var pseudofmt = /[^]*?(:[rp][el]a[\w-]+)[^]*/ /* extrats :readonly or :placholder from selector */
+	var trimptn = /[ \t]+$/ /* match tail whitspace */
 
 	/* vendors */
 	var webkit = '-webkit-'
@@ -32771,13 +32311,14 @@ var styled = _styled(StyledComponent, constructWithOptions);
 	var IMPORT = 169 /* <at>i */
 	var CHARSET = 163 /* <at>c */
 	var DOCUMENT = 100 /* <at>d */
+	var PAGE = 112 /* <at>p */
 
 	var column = 1 /* current column */
 	var line = 1 /* current line numebr */
 	var pattern = 0 /* :pattern */
 
 	var cascade = 1 /* #id h1 h2 vs h1#id h2#id  */
-	var vendor = 1 /* vendor prefix */
+	var prefix = 1 /* vendor prefix */
 	var escape = 1 /* escape :global() pattern */
 	var compress = 0 /* compress output */
 	var semicolon = 0 /* no/semicolon option */
@@ -32789,6 +32330,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 	/* plugins */
 	var plugins = []
 	var plugged = 0
+	var should = null
 
 	/* plugin context */
 	var POSTS = -2
@@ -32857,6 +32399,20 @@ var styled = _styled(StyledComponent, constructWithOptions);
 		while (caret < eof) {
 			code = body.charCodeAt(caret)
 
+			// eof varient
+			if (caret === eol) {
+				// last character + noop context, add synthetic padding for noop context to terminate
+				if (comment + quote + parentheses + bracket !== 0) {
+					if (comment !== 0) {
+						code = comment === FOWARDSLASH ? NEWLINE : FOWARDSLASH
+					}
+
+					quote = parentheses = bracket = 0
+					eof++
+					eol++
+				}
+			}
+
 			if (comment + quote + parentheses + bracket === 0) {
 				// eof varient
 				if (caret === eol) {
@@ -32887,9 +32443,14 @@ var styled = _styled(StyledComponent, constructWithOptions);
 					switch (code) {
 						// false flags
 						case OPENBRACES:
+						case CLOSEBRACES:
+						case SEMICOLON:
+						case DOUBLEQUOTE:
+						case SINGLEQUOTE:
+						case OPENPARENTHESES:
+						case CLOSEPARENTHESES:
 						case COMMA: {
 							insert = 0
-							break
 						}
 						// ignore
 						case TAB:
@@ -32900,8 +32461,26 @@ var styled = _styled(StyledComponent, constructWithOptions);
 						}
 						// valid
 						default: {
+							insert = 0
+							length = caret
+							first = code
 							caret--
 							code = SEMICOLON
+
+							while (length < eof) {
+								switch (body.charCodeAt(++length)) {
+									case NEWLINE:
+									case CARRIAGE:
+									case SEMICOLON: {
+										caret++
+										code = first
+									}
+									case COLON:
+									case OPENBRACES: {
+										length = eof
+									}
+								}
+							}
 						}
 					}
 				}
@@ -32953,7 +32532,8 @@ var styled = _styled(StyledComponent, constructWithOptions);
 								switch (second) {
 									case DOCUMENT:
 									case MEDIA:
-									case SUPPORTS: {
+									case SUPPORTS:
+									case DASH: {
 										selector = current
 										break
 									}
@@ -32990,18 +32570,28 @@ var styled = _styled(StyledComponent, constructWithOptions);
 											chars = chars.replace(supportsptn, supports)
 										}
 										case DOCUMENT:
-										case MEDIA: {
+										case MEDIA:
+										case DASH: {
 											child = chars + '{' + child + '}'
 											break
 										}
 										case KEYFRAME: {
 											chars = chars.replace(keyframeptn, '$1 $2' + (keyed > 0 ? key : ''))
 											child = chars + '{' + child + '}'
-											child = '@' + (vendor > 0 ? webkit + child + '@' + child : child)
+
+											if (prefix === 1 || (prefix === 2 && vendor('@'+child, 3))) {
+												child = '@' + webkit + child + '@' + child
+											} else {
+												child = '@' + child
+											}
 											break
 										}
 										default: {
 											child = chars + child
+
+											if (id === PAGE) {
+												child = (out += child, '')
+											}
 										}
 									}
 								} else {
@@ -33126,6 +32716,9 @@ var styled = _styled(StyledComponent, constructWithOptions);
 					// terminate line comment
 					if (comment === FOWARDSLASH) {
 						comment = 0
+					} else if (cascade + context === 0) {
+						format = 1
+						chars += '\0'
 					}
 
 					// execute plugins, newline context
@@ -33156,7 +32749,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 					switch (code) {
 						case TAB:
 						case SPACE: {
-							if (quote + bracket === 0) {
+							if (quote + bracket + comment === 0) {
 								switch (tail) {
 									case COMMA:
 									case COLON:
@@ -33237,22 +32830,12 @@ var styled = _styled(StyledComponent, constructWithOptions);
 						case DOUBLEQUOTE: {
 							if (comment === 0) {
 								quote = quote === code ? 0 : (quote === 0 ? code : quote)
-								// " last character, add synthetic padding
-								if (caret === eol) {
-									eol++
-									eof++
-								}
 							}
 							break
 						}
 						case SINGLEQUOTE: {
 							if (comment === 0) {
 								quote = quote === code ? 0 : (quote === 0 ? code : quote)
-								// ' last character, add synthetic padding
-								if (caret === eol) {
-									eol++
-									eof++
-								}
 							}
 							break
 						}
@@ -33272,12 +32855,6 @@ var styled = _styled(StyledComponent, constructWithOptions);
 						// functions
 						case CLOSEPARENTHESES: {
 							if (quote + comment + bracket === 0) {
-								// ) last character, add synthetic padding
-								if (caret === eol) {
-									eol++
-									eof++
-								}
-
 								parentheses--
 							}
 							break
@@ -33326,6 +32903,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 										}
 										// /*
 										case 220: {
+											length = caret
 											comment = STAR
 											break
 										}
@@ -33335,6 +32913,10 @@ var styled = _styled(StyledComponent, constructWithOptions);
 								// end block comment context
 								case STAR: {
 									if (code === FOWARDSLASH && tail === STAR) {
+										// /*<!> ... */, !
+										if (body.charCodeAt(length+2) === 33) {
+											out += body.substring(length, caret+1)
+										}
 										char = ''
 										comment = 0
 									}
@@ -33388,6 +32970,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 									}
 									break
 								}
+								case TAB:
 								case SPACE: {
 									switch (tail) {
 										case NULL:
@@ -33418,7 +33001,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 						chars += char
 
 						// previous non-whitespace character code
-						if (code !== SPACE) {
+						if (code !== SPACE && code !== TAB) {
 							peak = code
 						}
 					}
@@ -33459,7 +33042,10 @@ var styled = _styled(StyledComponent, constructWithOptions);
 
 			out = selector.join(',') + '{' + out + '}'
 
-			if (vendor*pattern > 0) {
+			if (prefix*pattern !== 0) {
+				if (prefix === 2 && !vendor(out, 2))
+					pattern = 0
+
 				switch (pattern) {
 					// ::read-only
 					case READONLY: {
@@ -33476,6 +33062,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 						break
 					}
 				}
+
 				pattern = 0
 			}
 		}
@@ -33566,7 +33153,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 					}
 					default: {
 						// :hover
-						return parent.trim() + selector
+						return parent.trim() + selector.replace(andptn, '$1'+parent.trim())
 					}
 				}
 			}
@@ -33598,180 +33185,229 @@ var styled = _styled(StyledComponent, constructWithOptions);
 
 		// animation: a, n, i characters
 		if (hash === 944) {
-			out = animation(out)
-		} else if (vendor > 0) {
-			// vendor prefix
-			switch (hash) {
-				// text-decoration/text-size-adjust: t, e, x
-				case 1015: {
-					// text-size-adjust, -
-					return out.charCodeAt(9) === DASH ? webkit + out + out : out
-				}
-				// filter/fill f, i, l
-				case 951: {
-					// filter, t
-					return out.charCodeAt(3) === 116 ? webkit + out + out : out
-				}
-				// color/column, c, o, l
-				case 963: {
-					// column, n
-					return out.charCodeAt(5) === 110 ? webkit + out + out : out
-				}
-				// mask, m, a, s
-				// clip-path, c, l, i
-				case 969:
-				case 942: {
-					return webkit + out + out
-				}
-				// appearance: a, p, p
-				case 978: {
-					return webkit + out + moz + out + out
-				}
-				// hyphens: h, y, p
-				// user-select: u, s, e
-				case 1019:
-				case 983: {
-					return webkit + out + moz + out + ms + out + out
-				}
-				// background/backface-visibility, b, a, c
-				case 883: {
-					// backface-visibility, -
-					return out.charCodeAt(8) === DASH ? webkit + out + out : out
-				}
-				// flex: f, l, e
-				case 932: {
-					return webkit + out + ms + out + out
-				}
-				// order: o, r, d
-				case 964: {
-					return webkit + out + ms + 'flex' + '-' + out + out
-				}
-				// justify-content, j, u, s
-				case 1023: {
-					cache = out.substring(out.indexOf(':', 15)).replace('flex-', '').replace('space-between', 'justify')
-					return webkit + 'box-pack' + cache + webkit + out + ms + 'flex-pack' + cache + out
-				}
-				// cursor, c, u, r
-				case 1005: {
-					return cursorptn.test(out) ? out.replace(colonptn, ':' + webkit) + out.replace(colonptn, ':' + moz) + out : out
-				}
-				// writing-mode, w, r, i
-				case 1000: {
-					cache = out.substring(13).trim()
-					index = cache.indexOf('-') + 1
+			return animation(out)
+		} else if (prefix === 0 || (prefix === 2 && !vendor(out, 1))) {
+			return out
+		}
 
-					switch (cache.charCodeAt(0)+cache.charCodeAt(index)) {
-						// vertical-lr
-						case 226: {
-							cache = out.replace(writingptn, 'tb')
-							break
+		// vendor prefix
+		switch (hash) {
+			// text-decoration/text-size-adjust: t, e, x
+			case 1015: {
+				// text-size-adjust, -
+				return out.charCodeAt(9) === DASH ? webkit + out + out : out
+			}
+			// filter/fill f, i, l
+			case 951: {
+				// filter, t
+				return out.charCodeAt(3) === 116 ? webkit + out + out : out
+			}
+			// color/column, c, o, l
+			case 963: {
+				// column, n
+				return out.charCodeAt(5) === 110 ? webkit + out + out : out
+			}
+			// box-decoration-break, b, o, x
+			case 1009: {
+				if (out.charCodeAt(4) !== 100) {
+					break
+				}
+			}
+			// mask, m, a, s
+			// clip-path, c, l, i
+			case 969:
+			case 942: {
+				return webkit + out + out
+			}
+			// appearance: a, p, p
+			case 978: {
+				return webkit + out + moz + out + out
+			}
+			// hyphens: h, y, p
+			// user-select: u, s, e
+			case 1019:
+			case 983: {
+				return webkit + out + moz + out + ms + out + out
+			}
+			// background/backface-visibility, b, a, c
+			case 883: {
+				// backface-visibility, -
+				return out.charCodeAt(8) === DASH ? webkit + out + out : out
+			}
+			// flex: f, l, e
+			case 932: {
+				if (out.charCodeAt(4) === DASH) {
+					switch (out.charCodeAt(5)) {
+						// flex-grow, g
+						case 103: {
+							return webkit + 'box-' + out.replace('-grow', '') + webkit + out + ms + out.replace('grow', 'positive') + out
 						}
-						// vertical-rl
-						case 232: {
-							cache = out.replace(writingptn, 'tb-rl')
-							break
+						// flex-shrink, s
+						case 115: {
+							return webkit + out + ms + out.replace('shrink', 'negative') + out
 						}
-						// horizontal-tb
-						case 220: {
-							cache = out.replace(writingptn, 'lr')
-							break
-						}
-						default: {
-							return out
+						// flex-basis, b
+						case 98: {
+							return webkit + out + ms + out.replace('basis', 'preferred-size') + out
 						}
 					}
-
-					return webkit + out + ms + cache + out
 				}
-				// position: sticky
-				case 1017: {
-					if (out.indexOf('sticky', 9) === -1) {
+
+				return webkit + out + ms + out + out
+			}
+			// order: o, r, d
+			case 964: {
+				return webkit + out + ms + 'flex' + '-' + out + out
+			}
+			// justify-items/justify-content, j, u, s
+			case 1023: {
+				// justify-content, c
+				if (out.charCodeAt(8) !== 99) {
+					break
+				}
+
+				cache = out.substring(out.indexOf(':', 15)).replace('flex-', '').replace('space-between', 'justify')
+				return webkit + 'box-pack' + cache + webkit + out + ms + 'flex-pack' + cache + out
+			}
+			// cursor, c, u, r
+			case 1005: {
+				return cursorptn.test(out) ? out.replace(colonptn, ':' + webkit) + out.replace(colonptn, ':' + moz) + out : out
+			}
+			// writing-mode, w, r, i
+			case 1000: {
+				cache = out.substring(13).trim()
+				index = cache.indexOf('-') + 1
+
+				switch (cache.charCodeAt(0)+cache.charCodeAt(index)) {
+					// vertical-lr
+					case 226: {
+						cache = out.replace(writingptn, 'tb')
+						break
+					}
+					// vertical-rl
+					case 232: {
+						cache = out.replace(writingptn, 'tb-rl')
+						break
+					}
+					// horizontal-tb
+					case 220: {
+						cache = out.replace(writingptn, 'lr')
+						break
+					}
+					default: {
 						return out
 					}
 				}
-				// display(flex/inline-flex/inline-box): d, i, s
-				case 975: {
-					index = (out = input).length - 10
-					cache = (out.charCodeAt(index) === 33 ? out.substring(0, index) : out).substring(input.indexOf(':', 7) + 1).trim()
 
-					switch (hash = cache.charCodeAt(0) + (cache.charCodeAt(7)|0)) {
-						// inline-
-						case 203: {
-							// inline-box
-							if (cache.charCodeAt(8) < 111) {
-								break
-							}
-						}
-						// inline-box/sticky
-						case 115: {
-							out = out.replace(cache, webkit+cache)+';'+out
+				return webkit + out + ms + cache + out
+			}
+			// position: sticky
+			case 1017: {
+				if (out.indexOf('sticky', 9) === -1) {
+					return out
+				}
+			}
+			// display(flex/inline-flex/inline-box): d, i, s
+			case 975: {
+				index = (out = input).length - 10
+				cache = (out.charCodeAt(index) === 33 ? out.substring(0, index) : out).substring(input.indexOf(':', 7) + 1).trim()
+
+				switch (hash = cache.charCodeAt(0) + (cache.charCodeAt(7)|0)) {
+					// inline-
+					case 203: {
+						// inline-box
+						if (cache.charCodeAt(8) < 111) {
 							break
 						}
-						// inline-flex
-						// flex
-						case 207:
-						case 102: {
-							out = (
-								out.replace(cache, webkit+(hash > 102 ? 'inline-' : '')+'box')+';'+
-								out.replace(cache, webkit+cache)+';'+
-								out.replace(cache, ms+cache+'box')+';'+
-								out
-							)
+					}
+					// inline-box/sticky
+					case 115: {
+						out = out.replace(cache, webkit+cache)+';'+out
+						break
+					}
+					// inline-flex
+					// flex
+					case 207:
+					case 102: {
+						out = (
+							out.replace(cache, webkit+(hash > 102 ? 'inline-' : '')+'box')+';'+
+							out.replace(cache, webkit+cache)+';'+
+							out.replace(cache, ms+cache+'box')+';'+
+							out
+						)
+					}
+				}
+
+				return out + ';'
+			}
+			// align-items, align-center, align-self: a, l, i, -
+			case 938: {
+				if (out.charCodeAt(5) === DASH) {
+					switch (out.charCodeAt(6)) {
+						// align-items, i
+						case 105: {
+							cache = out.replace('-items', '')
+							return webkit + out + webkit + 'box-' + cache + ms + 'flex-' + cache + out
+						}
+						// align-self, s
+						case 115: {
+							return webkit + out + ms + 'flex-item-' + out.replace(selfptn, '') + out
+						}
+						// align-content
+						default: {
+							return webkit + out + ms + 'flex-line-pack' + out.replace('align-content', '').replace(selfptn, '') + out
 						}
 					}
-
-					return out + ';'
 				}
-				// align-items, align-center, align-self: a, l, i, -
-				case 938: {
-					if (out.charCodeAt(5) === DASH) {
-						switch (out.charCodeAt(6)) {
-							// align-items, i
-							case 105: {
-								cache = out.replace('-items', '')
-								return webkit + out + webkit + 'box-' + cache + ms + 'flex-' + cache + out
-							}
-							// align-self, s
-							case 115: {
-								return webkit + out + ms + 'flex-item-' + out.replace(selfptn, '') + out
-							}
-							// align-content
-							default: {
-								return webkit + out + ms + 'flex-line-pack' + out.replace('align-content', '') + out
-							}
-						}
+				break
+			}
+			// width: min-content / width: max-content
+			case 953: {
+				if ((index = out.indexOf('-content', 9)) > 0) {
+					// width: min-content / width: max-content
+					if (out.charCodeAt(index - 3) === 109 && out.charCodeAt(index - 4) !== 45) {
+						cache = out.substring(index - 3)
+						return 'width:' + webkit + cache + 'width:' + moz + cache + 'width:' + cache
 					}
-					break
 				}
-				// width: min-content / width: max-content
-				case 953: {
-					if ((index = out.indexOf('-content', 9)) > 0) {
-						// width: min-content / width: max-content
-						if (out.charCodeAt(index - 3) === 109 && out.charCodeAt(index - 4) !== 45) {
-							cache = out.substring(index - 3)
-							return 'width:' + webkit + cache + 'width:' + moz + cache + 'width:' + cache
-						}
-					}
-					break
-				}
-				// transform, transition: t, r, a
-				case 962: {
-					out = webkit + out + (out.charCodeAt(5) === 102 ? ms + out : '') + out
+				break
+			}
+			// transform, transition: t, r, a
+			case 962: {
+				out = webkit + out + (out.charCodeAt(5) === 102 ? ms + out : '') + out
 
-					// transitions
-					if (second + third === 211 && out.charCodeAt(13) === 105 && out.indexOf('transform', 10) > 0) {
-						return out.substring(0, out.indexOf(';', 27) + 1).replace(transformptn, '$1' + webkit + '$2') + out
-					}
-
-					break
+				// transitions
+				if (second + third === 211 && out.charCodeAt(13) === 105 && out.indexOf('transform', 10) > 0) {
+					return out.substring(0, out.indexOf(';', 27) + 1).replace(transformptn, '$1' + webkit + '$2') + out
 				}
+
+				break
 			}
 		}
 
 		return out
 	}
 
+	var i = 0
+
 	/**
+	 * Vendor
+	 *
+	 * @param {string} content
+	 * @param {number} context
+	 * @return {boolean}
+	 */
+	function vendor (content, context) {
+		var index = content.indexOf(context === 1 ? ':' : '{')
+		var key = content.substring(0, context !== 3 ? index : 10)
+		var value = content.substring(index + 1, content.length - 1)
+
+		return should(context !== 2 ? key : key.replace(pseudofmt, '$1'), value, context)
+	}
+
+	/**
+	 * Supports
+	 *
 	 * @param {string} match
 	 * @param {string} group
 	 * @return {string}
@@ -33792,60 +33428,71 @@ var styled = _styled(StyledComponent, constructWithOptions);
 		var length = input.length
 		var index = input.indexOf(':', 9) + 1
 		var declare = input.substring(0, index).trim()
-		var body = input.substring(index, length-1).trim()
-		var out = ''
+		var out = input.substring(index, length-1).trim()
 
-		// shorthand
-		if (input.charCodeAt(9) !== DASH) {
-			// split in case of multiple animations
-			var list = body.split(animationptn)
+		switch (input.charCodeAt(9)*keyed) {
+			case 0: {
+				break
+			}
+			// animation-*, -
+			case DASH: {
+				// animation-name, n
+				if (input.charCodeAt(10) !== 110) {
+					break
+				}
+			}
+			// animation/animation-name
+			default: {
+				// split in case of multiple animations
+				var list = out.split((out = '', animationptn))
 
-			for (var i = 0, index = 0, length = list.length; i < length; index = 0, ++i) {
-				var value = list[i]
-				var items = value.split(propertiesptn)
+				for (var i = 0, index = 0, length = list.length; i < length; index = 0, ++i) {
+					var value = list[i]
+					var items = value.split(propertiesptn)
 
-				while (value = items[index]) {
-					var peak = value.charCodeAt(0)
+					while (value = items[index]) {
+						var peak = value.charCodeAt(0)
 
-					if (keyed === 1 && (
-						// letters
-						(peak > AT && peak < 90) || (peak > 96 && peak < 123) || peak === UNDERSCORE ||
-						// dash but not in sequence i.e --
-						(peak === DASH && value.charCodeAt(1) !== DASH)
-					)) {
-						// not a number/function
-						switch (isNaN(parseFloat(value)) + (value.indexOf('(') !== -1)) {
-							case 1: {
-								switch (value) {
-									// not a valid reserved keyword
-									case 'infinite': case 'alternate': case 'backwards': case 'running':
-									case 'normal': case 'forwards': case 'both': case 'none': case 'linear':
-									case 'ease': case 'ease-in': case 'ease-out': case 'ease-in-out':
-									case 'paused': case 'reverse': case 'alternate-reverse': case 'inherit':
-									case 'initial': case 'unset': case 'step-start': case 'step-end': {
-										break
-									}
-									default: {
-										value += key
+						if (keyed === 1 && (
+							// letters
+							(peak > AT && peak < 90) || (peak > 96 && peak < 123) || peak === UNDERSCORE ||
+							// dash but not in sequence i.e --
+							(peak === DASH && value.charCodeAt(1) !== DASH)
+						)) {
+							// not a number/function
+							switch (isNaN(parseFloat(value)) + (value.indexOf('(') !== -1)) {
+								case 1: {
+									switch (value) {
+										// not a valid reserved keyword
+										case 'infinite': case 'alternate': case 'backwards': case 'running':
+										case 'normal': case 'forwards': case 'both': case 'none': case 'linear':
+										case 'ease': case 'ease-in': case 'ease-out': case 'ease-in-out':
+										case 'paused': case 'reverse': case 'alternate-reverse': case 'inherit':
+										case 'initial': case 'unset': case 'step-start': case 'step-end': {
+											break
+										}
+										default: {
+											value += key
+										}
 									}
 								}
 							}
 						}
+
+						items[index++] = value
 					}
 
-					items[index++] = value
+					out += (i === 0 ? '' : ',') + items.join(' ')
 				}
-
-				out += (i === 0 ? '' : ',') + items.join(' ')
 			}
-		} else {
-			// animation-name, n
-			out += input.charCodeAt(10) === 110 ? body + (keyed === 1 ? key : '') : body
 		}
 
 		out = declare + out + ';'
 
-		return vendor > 0 ? webkit + out + out : out
+		if (prefix === 1 || (prefix === 2 && vendor(out, 1)))
+			return webkit + out + out
+
+		return out
 	}
 
 	/**
@@ -34046,9 +33693,19 @@ var styled = _styled(StyledComponent, constructWithOptions);
 				case 'global': escape = value|0; break
 				case 'cascade': cascade = value|0; break
 				case 'compress': compress = value|0; break
-				case 'prefix': vendor = value|0; break
 				case 'semicolon': semicolon = value|0; break
 				case 'preserve': preserve = value|0; break
+				case 'prefix':
+					should = null
+
+					if (!value) {
+						prefix = 0
+					} else if (typeof value !== 'function') {
+						prefix = 1
+					} else {
+						prefix = 2
+						should = value
+					}
 			}
 		}
 
@@ -34282,10 +33939,41 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./node_modules/webpack/buildin/harmony-module.js":
+/***/ (function(module, exports) {
+
+module.exports = function(originalModule) {
+	if(!originalModule.webpackPolyfill) {
+		var module = Object.create(originalModule);
+		// module.parent = undefined by default
+		if(!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		Object.defineProperty(module, "exports", {
+			enumerable: true,
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+
 /***/ "./package.json":
 /***/ (function(module, exports) {
 
-module.exports = {"name":"react-simple-tooltip","version":"2.0.0","author":{"name":"Cédric Delpoux","email":"xuopled@gmail.com"},"description":"A lightweight and simple tooltip component for React","files":["css","es","lib","umd"],"homepage":"https://github.com/xuopled/react-simple-tooltip#readme","keywords":["react","tooltip","bubble"],"license":"MIT","main":"lib/index.js","module":"es/index.js","style":"umd/index.css","repository":{"type":"git","url":"git+https://github.com/xuopled/react-simple-tooltip.git"},"scripts":{"build":"nwb build-react-component","clean":"nwb clean-module && nwb clean-demo","deploy":"gh-pages -d demo/dist","lint":"eslint src demo/src","precommit":"lint-staged","prepublish":"yarn run clean && yarn run build","start":"nwb serve-react-demo --port 1190","test":"jest --config jest.config.json --colors --no-cache","test:watch":"yarn test -- --watch"},"dependencies":{"prop-types":"^15.6.0","styled-components":"^2.1.2"},"devDependencies":{"babel-eslint":"^7.2.3","babel-jest":"^20.0.3","babel-plugin-transform-object-rest-spread":"^6.26.0","babel-preset-es2015":"^6.24.1","babel-preset-react":"^6.24.1","enzyme":"^2.9.1","eslint":"^4.5.0","eslint-config-prettier":"^2.3.0","eslint-loader":"^1.9.0","eslint-plugin-jest":"^20.0.3","eslint-plugin-prettier":"^2.1.2","eslint-plugin-react":"^7.3.0","gh-pages":"^1.0.0","html-loader":"^0.5.1","husky":"^0.14.3","jest":"^20.0.4","jest-css-modules":"^1.1.0","lint-staged":"^4.0.2","markdown-loader":"^2.0.1","nwb":"^0.18.0","prettier":"^1.5.3","react":"^15.6.1","react-demo-page":"^0.2.2","react-dom":"^15.6.1","react-test-renderer":"^15.6.1"},"peerDependencies":{"react":"^16.0.0","react-dom":"^16.0.0"}}
+module.exports = {"name":"react-simple-tooltip","version":"2.3.1","author":{"name":"Cédric Delpoux","email":"xuopled@gmail.com"},"description":"A lightweight and simple tooltip component for React","files":["css","es","lib","umd"],"homepage":"https://github.com/xuopled/react-simple-tooltip#readme","keywords":["react","tooltip","bubble"],"license":"MIT","main":"lib/index.js","module":"es/index.js","style":"umd/index.css","repository":{"type":"git","url":"git+https://github.com/xuopled/react-simple-tooltip.git"},"scripts":{"build":"nwb build-react-component","clean":"nwb clean-module && nwb clean-demo","deploy":"gh-pages -d demo/dist","lint":"eslint src demo/src","precommit":"lint-staged","prepublish":"yarn run clean && yarn run build","start":"nwb serve-react-demo --port 1190","test":"jest --config jest.config.json --colors --no-cache","test:watch":"yarn test -- --watch"},"dependencies":{"styled-components":"^2.1.2"},"devDependencies":{"babel-eslint":"^7.2.3","babel-jest":"^20.0.3","babel-plugin-transform-object-rest-spread":"^6.26.0","babel-preset-es2015":"^6.24.1","babel-preset-react":"^6.24.1","enzyme":"^2.9.1","enzyme-to-json":"^2.0.1","eslint":"^4.5.0","eslint-config-prettier":"^2.3.0","eslint-loader":"^1.9.0","eslint-plugin-jest":"^20.0.3","eslint-plugin-prettier":"^2.1.2","eslint-plugin-react":"^7.3.0","gh-pages":"^1.0.0","html-loader":"^0.5.1","husky":"^0.14.3","jest":"^20.0.4","jest-css-modules":"^1.1.0","jest-styled-components":"^4.10.0","lint-staged":"^4.0.2","markdown-loader":"^2.0.1","nwb":"^0.18.0","prettier":"^1.5.3","prop-types":"^15.6.0","react":"^15.6.1","react-demo-page":"^0.2.2","react-dom":"^15.6.1","react-test-renderer":"^15.6.1","sinon":"^4.2.2"},"peerDependencies":{"react":"^15.0.0 || ^16.0.0","react-dom":"^15.0.0 || ^16.0.0"}}
 
 /***/ }),
 
@@ -34420,11 +34108,13 @@ Bubble.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.es.js");
-var _templateObject = _taggedTemplateLiteralLoose(["\n  position: absolute;\n  ", ";\n"], ["\n  position: absolute;\n  ", ";\n"]),
-    _templateObject2 = _taggedTemplateLiteralLoose(["\n  bottom: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  ", ";\n"], ["\n  bottom: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  ", ";\n"]),
-    _templateObject3 = _taggedTemplateLiteralLoose(["\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  ", ";\n"], ["\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  ", ";\n"]),
-    _templateObject4 = _taggedTemplateLiteralLoose(["\n  right: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  ", ";\n"], ["\n  right: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  ", ";\n"]),
-    _templateObject5 = _taggedTemplateLiteralLoose(["\n  left: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  ", ";\n"], ["\n  left: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  ", ";\n"]);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_propTypes__ = __webpack_require__("./src/utils/propTypes.js");
+var _templateObject = _taggedTemplateLiteralLoose(["\n  0% {\n      opacity: 0;\n  }\n  100% {\n      opacity: 1;\n  }\n"], ["\n  0% {\n      opacity: 0;\n  }\n  100% {\n      opacity: 1;\n  }\n"]),
+    _templateObject2 = _taggedTemplateLiteralLoose(["\n  position: absolute;\n  ", "\n  ", ";\n"], ["\n  position: absolute;\n  ", "\n  ", ";\n"]),
+    _templateObject3 = _taggedTemplateLiteralLoose(["\n  bottom: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  margin-bottom: ", "px;\n"], ["\n  bottom: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  margin-bottom: ", "px;\n"]),
+    _templateObject4 = _taggedTemplateLiteralLoose(["\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  margin-top: ", "px;\n"], ["\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  margin-top: ", "px;\n"]),
+    _templateObject5 = _taggedTemplateLiteralLoose(["\n  right: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  margin-right: ", "px;\n"], ["\n  right: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  margin-right: ", "px;\n"]),
+    _templateObject6 = _taggedTemplateLiteralLoose(["\n  left: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  margin-left: ", "px;\n"], ["\n  left: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  margin-left: ", "px;\n"]);
 
 function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
@@ -34432,24 +34122,34 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 
 
-var Base = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject, function (props) {
+
+var fadeAnimation = Object(__WEBPACK_IMPORTED_MODULE_2_styled_components__["c" /* keyframes */])(_templateObject);
+
+var createAnimation = function createAnimation(props) {
+  return "animation:\n    " + props.fadeDuration + "ms\n    " + props.fadeEasing + "\n    0s\n    1\n    " + fadeAnimation + "\n  ";
+};
+
+// prettier-ignore
+var Base = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject2, function (props) {
+  return props.fadeDuration && createAnimation(props) + ";";
+}, function (props) {
   return props.zIndex && "z-index: " + props.zIndex + ";";
 });
 
-var Top = Base.extend(_templateObject2, function (props) {
-  return props.offset && "margin-bottom: " + props.offset + "px;";
+var Top = Base.extend(_templateObject3, function (props) {
+  return props.offset;
 });
 
-var Bottom = Base.extend(_templateObject3, function (props) {
-  return props.offset && "margin-top: " + props.offset + "px;";
+var Bottom = Base.extend(_templateObject4, function (props) {
+  return props.offset;
 });
 
-var Left = Base.extend(_templateObject4, function (props) {
-  return props.offset && "margin-right: " + props.offset + "px;";
+var Left = Base.extend(_templateObject5, function (props) {
+  return props.offset;
 });
 
-var Right = Base.extend(_templateObject5, function (props) {
-  return props.offset && "margin-left: " + props.offset + "px;";
+var Right = Base.extend(_templateObject6, function (props) {
+  return props.offset;
 });
 
 var tooltips = {
@@ -34461,25 +34161,35 @@ var tooltips = {
 
 var Tooltip = function Tooltip(_ref) {
   var children = _ref.children,
+      offset = _ref.offset,
       open = _ref.open,
-      zIndex = _ref.zIndex,
       placement = _ref.placement,
-      offset = _ref.offset;
+      zIndex = _ref.zIndex,
+      fadeDuration = _ref.fadeDuration,
+      fadeEasing = _ref.fadeEasing;
 
   var Component = tooltips[placement] || tooltips.top;
   return open && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     Component,
-    { open: open, zIndex: zIndex, offset: offset },
+    {
+      offset: offset,
+      open: open,
+      zIndex: zIndex,
+      fadeDuration: fadeDuration,
+      fadeEasing: fadeEasing
+    },
     children
   );
 };
 
 Tooltip.propTypes = {
   children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.any.isRequired,
+  offset: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
   open: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-  zIndex: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
   placement: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-  offset: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
+  zIndex: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+  fadeEasing: __WEBPACK_IMPORTED_MODULE_3__utils_propTypes__["a" /* easingPropType */],
+  fadeDuration: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Tooltip);
@@ -34498,6 +34208,7 @@ Tooltip.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Arrow__ = __webpack_require__("./src/components/Arrow/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Tooltip__ = __webpack_require__("./src/components/Tooltip/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Bubble__ = __webpack_require__("./src/components/Bubble/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_propTypes__ = __webpack_require__("./src/utils/propTypes.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _templateObject = _taggedTemplateLiteralLoose(["\n  position: relative;\n  display: inline-block;\n"], ["\n  position: relative;\n  display: inline-block;\n"]);
@@ -34511,6 +34222,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
+
 
 
 
@@ -34551,57 +34263,68 @@ var Wrapper = function (_React$Component) {
     var open = this.state.open;
 
     var _props = this.props,
+        offset = _props.offset,
         arrow = _props.arrow,
         background = _props.background,
         border = _props.border,
-        color = _props.color,
         children = _props.children,
+        color = _props.color,
+        content = _props.content,
         fixed = _props.fixed,
         fontFamily = _props.fontFamily,
         fontSize = _props.fontSize,
-        content = _props.content,
         padding = _props.padding,
         placement = _props.placement,
         radius = _props.radius,
         zIndex = _props.zIndex,
-        props = _objectWithoutProperties(_props, ["arrow", "background", "border", "color", "children", "fixed", "fontFamily", "fontSize", "content", "padding", "placement", "radius", "zIndex"]);
+        fadeEasing = _props.fadeEasing,
+        fadeDuration = _props.fadeDuration,
+        props = _objectWithoutProperties(_props, ["offset", "arrow", "background", "border", "children", "color", "content", "fixed", "fontFamily", "fontSize", "padding", "placement", "radius", "zIndex", "fadeEasing", "fadeDuration"]);
 
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    var hasTrigger = children !== undefined && children !== null;
+    var tooltipElement = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_4__components_Tooltip__["a" /* default */],
+      {
+        open: !hasTrigger || fixed ? true : open,
+        placement: placement,
+        offset: offset + arrow,
+        zIndex: zIndex,
+        fadeEasing: fadeEasing,
+        fadeDuration: fadeDuration
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_5__components_Bubble__["a" /* default */],
+        {
+          background: background,
+          border: border,
+          color: color,
+          radius: radius,
+          fontFamily: fontFamily,
+          fontSize: fontSize,
+          padding: padding
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Arrow__["a" /* default */], {
+          width: arrow,
+          background: background,
+          border: border,
+          color: color,
+          placement: placement
+        }),
+        content
+      )
+    );
+    return hasTrigger ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       Container,
       _extends({
-        onMouseEnter: !fixed && this.handleMouseEnter,
-        onMouseLeave: !fixed && this.handleMouseLeave
+        onMouseEnter: !fixed ? this.handleMouseEnter : undefined,
+        onMouseLeave: !fixed ? this.handleMouseLeave : undefined
       }, props),
       children,
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_4__components_Tooltip__["a" /* default */],
-        {
-          open: fixed ? true : open,
-          placement: placement,
-          offset: arrow,
-          zIndex: zIndex
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_5__components_Bubble__["a" /* default */],
-          {
-            background: background,
-            border: border,
-            color: color,
-            radius: radius,
-            fontFamily: fontFamily,
-            fontSize: fontSize,
-            padding: padding
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Arrow__["a" /* default */], {
-            width: arrow,
-            background: background,
-            border: border,
-            color: color,
-            placement: placement
-          }),
-          content
-        )
-      )
+      tooltipElement
+    ) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      Container,
+      props,
+      tooltipElement
     );
   };
 
@@ -34612,12 +34335,15 @@ Wrapper.propTypes = {
   arrow: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
   background: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
   border: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-  children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.any.isRequired,
+  children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.any,
   color: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
   content: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.any.isRequired,
+  fadeDuration: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+  fadeEasing: __WEBPACK_IMPORTED_MODULE_6__utils_propTypes__["a" /* easingPropType */],
   fixed: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
   fontFamily: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
   fontSize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+  offset: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
   padding: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
   placement: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOf(["left", "top", "right", "bottom"]),
   radius: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
@@ -34628,10 +34354,14 @@ Wrapper.defaultProps = {
   arrow: 8,
   background: "#000",
   border: "#000",
+  children: null,
   color: "#fff",
+  fadeDuration: 0,
+  fadeEasing: "linear",
   fixed: false,
   fontFamily: "inherit",
   fontSize: "inherit",
+  offset: 0,
   padding: 16,
   placement: "top",
   radius: 0,
@@ -34644,6 +34374,34 @@ __WEBPACK_IMPORTED_MODULE_5__components_Bubble__["a" /* default */].displayName 
 __WEBPACK_IMPORTED_MODULE_3__components_Arrow__["a" /* default */].displayName = "Tooltip.Arrow";
 
 /* harmony default export */ __webpack_exports__["a"] = (Wrapper);
+
+/***/ }),
+
+/***/ "./src/utils/propTypes.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return easingPropType; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
+
+
+var normalEasingPropType = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOf(["linear", "ease", "ease-in", "ease-out", "ease-in-out"]);
+
+// A regex to test if a string matches the CSS cubic-beizer format
+// cubic-bezier(n,n,n,n)
+// See: https://regex101.com/r/n2fAzV for details
+var cubicEasingRegex = /^cubic-bezier\((-?((\d*\.\d+)|\d+),){3}(-?(\d*\.\d+)|\d+)\)$/;
+
+var cubicEasingPropType = function cubicEasingPropType(props, propName, componentName) {
+  if (!cubicEasingRegex.test(props[propName])) {
+    return new Error("Invalid prop `" + propName + "` supplied to" + " `" + componentName + "`. Validation failed.");
+  }
+};
+
+var easingPropType = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([normalEasingPropType, cubicEasingPropType]);
+
+
 
 /***/ }),
 
