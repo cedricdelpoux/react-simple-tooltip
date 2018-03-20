@@ -68,6 +68,7 @@ See [Demo page][github-page]
 | border       | PropTypes.string                                    | Tooltip border color               | "#000"    |
 | color        | PropTypes.string                                    | Tooltip text color                 | "#fff"    |
 | content      | PropTypes.any.isRequired                            | Tooltip content                    | -         |
+| exitTimeout  | PropTypes.number                                    | Persistence, in milliseconds       | 0         |
 | fadeDuration | PropTypes.number                                    | Fade duration, in milliseconds     | 0         |
 | fadeEasing   | PropTypes.string                                    | Fade easing                        | "linear"  |
 | fixed        | PropTypes.bool                                      | Tooltip behavior, hover by default | false     |
