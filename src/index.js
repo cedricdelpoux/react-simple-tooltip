@@ -7,6 +7,8 @@ import Tooltip from "./components/Tooltip"
 import Bubble from "./components/Bubble"
 import {easingPropType} from "./utils/propTypes"
 
+/*eslint-env browser*/
+
 const Container = styled.div`
   position: relative;
   display: inline-block;
@@ -29,7 +31,14 @@ class Wrapper extends React.Component {
   }
 
   handleMouseLeave() {
-    this.setState({open: false})
+    const {exitTimeout} = this.props
+    if (exitTimeout) {
+      setTimeout(() => {
+        this.setState({open: false})
+      }, 1000)
+    } else {
+      this.setState({open: false})
+    }
   }
 
   render() {
@@ -105,6 +114,7 @@ Wrapper.propTypes = {
   children: PropTypes.any,
   color: PropTypes.string,
   content: PropTypes.any.isRequired,
+  exitTimeout: PropTypes.number,
   fadeDuration: PropTypes.number,
   fadeEasing: easingPropType,
   fixed: PropTypes.bool,
@@ -123,6 +133,7 @@ Wrapper.defaultProps = {
   border: "#000",
   children: null,
   color: "#fff",
+  exitTimeout: 0,
   fadeDuration: 0,
   fadeEasing: "linear",
   fixed: false,

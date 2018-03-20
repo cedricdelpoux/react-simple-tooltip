@@ -34,6 +34,26 @@ const routes = [
     label: "Demo",
   },
   {
+    path: "/timeout",
+    exact: true,
+    demo: {
+      component: (
+        <ReactSimpleTooltip
+          exitTimeout={1000}
+          placement="top"
+          content="😎"
+          arrow={15}
+        >
+          <Zone>Hover me !</Zone>
+        </ReactSimpleTooltip>
+      ),
+      displayName: "ReactSimpleTooltip",
+      hiddenProps: ["children"],
+      html: demoHtml,
+    },
+    label: "Timeout",
+  },
+  {
     path: "/standalone",
     demo: {
       component: (
