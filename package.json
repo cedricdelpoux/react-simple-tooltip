@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tooltip",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "author": {
     "name": "Cédric Delpoux",
     "email": "xuopled@gmail.com"
@@ -12,7 +12,6 @@
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "style": "umd/index.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xuopled/react-simple-tooltip.git"

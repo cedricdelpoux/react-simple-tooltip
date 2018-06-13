@@ -1,3 +1,7 @@
+# 2.3.2 — 2018-06-13
+
+* Removes: index.css in package.json
+
 # 2.3.1 — 2018-03-12
 
 * Fixed: Removed warning when onMouseEnter and Leave are booleans instead of undefined by @vincentdesmares
