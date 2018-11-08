@@ -18,14 +18,14 @@ const createAnimation = props => {
     ${props.fadeEasing}
     0s
     1
-    ${fadeAnimation}
+    ${fadeAnimation};
   `
 }
 
 // prettier-ignore
 const Base = styled.div`
   position: absolute;
-  ${props => props.fadeDuration && `${createAnimation(props)};`}
+  ${props => props.fadeDuration && props.fadeDuration > 0 && `${createAnimation(props)}`};
   ${props => props.zIndex && `z-index: ${props.zIndex};`};
 `
 
