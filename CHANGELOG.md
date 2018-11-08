@@ -1,3 +1,9 @@
+# 2.3.3 — 2018-11-08
+
+* Fixed: z-index prop
+* Updated: Dependencies
+
+
 # 2.3.2 — 2018-06-13
 
 * Removes: index.css in package.json
