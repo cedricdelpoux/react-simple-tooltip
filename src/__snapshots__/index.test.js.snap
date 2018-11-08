@@ -38,7 +38,7 @@ exports[`Tooltip Should render without children 1`] = `
           zIndex={1}
         >
           <div
-            className="sc-bZQynM hQvhch"
+            className="sc-bZQynM bSMPxA"
             offset={8}
             open={true}
           >
