@@ -36,7 +36,7 @@ exports[`Tooltip renders 1`] = `
           position: absolute;
           ",
               [Function],
-              "
+              ";
           ",
               [Function],
               ";
@@ -114,7 +114,7 @@ exports[`Tooltip renders 2`] = `
           position: absolute;
           ",
               [Function],
-              "
+              ";
           ",
               [Function],
               ";
@@ -192,7 +192,7 @@ exports[`Tooltip renders 3`] = `
           position: absolute;
           ",
               [Function],
-              "
+              ";
           ",
               [Function],
               ";
@@ -270,7 +270,7 @@ exports[`Tooltip renders 4`] = `
           position: absolute;
           ",
               [Function],
-              "
+              ";
           ",
               [Function],
               ";
@@ -355,7 +355,7 @@ exports[`Tooltip should create a Tooltip with an animation 1`] = `
           position: absolute;
           ",
               [Function],
-              "
+              ";
           ",
               [Function],
               ";

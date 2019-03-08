@@ -1,12 +1,12 @@
 var extraWebpackConfig = {
   module: {
     rules: [
-      /*{
+      {
         test: /\.js$/,
         enforce: "pre",
         loader: "eslint-loader",
         include: /src/,
-      },*/
+      },
       {
         test: /\.md$/,
         loader: "html-loader!markdown-loader",
@@ -20,6 +20,12 @@ var extraWebpackConfig = {
 module.exports = {
   type: "react-component",
   polyfill: false,
+  babel: {
+    plugins: [
+      "babel-plugin-styled-components",
+      "babel-plugin-transform-object-rest-spread",
+    ],
+  },
   npm: {
     cjs: true,
     esModules: true,

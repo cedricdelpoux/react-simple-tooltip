@@ -35,22 +35,23 @@ class Wrapper extends React.Component {
   render() {
     const {open} = this.state
     const {
-      offset,
       arrow,
       background,
       border,
       children,
       color,
       content,
+      customCss,
+      fadeDuration,
+      fadeEasing,
       fixed,
       fontFamily,
       fontSize,
+      offset,
       padding,
       placement,
       radius,
       zIndex,
-      fadeEasing,
-      fadeDuration,
       ...props
     } = this.props
     const hasTrigger = children !== undefined && children !== null
@@ -87,13 +88,16 @@ class Wrapper extends React.Component {
       <Container
         onMouseEnter={!fixed ? this.handleMouseEnter : undefined}
         onMouseLeave={!fixed ? this.handleMouseLeave : undefined}
+        css={customCss}
         {...props}
       >
         {children}
         {tooltipElement}
       </Container>
     ) : (
-      <Container {...props}>{tooltipElement}</Container>
+      <Container css={customCss} {...props}>
+        {tooltipElement}
+      </Container>
     )
   }
 }
@@ -105,6 +109,7 @@ Wrapper.propTypes = {
   children: PropTypes.any,
   color: PropTypes.string,
   content: PropTypes.any.isRequired,
+  customCss: PropTypes.any,
   fadeDuration: PropTypes.number,
   fadeEasing: easingPropType,
   fixed: PropTypes.bool,

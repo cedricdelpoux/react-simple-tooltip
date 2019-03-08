@@ -55,6 +55,25 @@ const App = () => (
 )
 ```
 
+### Custom css
+
+```javascript
+import React from "react"
+import Tooltip from "react-simple-tooltip"
+import {css} from "styled-components"
+
+const App = () => (
+  <Tooltip
+    content="😎"
+    customCss={css`
+      white-space: nowrap;
+    `}
+  >
+    <button>Hover me !</button>
+  </Tooltip>
+)
+```
+
 ## Demo
 
 See [Demo page][github-page]
@@ -68,6 +87,7 @@ See [Demo page][github-page]
 | border       | PropTypes.string                                    | Tooltip border color               | "#000"    |
 | color        | PropTypes.string                                    | Tooltip text color                 | "#fff"    |
 | content      | PropTypes.any.isRequired                            | Tooltip content                    | -         |
+| customCss    | PropTypes.any                                       | Custom css                         | -         |
 | fadeDuration | PropTypes.number                                    | Fade duration, in milliseconds     | 0         |
 | fadeEasing   | PropTypes.string                                    | Fade easing                        | "linear"  |
 | fixed        | PropTypes.bool                                      | Tooltip behavior, hover by default | false     |
@@ -80,9 +100,9 @@ See [Demo page][github-page]
 
 ## Contributing
 
-* ⇄ Pull/Merge requests and ★ Stars are always welcome.
-* For bugs and feature requests, please [create an issue][github-issue].
-* Pull requests must be accompanied by passing automated tests (`npm test`).
+- ⇄ Pull/Merge requests and ★ Stars are always welcome.
+- For bugs and feature requests, please [create an issue][github-issue].
+- Pull requests must be accompanied by passing automated tests (`npm test`).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines
 

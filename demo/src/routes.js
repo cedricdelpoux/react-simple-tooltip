@@ -23,7 +23,12 @@ const routes = [
     exact: true,
     demo: {
       component: (
-        <ReactSimpleTooltip placement="top" content="😎" arrow={15}>
+        <ReactSimpleTooltip
+          placement="top"
+          content="😎"
+          arrow={15}
+          customCss="whitespace: nowrap;"
+        >
           <Zone>Hover me !</Zone>
         </ReactSimpleTooltip>
       ),

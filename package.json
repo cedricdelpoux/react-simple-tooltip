@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tooltip",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "author": {
     "name": "Cédric Delpoux",
     "email": "xuopled@gmail.com"
@@ -44,6 +44,7 @@
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.9.0",

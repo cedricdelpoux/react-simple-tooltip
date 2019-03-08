@@ -1,3 +1,7 @@
+# 2.5.0 — 2019-03-08
+
+- Added: `customCss` prop
+
 # 2.4.0 — 2019-03-08
 
 - Updated: dependencies

@@ -74,13 +74,13 @@ exports[`Tooltip Should render without children 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bZQynM",
                     "isStatic": false,
-                    "lastClassName": "hQvhch",
+                    "lastClassName": "bSMPxA",
                     "rules": Array [
                       "
                   position: absolute;
                   ",
                       [Function],
-                      "
+                      ";
                   ",
                       [Function],
                       ";
@@ -112,7 +112,7 @@ exports[`Tooltip Should render without children 1`] = `
               zIndex={1}
             >
               <div
-                className="sc-EHOje sc-bZQynM hQvhch"
+                className="sc-EHOje sc-bZQynM bSMPxA"
                 offset={8}
               >
                 <Tooltip.Bubble
