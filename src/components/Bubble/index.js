@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-const Bubble = styled.div`
+const Bubble = styled("div")`
   color: ${props => (props.color ? props.color : "inherit")};
   background: ${props => (props.background ? props.background : "inherit")};
   border-radius: ${props => (props.radius ? `${props.radius}px` : 0)};

@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled, {keyframes} from "styled-components"
+import styled, {css, keyframes} from "styled-components"
 import {easingPropType} from "../../utils/propTypes"
 
 const fadeAnimation = keyframes`
@@ -12,45 +12,40 @@ const fadeAnimation = keyframes`
   }
 `
 
-const createAnimation = props => {
-  return `animation:
-    ${props.fadeDuration}ms
-    ${props.fadeEasing}
-    0s
-    1
-    ${fadeAnimation};
-  `
-}
+const animation = props => css`
+  animation: ${props.fadeDuration}ms ${props.fadeEasing} 0s 1 ${fadeAnimation};
+`
 
 // prettier-ignore
-const Base = styled.div`
+const Base = styled("div")`
   position: absolute;
-  ${props => props.fadeDuration && props.fadeDuration > 0 && `${createAnimation(props)}`};
+  ${props => {
+    return props.fadeDuration && props.fadeDuration > 0 && animation(props)}}
   ${props => props.zIndex && `z-index: ${props.zIndex};`};
 `
 
-const Top = Base.extend`
+const Top = styled(Base)`
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: ${props => props.offset}px;
 `
 
-const Bottom = Base.extend`
+const Bottom = styled(Base)`
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   margin-top: ${props => props.offset}px;
 `
 
-const Left = Base.extend`
+const Left = styled(Base)`
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
   margin-right: ${props => props.offset}px;
 `
 
-const Right = Base.extend`
+const Right = styled(Base)`
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
@@ -78,7 +73,6 @@ const Tooltip = ({
     open && (
       <Component
         offset={offset}
-        open={open}
         zIndex={zIndex}
         fadeDuration={fadeDuration}
         fadeEasing={fadeEasing}

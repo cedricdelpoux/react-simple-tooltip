@@ -18,19 +18,63 @@ exports[`Tooltip renders 1`] = `
   placement="bottom"
   zIndex={8}
 >
-  <styled.div
+  <Styled(styled.div)
     offset={8}
-    open={true}
     zIndex={8}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+          position: absolute;
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              ";
+        ",
+              "
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-top: ",
+              [Function],
+              "px;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       offset={8}
-      open={true}
+      zIndex={8}
     >
-      😎
-    </div>
-  </styled.div>
+      <div
+        className="c0"
+        offset={8}
+      >
+        😎
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
 </Tooltip>
 `;
 
@@ -52,19 +96,63 @@ exports[`Tooltip renders 2`] = `
   placement="top"
   zIndex={8}
 >
-  <styled.div
+  <Styled(styled.div)
     offset={8}
-    open={true}
     zIndex={8}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+          position: absolute;
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              ";
+        ",
+              "
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-bottom: ",
+              [Function],
+              "px;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       offset={8}
-      open={true}
+      zIndex={8}
     >
-      😎
-    </div>
-  </styled.div>
+      <div
+        className="c0"
+        offset={8}
+      >
+        😎
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
 </Tooltip>
 `;
 
@@ -86,19 +174,63 @@ exports[`Tooltip renders 3`] = `
   placement="right"
   zIndex={8}
 >
-  <styled.div
+  <Styled(styled.div)
     offset={8}
-    open={true}
     zIndex={8}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+          position: absolute;
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              ";
+        ",
+              "
+          left: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: ",
+              [Function],
+              "px;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       offset={8}
-      open={true}
+      zIndex={8}
     >
-      😎
-    </div>
-  </styled.div>
+      <div
+        className="c0"
+        offset={8}
+      >
+        😎
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
 </Tooltip>
 `;
 
@@ -120,19 +252,63 @@ exports[`Tooltip renders 4`] = `
   placement="left"
   zIndex={8}
 >
-  <styled.div
+  <Styled(styled.div)
     offset={8}
-    open={true}
     zIndex={8}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+          position: absolute;
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              ";
+        ",
+              "
+          right: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-right: ",
+              [Function],
+              "px;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       offset={8}
-      open={true}
+      zIndex={8}
     >
-      😎
-    </div>
-  </styled.div>
+      <div
+        className="c0"
+        offset={8}
+      >
+        😎
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
 </Tooltip>
 `;
 
@@ -157,20 +333,66 @@ exports[`Tooltip should create a Tooltip with an animation 1`] = `
   open={true}
   zIndex={8}
 >
-  <styled.div
+  <Styled(styled.div)
     fadeDuration={100}
     fadeEasing="ease-out"
     offset={8}
-    open={true}
     zIndex={8}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      fadeDuration={100}
+      fadeEasing="ease-out"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+          position: absolute;
+          ",
+              [Function],
+              "
+          ",
+              [Function],
+              ";
+        ",
+              "
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-bottom: ",
+              [Function],
+              "px;
+        ",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       offset={8}
-      open={true}
+      zIndex={8}
     >
-      😎
-    </div>
-  </styled.div>
+      <div
+        className="c0"
+        offset={8}
+      >
+        😎
+      </div>
+    </StyledComponent>
+  </Styled(styled.div)>
 </Tooltip>
 `;

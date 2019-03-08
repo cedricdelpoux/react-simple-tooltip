@@ -25,7 +25,7 @@ describe("Tooltip", () => {
     ]
 
     wrappers.forEach(wrapper => {
-      expect(wrapper).not.toHaveStyleRule("animation", /.*/)
+      expect(wrapper).not.toHaveStyleRule("animation")
       expect(wrapper).toMatchSnapshot()
     })
   })

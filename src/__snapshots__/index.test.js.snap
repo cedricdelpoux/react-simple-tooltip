@@ -19,70 +19,261 @@ exports[`Tooltip Should render without children 1`] = `
   zIndex={1}
 >
   <styled.div>
-    <div
-      className="sc-gZMcBi daZGjV"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gZMcBi",
+            "isStatic": true,
+            "lastClassName": "daZGjV",
+            "rules": Array [
+              "
+          position: relative;
+          display: inline-block;
+        ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gZMcBi",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <Tooltip
-        fadeDuration={0}
-        fadeEasing="linear"
-        offset={8}
-        open={true}
-        placement="top"
-        zIndex={1}
+      <div
+        className="sc-gZMcBi daZGjV"
       >
-        <styled.div
+        <Tooltip
           fadeDuration={0}
           fadeEasing="linear"
           offset={8}
           open={true}
+          placement="top"
           zIndex={1}
         >
-          <div
-            className="sc-bZQynM bSMPxA"
+          <Styled(styled.div)
+            fadeDuration={0}
+            fadeEasing="linear"
             offset={8}
-            open={true}
+            zIndex={1}
           >
-            <Tooltip.Bubble
-              background="#000"
-              border="#000"
-              color="#fff"
-              fontFamily="inherit"
-              fontSize="inherit"
-              padding={16}
-              radius={0}
+            <StyledComponent
+              fadeDuration={0}
+              fadeEasing="linear"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bZQynM",
+                    "isStatic": false,
+                    "lastClassName": "hQvhch",
+                    "rules": Array [
+                      "
+                  position: absolute;
+                  ",
+                      [Function],
+                      "
+                  ",
+                      [Function],
+                      ";
+                ",
+                      "
+                  bottom: 100%;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  margin-bottom: ",
+                      [Function],
+                      "px;
+                ",
+                    ],
+                  },
+                  "displayName": "Styled(styled.div)",
+                  "foldedComponentIds": Array [
+                    "sc-EHOje",
+                  ],
+                  "render": [Function],
+                  "styledComponentId": "sc-bZQynM",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              offset={8}
+              zIndex={1}
             >
               <div
-                className="sc-iwsKbI jAfIlk"
-                color="#fff"
-                fontFamily="inherit"
-                fontSize="inherit"
-                radius={0}
+                className="sc-EHOje sc-bZQynM hQvhch"
+                offset={8}
               >
-                <Tooltip.Arrow
+                <Tooltip.Bubble
                   background="#000"
                   border="#000"
                   color="#fff"
-                  placement="top"
-                  width={8}
+                  fontFamily="inherit"
+                  fontSize="inherit"
+                  padding={16}
+                  radius={0}
                 >
-                  <styled.div
+                  <StyledComponent
                     background="#000"
                     border="#000"
-                    width={8}
+                    color="#fff"
+                    fontFamily="inherit"
+                    fontSize="inherit"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-iwsKbI",
+                          "isStatic": false,
+                          "lastClassName": "jAfIlk",
+                          "rules": Array [
+                            "
+                        color: ",
+                            [Function],
+                            ";
+                        background: ",
+                            [Function],
+                            ";
+                        border-radius: ",
+                            [Function],
+                            ";
+                        border: 1px solid ",
+                            [Function],
+                            ";
+                        padding: ",
+                            [Function],
+                            ";
+                        font-size: ",
+                            [Function],
+                            ";
+                        font-family: ",
+                            [Function],
+                            ";
+                      ",
+                          ],
+                        },
+                        "displayName": "Tooltip.Bubble",
+                        "foldedComponentIds": Array [],
+                        "propTypes": Object {
+                          "background": [Function],
+                          "color": [Function],
+                          "fontFamily": [Function],
+                          "fontSize": [Function],
+                          "padding": [Function],
+                          "radius": [Function],
+                        },
+                        "render": [Function],
+                        "styledComponentId": "sc-iwsKbI",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    padding={16}
+                    radius={0}
                   >
                     <div
-                      className="sc-htpNat flyQrw"
-                      width={8}
-                    />
-                  </styled.div>
-                </Tooltip.Arrow>
-                my content
+                      className="sc-iwsKbI jAfIlk"
+                      color="#fff"
+                      fontFamily="inherit"
+                      fontSize="inherit"
+                      radius={0}
+                    >
+                      <Tooltip.Arrow
+                        background="#000"
+                        border="#000"
+                        color="#fff"
+                        placement="top"
+                        width={8}
+                      >
+                        <Styled(styled.div)
+                          background="#000"
+                          border="#000"
+                          width={8}
+                        >
+                          <StyledComponent
+                            background="#000"
+                            border="#000"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-htpNat",
+                                  "isStatic": false,
+                                  "lastClassName": "flyQrw",
+                                  "rules": Array [
+                                    "
+                                position: absolute;
+                                width: ",
+                                    [Function],
+                                    "px;
+                                height: ",
+                                    [Function],
+                                    "px;
+                                background: ",
+                                    [Function],
+                                    ";
+                              ",
+                                    "
+                                transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+                                top: 100%;
+                                left: 50%;
+                                border-right: 1px solid ",
+                                    [Function],
+                                    ";
+                                border-bottom: 1px solid ",
+                                    [Function],
+                                    ";
+                              ",
+                                  ],
+                                },
+                                "displayName": "Styled(styled.div)",
+                                "foldedComponentIds": Array [
+                                  "sc-bdVaJa",
+                                ],
+                                "render": [Function],
+                                "styledComponentId": "sc-htpNat",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            width={8}
+                          >
+                            <div
+                              className="sc-bdVaJa sc-htpNat flyQrw"
+                              width={8}
+                            />
+                          </StyledComponent>
+                        </Styled(styled.div)>
+                      </Tooltip.Arrow>
+                      my content
+                    </div>
+                  </StyledComponent>
+                </Tooltip.Bubble>
               </div>
-            </Tooltip.Bubble>
-          </div>
-        </styled.div>
-      </Tooltip>
-    </div>
+            </StyledComponent>
+          </Styled(styled.div)>
+        </Tooltip>
+      </div>
+    </StyledComponent>
   </styled.div>
 </Tooltip.Wrapper>
 `;
@@ -109,23 +300,54 @@ exports[`Tooltip should render 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="sc-gZMcBi daZGjV"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gZMcBi",
+            "isStatic": true,
+            "lastClassName": "daZGjV",
+            "rules": Array [
+              "
+          position: relative;
+          display: inline-block;
+        ",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gZMcBi",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
-      <button>
-        Hover Me
-      </button>
-      <Tooltip
-        fadeDuration={0}
-        fadeEasing="linear"
-        offset={8}
-        open={false}
-        placement="top"
-        zIndex={1}
-      />
-    </div>
+      <div
+        className="sc-gZMcBi daZGjV"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <button>
+          Hover Me
+        </button>
+        <Tooltip
+          fadeDuration={0}
+          fadeEasing="linear"
+          offset={8}
+          open={false}
+          placement="top"
+          zIndex={1}
+        />
+      </div>
+    </StyledComponent>
   </styled.div>
 </Tooltip.Wrapper>
 `;

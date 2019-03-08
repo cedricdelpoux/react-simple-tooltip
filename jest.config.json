@@ -7,5 +7,6 @@
   "moduleNameMapper": {
     "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
   },
+  "setupTestFrameworkScriptFile": "<rootDir>/setupTest",
   "snapshotSerializers": ["enzyme-to-json/serializer"]
 }
