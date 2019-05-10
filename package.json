@@ -31,11 +31,11 @@
     "deploy": "gh-pages -d demo/dist",
     "lint": "eslint src demo/src",
     "precommit": "lint-staged",
-    "prepublish": "npm run clean && npm run build",
+    "prepublish": "yarn run clean && yarn run build",
     "start": "nwb serve-react-demo --port 1190",
     "test": "jest --config jest.config.json --colors --no-cache",
     "test:snapshot:update": "jest --config jest.config.json --updateSnapshot",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "yarn run test -- --watch"
   },
   "dependencies": {
     "@emotion/core": "^10.0.10"
