@@ -1,15 +1,11 @@
 /** @jsx jsx */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/display-name */
-import React from "react"
 import ReactSimpleTooltip from "../../src"
 import {css, jsx} from "@emotion/core"
 
 import demoHtml from "./demo.md"
 import readmeHtml from "../../README.md"
 
+// eslint-disable-next-line react/prop-types
 const Zone = ({children}) => (
   <div
     css={css`
