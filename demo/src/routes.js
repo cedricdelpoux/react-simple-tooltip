@@ -1,15 +1,26 @@
+/** @jsx jsx */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/display-name */
 import React from "react"
 import ReactSimpleTooltip from "../../src"
-import styled from "styled-components"
+import {css, jsx} from "@emotion/core"
 
 import demoHtml from "./demo.md"
 import readmeHtml from "../../README.md"
 
-const Zone = styled.div`
-  background: #44b39d;
-  color: #fff;
-  padding: 10px;
-`
+const Zone = ({children}) => (
+  <div
+    css={css`
+      background: #44b39d;
+      color: #fff;
+      padding: 10px;
+    `}
+  >
+    {children}
+  </div>
+)
 
 const data = []
 

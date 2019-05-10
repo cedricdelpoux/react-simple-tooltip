@@ -1,13 +1,14 @@
+/** @jsx jsx */
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
+import {css, jsx} from "@emotion/core"
 
 import Arrow from "./components/Arrow"
 import Tooltip from "./components/Tooltip"
 import Bubble from "./components/Bubble"
 import {easingPropType} from "./utils/propTypes"
 
-const Container = styled.div`
+const ContainerCss = css`
   position: relative;
   display: inline-block;
 `
@@ -85,19 +86,28 @@ class Wrapper extends React.Component {
       </Tooltip>
     )
     return hasTrigger ? (
-      <Container
+      <div
         onMouseEnter={!fixed ? this.handleMouseEnter : undefined}
         onMouseLeave={!fixed ? this.handleMouseLeave : undefined}
-        css={customCss}
+        css={css`
+          ${ContainerCss};
+          ${customCss}
+        `}
         {...props}
       >
         {children}
         {tooltipElement}
-      </Container>
+      </div>
     ) : (
-      <Container css={customCss} {...props}>
+      <div
+        css={css`
+          ${ContainerCss};
+          ${customCss}
+        `}
+        {...props}
+      >
         {tooltipElement}
-      </Container>
+      </div>
     )
   }
 }

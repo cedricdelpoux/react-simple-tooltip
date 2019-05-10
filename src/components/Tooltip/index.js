@@ -1,6 +1,11 @@
+/** @jsx jsx */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/display-name */
 import React from "react"
 import PropTypes from "prop-types"
-import styled, {css, keyframes} from "styled-components"
+import {css, keyframes, jsx} from "@emotion/core"
 import {easingPropType} from "../../utils/propTypes"
 
 const fadeAnimation = keyframes`
@@ -17,45 +22,50 @@ const animation = props => css`
 `
 
 // prettier-ignore
-const Base = styled("div")`
+// eslint-disable-next-line no-unused-vars
+const Base = (props) => css`
   position: absolute;
-  ${props => props.fadeDuration && props.fadeDuration > 0 && animation(props)};
-  ${props => props.zIndex && `z-index: ${props.zIndex};`};
+  ${props.fadeDuration && props.fadeDuration > 0 && animation(props)};
+  ${props.zIndex && `z-index: ${props.zIndex};`};
 `
 
-const Top = styled(Base)`
+const Top = props => css`
+  ${Base(props)};
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: ${props => props.offset}px;
+  margin-bottom: ${props.offset}px;
 `
 
-const Bottom = styled(Base)`
+const Bottom = props => css`
+  ${Base(props)};
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: ${props => props.offset}px;
+  margin-top: ${props.offset}px;
 `
 
-const Left = styled(Base)`
+const Left = props => css`
+  ${Base(props)};
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
-  margin-right: ${props => props.offset}px;
+  margin-right: ${props.offset}px;
 `
 
-const Right = styled(Base)`
+const Right = props => css`
+  ${Base(props)};
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: ${props => props.offset}px;
+  margin-left: ${props.offset}px;
 `
 
 const tooltips = {
-  left: Left,
-  top: Top,
-  right: Right,
-  bottom: Bottom,
+  left: ({children, ...props}) => <div css={Left(props)}>{children}</div>,
+  top: ({children, ...props}) => <div css={Top(props)}>{children}</div>,
+  right: ({children, ...props}) => <div css={Right(props)}>{children}</div>,
+  bottom: ({children, ...props}) => <div css={Bottom(props)}>{children}</div>,
 }
 
 const Tooltip = ({
