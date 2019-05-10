@@ -1,9 +1,4 @@
 /** @jsx jsx */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/display-name */
-import React from "react"
 import PropTypes from "prop-types"
 import {css, keyframes, jsx} from "@emotion/core"
 import {easingPropType} from "../../utils/propTypes"
@@ -22,7 +17,6 @@ const animation = props => css`
 `
 
 // prettier-ignore
-// eslint-disable-next-line no-unused-vars
 const Base = (props) => css`
   position: absolute;
   ${props.fadeDuration && props.fadeDuration > 0 && animation(props)};
@@ -61,11 +55,26 @@ const Right = props => css`
   margin-left: ${props.offset}px;
 `
 
+const BaseToolTop = ({fn, children, ...props}) => (
+  <div css={fn(props)}>{children}</div>
+)
+
+BaseToolTop.propTypes = {
+  fn: PropTypes.func.isRequired,
+  children: PropTypes.any.isRequired,
+  offset: PropTypes.number,
+  open: PropTypes.bool,
+  zIndex: PropTypes.number,
+  fadeEasing: easingPropType,
+  fadeDuration: PropTypes.number,
+}
+
 const tooltips = {
-  left: ({children, ...props}) => <div css={Left(props)}>{children}</div>,
-  top: ({children, ...props}) => <div css={Top(props)}>{children}</div>,
-  right: ({children, ...props}) => <div css={Right(props)}>{children}</div>,
-  bottom: ({children, ...props}) => <div css={Bottom(props)}>{children}</div>,
+  left: ({children, ...props}) => BaseToolTop({fn: Left, children, ...props}),
+  top: ({children, ...props}) => BaseToolTop({fn: Top, children, ...props}),
+  right: ({children, ...props}) => BaseToolTop({fn: Right, children, ...props}),
+  bottom: ({children, ...props}) =>
+    BaseToolTop({fn: Bottom, children, ...props}),
 }
 
 const Tooltip = ({

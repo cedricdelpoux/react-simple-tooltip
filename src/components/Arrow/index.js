@@ -1,9 +1,4 @@
 /** @jsx jsx */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/display-name */
-import React from "react"
 import PropTypes from "prop-types"
 import {css, jsx} from "@emotion/core"
 
@@ -48,11 +43,20 @@ const Right = props => css`
   border-top: 1px solid ${props.border};
 `
 
+const BaseArrow = ({fn, ...props}) => <div css={fn(props)} />
+
+BaseArrow.propTypes = {
+  fn: PropTypes.func.isRequired,
+  background: PropTypes.string.isRequired,
+  border: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+}
+
 const arrows = {
-  left: props => <div css={Right(props)} />,
-  top: props => <div css={Down(props)} />,
-  right: props => <div css={Left(props)} />,
-  bottom: props => <div css={Up(props)} />,
+  left: props => BaseArrow({fn: Right, ...props}),
+  top: props => BaseArrow({fn: Down, ...props}),
+  right: props => BaseArrow({fn: Left, ...props}),
+  bottom: props => BaseArrow({fn: Up, ...props}),
 }
 
 const Arrow = ({background, border, placement, width}) => {
