@@ -1,3 +1,7 @@
+# 2.6.0 — 2019-05-23
+
+- Updated: Replacing styled-components with emotion/core
+
 # 2.5.0 — 2019-03-08
 
 - Added: `customCss` prop
