@@ -1,15 +1,22 @@
-import React from "react"
+/** @jsx jsx */
 import ReactSimpleTooltip from "../../src"
-import styled from "styled-components"
+import {css, jsx} from "@emotion/core"
 
 import demoHtml from "./demo.md"
 import readmeHtml from "../../README.md"
 
-const Zone = styled.div`
-  background: #44b39d;
-  color: #fff;
-  padding: 10px;
-`
+// eslint-disable-next-line react/prop-types
+const Zone = ({children}) => (
+  <div
+    css={css`
+      background: #44b39d;
+      color: #fff;
+      padding: 10px;
+    `}
+  >
+    {children}
+  </div>
+)
 
 const data = []
 

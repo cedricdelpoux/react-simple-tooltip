@@ -21,10 +21,7 @@ module.exports = {
   type: "react-component",
   polyfill: false,
   babel: {
-    plugins: [
-      "babel-plugin-styled-components",
-      "babel-plugin-transform-object-rest-spread",
-    ],
+    plugins: ["babel-plugin-transform-object-rest-spread"],
   },
   npm: {
     cjs: true,

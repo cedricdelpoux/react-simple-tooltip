@@ -1,7 +1,11 @@
 import {mount} from "enzyme"
 import React from "react"
 import Tooltip from "./index"
-import "jest-styled-components"
+import * as emotion from "emotion"
+import {matchers, createSerializer} from "jest-emotion"
+
+expect.extend(matchers)
+expect.addSnapshotSerializer(createSerializer(emotion))
 
 const tooltipProps = {
   offset: 8,

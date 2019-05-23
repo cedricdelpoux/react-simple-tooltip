@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip renders 1`] = `
-.c0 {
+.emotion-0 {
+  position: absolute;
+  z-index: 8;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+
+.emotion-0 {
   position: absolute;
   z-index: 8;
   top: 100%;
@@ -18,68 +29,55 @@ exports[`Tooltip renders 1`] = `
   placement="bottom"
   zIndex={8}
 >
-  <Styled(styled.div)
+  <bottom
     offset={8}
     zIndex={8}
   >
-    <StyledComponent
-      forwardedComponent={
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BaseToolTop"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+          "map": undefined,
+          "name": "10m8uvq",
+          "next": undefined,
+          "styles": "
+          
           position: absolute;
-          ",
-              [Function],
-              ";
-          ",
-              [Function],
-              ";
-        ",
-              "
+          ;
+          z-index: 8;;
+        ;
           top: 100%;
           left: 50%;
           transform: translateX(-50%);
-          margin-top: ",
-              [Function],
-              "px;
+          margin-top: 8px;
         ",
-            ],
-          },
-          "displayName": "Styled(styled.div)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
         }
       }
-      forwardedRef={null}
-      offset={8}
-      zIndex={8}
     >
       <div
-        className="c0"
-        offset={8}
+        className="emotion-0"
       >
         😎
       </div>
-    </StyledComponent>
-  </Styled(styled.div)>
+    </EmotionCssPropInternal>
+  </bottom>
 </Tooltip>
 `;
 
 exports[`Tooltip renders 2`] = `
-.c0 {
+.emotion-0 {
+  position: absolute;
+  z-index: 8;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+.emotion-0 {
   position: absolute;
   z-index: 8;
   bottom: 100%;
@@ -96,68 +94,55 @@ exports[`Tooltip renders 2`] = `
   placement="top"
   zIndex={8}
 >
-  <Styled(styled.div)
+  <top
     offset={8}
     zIndex={8}
   >
-    <StyledComponent
-      forwardedComponent={
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BaseToolTop"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+          "map": undefined,
+          "name": "158wz1b",
+          "next": undefined,
+          "styles": "
+          
           position: absolute;
-          ",
-              [Function],
-              ";
-          ",
-              [Function],
-              ";
-        ",
-              "
+          ;
+          z-index: 8;;
+        ;
           bottom: 100%;
           left: 50%;
           transform: translateX(-50%);
-          margin-bottom: ",
-              [Function],
-              "px;
+          margin-bottom: 8px;
         ",
-            ],
-          },
-          "displayName": "Styled(styled.div)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
         }
       }
-      forwardedRef={null}
-      offset={8}
-      zIndex={8}
     >
       <div
-        className="c0"
-        offset={8}
+        className="emotion-0"
       >
         😎
       </div>
-    </StyledComponent>
-  </Styled(styled.div)>
+    </EmotionCssPropInternal>
+  </top>
 </Tooltip>
 `;
 
 exports[`Tooltip renders 3`] = `
-.c0 {
+.emotion-0 {
+  position: absolute;
+  z-index: 8;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 8px;
+}
+
+.emotion-0 {
   position: absolute;
   z-index: 8;
   left: 100%;
@@ -174,68 +159,55 @@ exports[`Tooltip renders 3`] = `
   placement="right"
   zIndex={8}
 >
-  <Styled(styled.div)
+  <right
     offset={8}
     zIndex={8}
   >
-    <StyledComponent
-      forwardedComponent={
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BaseToolTop"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-ifAKCX",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+          "map": undefined,
+          "name": "1il8gpc",
+          "next": undefined,
+          "styles": "
+          
           position: absolute;
-          ",
-              [Function],
-              ";
-          ",
-              [Function],
-              ";
-        ",
-              "
+          ;
+          z-index: 8;;
+        ;
           left: 100%;
           top: 50%;
           transform: translateY(-50%);
-          margin-left: ",
-              [Function],
-              "px;
+          margin-left: 8px;
         ",
-            ],
-          },
-          "displayName": "Styled(styled.div)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-ifAKCX",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
         }
       }
-      forwardedRef={null}
-      offset={8}
-      zIndex={8}
     >
       <div
-        className="c0"
-        offset={8}
+        className="emotion-0"
       >
         😎
       </div>
-    </StyledComponent>
-  </Styled(styled.div)>
+    </EmotionCssPropInternal>
+  </right>
 </Tooltip>
 `;
 
 exports[`Tooltip renders 4`] = `
-.c0 {
+.emotion-0 {
+  position: absolute;
+  z-index: 8;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 8px;
+}
+
+.emotion-0 {
   position: absolute;
   z-index: 8;
   right: 100%;
@@ -252,71 +224,70 @@ exports[`Tooltip renders 4`] = `
   placement="left"
   zIndex={8}
 >
-  <Styled(styled.div)
+  <left
     offset={8}
     zIndex={8}
   >
-    <StyledComponent
-      forwardedComponent={
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BaseToolTop"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+          "map": undefined,
+          "name": "1ey0qyy",
+          "next": undefined,
+          "styles": "
+          
           position: absolute;
-          ",
-              [Function],
-              ";
-          ",
-              [Function],
-              ";
-        ",
-              "
+          ;
+          z-index: 8;;
+        ;
           right: 100%;
           top: 50%;
           transform: translateY(-50%);
-          margin-right: ",
-              [Function],
-              "px;
+          margin-right: 8px;
         ",
-            ],
-          },
-          "displayName": "Styled(styled.div)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
         }
       }
-      forwardedRef={null}
-      offset={8}
-      zIndex={8}
     >
       <div
-        className="c0"
-        offset={8}
+        className="emotion-0"
       >
         😎
       </div>
-    </StyledComponent>
-  </Styled(styled.div)>
+    </EmotionCssPropInternal>
+  </left>
 </Tooltip>
 `;
 
 exports[`Tooltip should create a Tooltip with an animation 1`] = `
-.c0 {
+@keyframes animation-0 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
   position: absolute;
-  -webkit-animation: 100ms ease-out 0s 1 bcCCNc;
-  animation: 100ms ease-out 0s 1 bcCCNc;
+  -webkit-animation: 100ms ease-out 0s 1 animation-0;
+  animation: 100ms ease-out 0s 1 animation-0;
+  z-index: 8;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+.emotion-0 {
+  position: absolute;
+  -webkit-animation: 100ms ease-out 0s 1 animation-0;
+  animation: 100ms ease-out 0s 1 animation-0;
   z-index: 8;
   bottom: 100%;
   left: 50%;
@@ -333,66 +304,53 @@ exports[`Tooltip should create a Tooltip with an animation 1`] = `
   open={true}
   zIndex={8}
 >
-  <Styled(styled.div)
+  <top
     fadeDuration={100}
     fadeEasing="ease-out"
     offset={8}
     zIndex={8}
   >
-    <StyledComponent
-      fadeDuration={100}
-      fadeEasing="ease-out"
-      forwardedComponent={
+    <EmotionCssPropInternal
+      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="BaseToolTop"
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
         Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+          "map": undefined,
+          "name": "13wl4ay",
+          "next": Object {
+            "name": "animation-1f15dgw",
+            "next": undefined,
+            "styles": "@keyframes animation-1f15dgw{
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+        }",
+          },
+          "styles": "
+          
           position: absolute;
-          ",
-              [Function],
-              ";
-          ",
-              [Function],
-              ";
-        ",
-              "
+          
+          animation: 100ms ease-out 0s 1 animation-1f15dgw;
+        ;
+          z-index: 8;;
+        ;
           bottom: 100%;
           left: 50%;
           transform: translateX(-50%);
-          margin-bottom: ",
-              [Function],
-              "px;
+          margin-bottom: 8px;
         ",
-            ],
-          },
-          "displayName": "Styled(styled.div)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
         }
       }
-      forwardedRef={null}
-      offset={8}
-      zIndex={8}
     >
       <div
-        className="c0"
-        offset={8}
+        className="emotion-0"
       >
         😎
       </div>
-    </StyledComponent>
-  </Styled(styled.div)>
+    </EmotionCssPropInternal>
+  </top>
 </Tooltip>
 `;
