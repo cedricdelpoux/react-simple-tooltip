@@ -31,14 +31,16 @@
     "deploy": "gh-pages -d demo/dist",
     "lint": "eslint src demo/src",
     "precommit": "lint-staged",
-    "prepublish": "yarn run clean && yarn run build",
+    "prepublish": "npm run snyk-protect; yarn run clean && yarn run build",
     "start": "nwb serve-react-demo --port 1190",
     "test": "jest --config jest.config.json --colors --no-cache",
     "test:snapshot:update": "jest --config jest.config.json --updateSnapshot",
-    "test:watch": "yarn run test -- --watch"
+    "test:watch": "yarn run test -- --watch",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.10"
+    "@emotion/core": "^10.0.10",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.9",
@@ -77,5 +79,6 @@
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0"
-  }
+  },
+  "snyk": true
 }
