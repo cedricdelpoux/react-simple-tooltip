@@ -23,6 +23,7 @@ class Wrapper extends React.Component {
 
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    this.handleTouch = this.handleTouch.bind(this)
   }
 
   handleMouseEnter() {
@@ -31,6 +32,11 @@ class Wrapper extends React.Component {
 
   handleMouseLeave() {
     this.setState({open: false})
+  }
+
+  handleTouch() {
+    const isOpen = this.state.open
+    this.setState({open: !isOpen})
   }
 
   render() {
@@ -89,6 +95,7 @@ class Wrapper extends React.Component {
       <div
         onMouseEnter={!fixed ? this.handleMouseEnter : undefined}
         onMouseLeave={!fixed ? this.handleMouseLeave : undefined}
+        onTouchEnd={!fixed ? this.handleTouch : undefined}
         css={css`
           ${ContainerCss};
           ${customCss}
