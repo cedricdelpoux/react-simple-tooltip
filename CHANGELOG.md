@@ -1,3 +1,7 @@
+# 2.6.1 — 2019-07-25
+
+- Fixed: ios touched devices by @vnoitkumar
+
 # 2.6.0 — 2019-05-23
 
 - Updated: Replacing styled-components with emotion/core
