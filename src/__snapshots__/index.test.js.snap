@@ -200,11 +200,13 @@ exports[`Tooltip should render 1`] = `
     }
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
+    onTouchEnd={[Function]}
   >
     <div
       className="css-1oin9j2"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
+      onTouchEnd={[Function]}
     >
       <button>
         Hover Me
