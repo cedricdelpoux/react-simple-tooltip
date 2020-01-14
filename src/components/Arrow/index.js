@@ -42,6 +42,14 @@ const Right = props => css`
   border-right: 1px solid ${props.border};
   border-top: 1px solid ${props.border};
 `
+const TopLeft = props => css`
+  ${Base(props)};
+  transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+  top: 100%;
+  left: 92%;
+  border-right: 1px solid ${props.border};
+  border-bottom: 1px solid ${props.border};
+`
 
 const BaseArrow = ({fn, ...props}) => <div css={fn(props)} />
 
@@ -57,6 +65,7 @@ const arrows = {
   top: props => BaseArrow({fn: Down, ...props}),
   right: props => BaseArrow({fn: Left, ...props}),
   bottom: props => BaseArrow({fn: Up, ...props}),
+  topLeft: props => BaseArrow({fn: TopLeft, ...props}),
 }
 
 const Arrow = ({background, border, placement, width}) => {

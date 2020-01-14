@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @jsx jsx */
 import PropTypes from "prop-types"
 import {css, keyframes, jsx} from "@emotion/core"
@@ -54,7 +55,13 @@ const Right = props => css`
   transform: translateY(-50%);
   margin-left: ${props.offset}px;
 `
-
+const TopLeft = props => css`
+  ${Base(props)};
+  bottom: 100%;
+  right: 10%;
+  transform: translateX(-50%);
+  margin-bottom: ${props.offset}px;
+`
 const BaseToolTop = ({fn, children, ...props}) => (
   <div css={fn(props)}>{children}</div>
 )
@@ -73,6 +80,8 @@ const tooltips = {
   left: ({children, ...props}) => BaseToolTop({fn: Left, children, ...props}),
   top: ({children, ...props}) => BaseToolTop({fn: Top, children, ...props}),
   right: ({children, ...props}) => BaseToolTop({fn: Right, children, ...props}),
+  topLeft: ({children, ...props}) =>
+    BaseToolTop({fn: TopLeft, children, ...props}),
   bottom: ({children, ...props}) =>
     BaseToolTop({fn: Bottom, children, ...props}),
 }
@@ -87,6 +96,7 @@ const Tooltip = ({
   fadeEasing,
 }) => {
   const Component = tooltips[placement] || tooltips.top
+  // const Component = tooltips.custom|| tooltips[placement]
   return (
     open && (
       <Component

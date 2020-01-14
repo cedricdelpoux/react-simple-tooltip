@@ -134,7 +134,7 @@ Wrapper.propTypes = {
   fontSize: PropTypes.string,
   offset: PropTypes.number,
   padding: PropTypes.number,
-  placement: PropTypes.oneOf(["left", "top", "right", "bottom"]),
+  placement: PropTypes.oneOf(["left", "top", "right", "bottom", "topLeft"]),
   radius: PropTypes.number,
   zIndex: PropTypes.number,
 }
