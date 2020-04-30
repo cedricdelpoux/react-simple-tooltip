@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
-    "snyk": "^1.269.0"
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.9",
