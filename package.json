@@ -38,8 +38,7 @@
     "test:watch": "yarn run test -- --watch"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.10",
-    "snyk": "^1.339.1"
+    "@emotion/core": "^10.0.10"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.9",
