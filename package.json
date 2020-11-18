@@ -3,7 +3,7 @@
   "version": "2.6.1",
   "author": {
     "name": "Cédric Delpoux",
-    "email": "xuopled@gmail.com"
+    "email": "cedric.delpoux@gmail.com"
   },
   "description": "A lightweight and simple tooltip component for React",
   "files": [
@@ -12,7 +12,7 @@
     "lib",
     "umd"
   ],
-  "homepage": "https://github.com/xuopled/react-simple-tooltip#readme",
+  "homepage": "https://github.com/cedricdelpoux/react-simple-tooltip#readme",
   "keywords": [
     "react",
     "tooltip",
@@ -23,7 +23,7 @@
   "module": "es/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuopled/react-simple-tooltip.git"
+    "url": "git+https://github.com/cedricdelpoux/react-simple-tooltip.git"
   },
   "scripts": {
     "build": "nwb build-react-component",
@@ -31,12 +31,11 @@
     "deploy": "gh-pages -d demo/dist",
     "lint": "eslint src demo/src",
     "precommit": "lint-staged",
-    "prepublish": "npm run snyk-protect; yarn run clean && yarn run build",
+    "prepublish": "yarn clean && yarn build",
     "start": "nwb serve-react-demo --port 1190",
     "test": "jest --config jest.config.json --colors --no-cache",
     "test:snapshot:update": "jest --config jest.config.json --updateSnapshot",
-    "test:watch": "yarn run test -- --watch",
-    "snyk-protect": "snyk protect"
+    "test:watch": "yarn run test -- --watch"
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
@@ -79,6 +78,5 @@
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0"
-  },
-  "snyk": true
+  }
 }
