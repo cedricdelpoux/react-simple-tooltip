@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import PropTypes from "prop-types"
-import {css, jsx} from "@emotion/core"
+import PropTypes from "prop-types";
+import { css, jsx } from "@emotion/core";
 
-const Bubble = props => (
+const Bubble = (props) => (
   <div
     css={css`
       color: ${props.color ? props.color : "inherit"};
@@ -16,17 +16,17 @@ const Bubble = props => (
   >
     {props.children}
   </div>
-)
+);
 
 Bubble.propTypes = {
   color: PropTypes.string,
   background: PropTypes.string,
   border: PropTypes.string,
   padding: PropTypes.number,
-  radius: PropTypes.number,
+  radius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   fontSize: PropTypes.string,
   fontFamily: PropTypes.string,
   children: PropTypes.array,
-}
+};
 
-export default Bubble
+export default Bubble;
