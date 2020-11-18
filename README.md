@@ -116,10 +116,10 @@ This project is licensed under the MIT License - see the [LICENCE.md](./LICENCE.
 
 [npm-badge]: https://img.shields.io/npm/v/react-simple-tooltip.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/react-simple-tooltip
-[build-badge]: https://img.shields.io/travis/xuopled/react-simple-tooltip/master.svg?style=flat-square
-[build]: https://travis-ci.org/xuopled/react-simple-tooltip
-[codecov-badge]: https://img.shields.io/codecov/c/github/xuopled/react-simple-tooltip.svg?style=flat-square
-[codecov]: https://codecov.io/gh/xuopled/react-simple-tooltip
+[build-badge]: https://img.shields.io/travis/cedricdelpoux/react-simple-tooltip/master.svg?style=flat-square
+[build]: https://travis-ci.org/cedricdelpoux/react-simple-tooltip
+[codecov-badge]: https://img.shields.io/codecov/c/github/cedricdelpoux/react-simple-tooltip.svg?style=flat-square
+[codecov]: https://codecov.io/gh/cedricdelpoux/react-simple-tooltip
 [module-formats]: https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat-square
-[github-page]: https://xuopled.github.io/react-simple-tooltip
-[github-issue]: https://github.com/xuopled/react-simple-tooltip/issues/new
+[github-page]: https://cedricdelpoux.github.io/react-simple-tooltip
+[github-issue]: https://github.com/cedricdelpoux/react-simple-tooltip/issues/new
