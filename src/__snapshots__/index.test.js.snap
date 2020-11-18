@@ -23,20 +23,21 @@ exports[`Tooltip Should render without children 1`] = `
     css={
       Object {
         "map": undefined,
-        "name": "1oin9j2",
+        "name": "bbq5bh",
         "next": undefined,
         "styles": "
                 
         position: relative;
         display: inline-block;
-      ;
+      ;;
                 
               ",
+        "toString": [Function],
       }
     }
   >
     <div
-      className="css-1oin9j2"
+      className="css-bbq5bh"
     >
       <Tooltip
         fadeDuration={0}
@@ -58,24 +59,25 @@ exports[`Tooltip Should render without children 1`] = `
             css={
               Object {
                 "map": undefined,
-                "name": "iw0mcy",
+                "name": "vo5ay8",
                 "next": undefined,
                 "styles": "
                 
                 position: absolute;
                 0;
                 z-index: 1;;
-              ;
+              ;;
                 bottom: 100%;
                 left: 50%;
                 transform: translateX(-50%);
                 margin-bottom: 8px;
               ",
+                "toString": [Function],
               }
             }
           >
             <div
-              className="css-h9nlcb-BaseToolTop"
+              className="css-f5brtt-BaseToolTop"
             >
               <Tooltip.Bubble
                 background="#000"
@@ -87,7 +89,6 @@ exports[`Tooltip Should render without children 1`] = `
                 radius={0}
               >
                 <EmotionCssPropInternal
-                  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Bubble"
                   __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                   css={
                     Object {
@@ -103,11 +104,12 @@ exports[`Tooltip Should render without children 1`] = `
                           font-size: inherit;
                           font-family: inherit;
                         ",
+                      "toString": [Function],
                     }
                   }
                 >
                   <div
-                    className="css-s1siyn-Bubble"
+                    className="css-2zis3v"
                   >
                     <Tooltip.Arrow
                       background="#000"
@@ -127,7 +129,7 @@ exports[`Tooltip Should render without children 1`] = `
                           css={
                             Object {
                               "map": undefined,
-                              "name": "5qs1ji",
+                              "name": "1ikf1el",
                               "next": undefined,
                               "styles": "
                               
@@ -135,18 +137,19 @@ exports[`Tooltip Should render without children 1`] = `
                               width: 8px;
                               height: 8px;
                               background: #000;
-                            ;
+                            ;;
                               transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
                               top: 100%;
                               left: 50%;
                               border-right: 1px solid #000;
                               border-bottom: 1px solid #000;
                             ",
+                              "toString": [Function],
                             }
                           }
                         >
                           <div
-                            className="css-fiwddr-BaseArrow"
+                            className="css-12sk1qt-BaseArrow"
                           />
                         </EmotionCssPropInternal>
                       </top>
@@ -187,15 +190,16 @@ exports[`Tooltip should render 1`] = `
     css={
       Object {
         "map": undefined,
-        "name": "1oin9j2",
+        "name": "bbq5bh",
         "next": undefined,
         "styles": "
                 
         position: relative;
         display: inline-block;
-      ;
+      ;;
                 
               ",
+        "toString": [Function],
       }
     }
     onMouseEnter={[Function]}
@@ -203,7 +207,7 @@ exports[`Tooltip should render 1`] = `
     onTouchEnd={[Function]}
   >
     <div
-      className="css-1oin9j2"
+      className="css-bbq5bh"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onTouchEnd={[Function]}
